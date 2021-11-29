@@ -1,0 +1,198 @@
+.container {
+   display: flex;
+   min-height: 100vh;
+   position: relative;
+   overflow: hidden;
+
+}
+
+.side-background {
+   background-color: $color-primary;
+   width: 45rem;
+
+   @include respond(tab-port) {
+      width: 25rem;
+   }
+
+   @include respond(tab-land) {
+      width: 25rem;
+   }
+
+   @include respond(big-phone) {
+      width: 15rem;
+   }
+
+   @include respond(phone) {
+      width: 12rem;
+   }
+
+   @include respond(xtrasmall-phone) {
+      width: 10rem;
+   }
+
+   &__logo {
+
+      position: absolute;
+      width: 20rem;
+      right: 3rem;
+      top: 3rem; 
+      
+      @include respond(tab-port) {
+         width: 15rem;
+      }
+
+      @include respond(tab-land) {
+         width: 15rem;
+      }
+
+      @include respond(big-phone) {
+         width: 10rem;
+         right: 2rem;
+         top: 2rem; 
+      }
+
+      @include respond(phone) {
+         width: 9rem;
+         right: 1rem;
+         top: 1rem;  
+      }
+
+      @include respond(xtrasmall-phone) {
+         width: 8rem;
+      }
+   }
+}
+
+.andy {
+   position: absolute;
+   width: 60rem;
+   top: 15rem;
+   right: 8rem;
+
+   @include respond(tab-land) {
+      width: 55rem;
+      right: -7rem;
+   }
+
+   @include respond(tab-port) {
+      right: -16rem;
+   }
+
+   @include respond(big-phone) {
+      width: 35rem;
+      right: -10rem;
+   }
+
+   @include respond(phone) {
+      width: 27rem;  
+      right: -9rem;
+      top: 20rem;
+   }
+
+   @include respond(small-phone) {
+      width: 27rem;
+      top: 20rem;
+      right: -10rem;
+   }
+
+   @include respond(xtrasmall-phone) {
+      width: 24rem;
+      top: 27.5rem;
+      right: -9rem;
+   }
+
+}
+
+
+.left-rec {
+   position: absolute;
+   width: 85px;
+   height: 34px;
+   background-color: $color-primary;
+   top: 109px;
+
+
+   @media screen and (max-width: $bp-laptop) {
+      top: 85px;
+      
+   }
+   
+
+   @include respond(tab-land) {
+      width: 56.7px;
+      height: 22.67px;
+      top: 70px;
+
+   }
+
+
+   @include respond(tab-port) {
+      width: 56.7px;
+      height: 22.67px;
+      top: 72px;
+   }
+
+
+   @include respond(big-phone) {
+      top: 40px;
+      width: 44px;
+
+   }
+
+   @include respond(phone) {
+      top: 35px;
+      height: 15.11px;
+      width: 29.33px;
+
+   }
+
+   @include respond(xtrasmall-phone) {
+      top: 31px;
+      height: 15.11px;
+      width: 15px;
+
+   }
+}
+
+.bottom-rec {
+
+   width: 31px;
+   height: 57px;
+   background-color: $color-primary;
+   position: absolute;
+   bottom: 0;
+   left: 85px;
+
+
+   @include respond(tab-land) {  
+      left: 57px;
+      width: 20.67px;
+      height: 38px;
+   }
+
+   @include respond(tab-port) {  
+      left: 57px;
+      width: 20.67px;
+      height: 38px; 
+   }
+   
+   @media screen and (max-width: $bp-tablet) {
+   }
+
+   @include respond(big-phone) {
+      left: 44px;
+
+   }
+
+   @include respond(phone) {
+      height: 25.33px;
+      width: 13.78px;
+      left: 29px;
+   }
+
+   @include respond(xtrasmall-phone) {
+
+      left: 15px;
+
+   }
+}
