@@ -23,8 +23,6 @@
    }
 
 
-   
-
    &__btn, &__p1, &__p2 {
       text-align: center;
    }
@@ -41,8 +39,6 @@
    &__ul {
       font-size: 3rem;
       margin: 0 auto;
-
-     
       
       &--li {
          list-style: none;
@@ -59,9 +55,15 @@
          padding: 1em 1em;
          }
 
+         @media screen and (max-width: 736px) and (max-height: 414px) {
+            padding: .7em;
+            }
+
          @media screen and (max-width: 667px) {
             padding: .7em 1em;
             }
+
+
       
    }
 

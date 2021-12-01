@@ -23,9 +23,9 @@ html {
   }
 }
 
-@media screen and (max-width: 736px) and (max-height: 414) {
+@media screen and (max-width: 736px) and (max-height: 414px) {
   html {
-    font-size: 35%;
+    font-size: 32%;
   }
 }
 
@@ -143,6 +143,12 @@ body {
 @media screen and (max-width: 1024px) {
   .content__name, .content__email {
     padding: 1em 1em;
+  }
+}
+
+@media screen and (max-width: 736px) and (max-height: 414px) {
+  .content__name, .content__email {
+    padding: .7em;
   }
 }
 
