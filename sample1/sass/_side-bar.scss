@@ -8,6 +8,10 @@
    grid-template-columns: repeat(2, 1fr);
    grid-template-rows: 10vh 1fr;
 
+   @media screen and (max-width: 606px) {
+      
+   }
+
 
    &__logo {
       width: 80%;
