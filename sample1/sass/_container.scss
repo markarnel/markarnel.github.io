@@ -6,6 +6,10 @@
    grid-template-columns: 10vh 1fr 40vh;
    grid-template-rows: 10vh 1fr 5vh;
 
+   @media screen and (max-width: 586px) {
+      grid-template-columns: 5vh 1fr 10vh;
+   }
+
 
       @media screen and (max-width: 375px) {
          grid-template-columns: 5vh 1fr 10vh;
