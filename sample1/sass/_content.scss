@@ -20,7 +20,10 @@
    @media screen and (max-width: 320px) {
       grid-column: 1 / 3;
       grid-row: 2 / 3;
+
+      margin: 0 1em;
    }
+
 
 
    &__btn, &__p1, &__p2 {

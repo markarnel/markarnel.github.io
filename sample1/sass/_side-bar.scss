@@ -10,7 +10,10 @@
 
    @media screen and (max-width: 586px) {
       grid-template-columns: 1fr;
-   
+   }
+
+   @media screen and (max-width: 586px) {
+      grid-template-columns: 10vh;
    }
 
 
