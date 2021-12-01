@@ -1,183 +1,86 @@
 .content {
-   flex: 1;
+   grid-column: 2 / 2;
+   grid-row: 2 / 3;
 
-   position: relative;
    display: flex;
+   flex-direction: column;
    justify-content: center;
    align-items: center;
 
-}
+   &__btn, &__p, &__p1 {
+      text-align: center;
+   }
 
-.content-form {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-
-   &__h2 {
-      color: $color-primary;
-      font-size: 5em;
+   &__heading {
+      font-size: 6rem;
       font-weight: 800;
-      line-height: 1.14 ;
-      
-      @media screen and (max-width: $bp-laptop) {
-         font-size: 6em;
-      }
+      color: $color-primary;
 
-      @include respond(tab-land) {
-         font-size: 6.4em;
-       }
-
-       @include respond(tab-port) {
-         font-size: 5.1em;
-       }
-
-      @media screen and (max-width: $bp-tablet) {
-         width: 70%;
-         line-height: 1.1;
-         font-size: 4em;
-      }
-
-      @include respond(big-phone) {
-        width: 41%;
-        margin-right: 15rem;
-        font-size: 4.6em;
-
-      }
-
-      @include respond(phone) {
-         margin-right: 10rem;
-         font-size: 4em;
-       }
-
-       @include respond(small-phone) {
-         margin-right: 7rem;
-       }
-
-       @include respond(xtrasmall-phone) {
-         font-size: 3.5em;
-         margin-left: -1rem;
-       }
-
-
-      &--span {
-         display: block;
-      }
    }
 
    &__ul {
-      margin-left: 6rem;
-      width: 60%;
+      font-size: 2.5rem;
 
-      @media screen and (max-width: $bp-tablet) {
-         margin-left: 0;
+      &--li {
+
       }
-
-   }  
-
-   &__li {
-      font-size: 2.1em;
-      font-weight: 400;
-
-      @media screen and (max-width: $bp-tablet) {
-         font-size: 1.8em;
-      }
-
-      @include respond(big-phone) {
-         font-size: 1.5em;
-       }
    }
 
-   &__name,
-   &__email {
-      width: 50%;
-      border: 3px solid $color-primary;
-      padding: 1.5rem;
-      border-radius: 15px;
-      font-size: 2em;
-      font-weight: 400;
+   &__name, &__email {
+      border: 2px solid $color-primary;
+      min-width: 40rem;
+
+      padding: 1.5em;
+      border-radius: 10px;
+
+      @media screen and (max-width: 623px) {
+         padding: 1em;
+       }
+
+       @media screen and (max-width: 514px) {
+         padding: .8em;
+         border: 1px solid $color-primary;
+       }
+       @media screen and (max-width: 348px) {
+         font-size: 3rem;
+       }
+
       
-      // &::placeholder {
+      
 
-      // }
-
-      @include respond(tab-port) {
-         padding: 1.7rem;
-       }
-
-      @media screen and (max-width: $bp-tablet) {
-         padding: 1.2rem;
-         font-size: 1.5em;
-         border: 2px solid $color-primary;
-         border-radius: 10px;
-      }
-
-      @include respond(big-phone) {
-         margin-right: 5.5rem;
-         width: 60%;
-       }
-
-   
-      @include respond(phone) {
-         padding: 1.4rem;
-         font-size: 1.1em;
-         border: 1.5px solid $color-primary;
-         border-radius: 10px;
-         width: 65%;
-         margin-right: 2.5rem;
-       }
-   
-       @include respond(small-phone) {
-         padding: 1.5rem;
-         margin-right: 1rem;
-       }
-   
-       @include respond(xtrasmall-phone) {
-         padding: 1rem; 
-         width: 70%;
-       }
    }
 
    &__btn {
+      background-color: $color-primary;
+      color: #fff;
+      padding: 1.5em;
+      min-width: 40rem;
+      border-radius: 10px;
+      border: none;
+      font-weight: 700;
 
-      @include respond(big-phone) {
-         margin-right: 5.5rem;
-      }
-
-      @include respond(phone) {
-         margin-right: 2.5rem;
+      @media screen and (max-width: 623px) {
+         padding: 1em;
        }
 
-       @include respond(small-phone) {
-         margin-right: 1rem;
+       @media screen and (max-width: 514px) {
+         padding: .8em;
        }
+
+       @media screen and (max-width: 317px) {
+         padding: .5em;
+       }
+
+
    }
-
-   &__p {
-      font-size: 1.5em;
-      text-align: center;
-
-
-      @media screen and (max-width: $bp-tablet) {
-         font-size: 1.4em;
-      }
-
-      @include respond(phone) {
-         font-size: 1.3em;
-       }
-
-       @include respond(small-phone) {
-         font-size: 1.1em;
-
-       }
-   }
-
    &__p1 {
-      font-size: 1em;
-      text-align: center; 
 
-      @include respond(small-phone) {
-         font-size: .9em;
-
-       }
+      font-size: 1.5rem;
    }
+
+   &__p2 {
+      font-size: 1.2rem;
+   }
+   
 }
+

@@ -1,0 +1,13 @@
+.rec-down {
+   grid-row: 3 / 4;
+   display: grid;
+
+   &__box { 
+      align-self: end;
+      justify-self: end;
+      width: 25%;
+      height: 75%;
+      background-color: $color-primary;
+
+   }
+}

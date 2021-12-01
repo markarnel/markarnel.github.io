@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+   
+    @media screen and (max-width: 1222px) {
+      font-size: 55%;
+    }
+    @media screen and (max-width: 754px) {
+      font-size: 45%;
+    }
+
+    @media screen and (max-width: 623px) {
+      font-size: 35%;
+    }
+
+    @media screen and (max-width: 514px) {
+      font-size: 25%;
+    }
+
+    @media screen and (max-width: 317px) {
+      font-size: 20%;
+    }
+
+
+}
+
+body {
+   font-family: $font-primary;
+}
+
+.mb-sm { 
+   margin-bottom: .5rem;
+
+}
+.mb-md {
+    margin-bottom: 1rem;
+
+}
+
+.mb-lg { 
+   margin-bottom: 1.5rem;
+
+   @media screen and (max-width: 623px) {
+      margin-bottom: 3rem;
+    }
+
+ }
+
+.mb-hg {
+    margin-bottom: 2rem; 
+
+    @media screen and (max-width: 623px) {
+      margin-bottom: 6rem;
+    }
+
+}

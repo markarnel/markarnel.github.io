@@ -1,0 +1,14 @@
+.rec-up {
+
+   grid-column: 1 / 2;
+   display: grid;
+
+
+   &__box { 
+      align-self: end;
+      width: 75%;
+      height: 25%;
+      background-color: $color-primary;
+      
+   }
+}

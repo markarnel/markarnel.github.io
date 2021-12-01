@@ -1,5 +1,7 @@
-@import "./mixin";
-@import "./base";
+@import "./variables";
+@import "./boilerplate";
+@import "./container";
 @import "./content";
-@import "./layout";
-@import "./typography";
+@import "./rec-down";
+@import "./rec-up";
+@import "./side-bar";
