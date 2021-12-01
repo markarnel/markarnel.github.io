@@ -9,21 +9,11 @@
    grid-template-rows: 10vh 1fr;
 
 
-   @media screen and (max-width: 667px) {
-
-      grid-template-columns: 10vh;
-      grid-template-rows: 10vh;
-   }
-
-
    &__logo {
       width: 80%;
       grid-column: 2 / 3;
       margin: auto;
 
-      @media screen and (max-width: 667px) {
-         grid-column: 1 / 2;
-         }
 
    }
 
@@ -37,10 +27,6 @@
 
       align-self: end;
 
-      @media screen and (max-width: 667px) {
-         display: none;
-         }
-
    }
 
    &__white {
@@ -49,8 +35,5 @@
       grid-row: 1 / 3;
       grid-column: 1 / 2;
       
-      @media screen and (max-width: 667px) {
-         display: none;
-         }
    }
 }
