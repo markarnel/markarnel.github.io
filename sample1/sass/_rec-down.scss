@@ -9,5 +9,19 @@
       height: 75%;
       background-color: $color-primary;
 
+      @media screen and (max-width: 375px) {
+         height: 50%;
+      }
+
+      @media screen and (max-width: 375px) {
+         height: 40%;
+ 
+      }
+
+      @media screen and (max-width: 320px) {
+         display: none;
+      }
+
+
    }
 }

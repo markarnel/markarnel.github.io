@@ -9,49 +9,19 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+
+   @media screen and (max-width: 1024px) {
+   font-size: 50%;
+   }
+
+   @media screen and (max-width: 768px) {
+   font-size: 40%;
+   }
+
+   @media screen and (max-width: 667px) {
+   font-size: 30%;
+   }
    
-    @media screen and (max-width: 1222px) {
-      font-size: 55%;
-
-    }
-
-    @media screen and (max-width: 1024px) {
-      font-size: 50%;
-
-    }
-
-    @media screen and (max-width: 1021px) and (max-height: 708px) {
-      font-size: 40%;
-    }
-
-    @media screen and (max-width: 754px) {
-      font-size: 45%;
-    }
-
-    @media screen and (max-width: 736px) and (max-height: 414px) {
-      font-size: 30%;
-    }
-
-    @media screen and (max-width: 667px) and (max-height: 375px) {
-      font-size: 30%;
-    }
-
-
-    @media screen and (max-width: 623px) {
-      font-size: 35%;
-    }
-
-    @media screen and (max-width: 514px) {
-      font-size: 25%;
-    }
-
-    @media screen and (max-width: 317px) {
-      font-size: 20%;
-    }
-
-    
-
-
 }
 
 body {
@@ -70,17 +40,9 @@ body {
 .mb-lg { 
    margin-bottom: 1.5rem;
 
-   @media screen and (max-width: 623px) {
-      margin-bottom: 3rem;
-    }
-
  }
 
 .mb-hg {
     margin-bottom: 2rem; 
-
-    @media screen and (max-width: 623px) {
-      margin-bottom: 6rem;
-    }
 
 }
