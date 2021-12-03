@@ -1,0 +1,18 @@
+.header {
+   position: relative;
+   background-color: $color;
+
+   min-height: 10rem;
+
+   display: flex;
+   align-items: center;
+
+   
+
+   &__logo {
+      
+      margin-left: 5em;
+      width: 13rem;
+
+   }
+}

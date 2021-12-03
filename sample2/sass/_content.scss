@@ -1,0 +1,75 @@
+.wrapper-content {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 89vh;
+   
+}
+
+.content {
+
+   width: 600px;
+   padding: 5rem 0;
+
+   @media screen and (max-height: 1000px){
+      // margin-top: 50px;
+   }
+
+
+   &__p1, &__p2 {
+      text-align: center;
+      font-weight: 300;
+      margin-top: 20px;
+   }
+
+   &__heading {
+      
+      font-size: 54px;
+      font-weight: 800;
+      color: $color;
+      line-height: 1.1;
+      text-align: left;
+      margin: 0 auto;
+   }
+
+   &__ul {
+      margin-top: 33px;
+      font-size: 30px;
+
+      &--li {
+         list-style: none;
+         line-height: 41px;
+
+      }
+   }
+
+   &__name, &__email {
+      border: 1.5px solid $color;
+      padding: 1.5em 1em;
+      margin: 0 auto;
+      width: 600px;
+      margin-top: 33px;
+   }
+
+   &__btn {
+      
+      background-color: $color;
+      color: #fff;
+      border: none;
+      font-weight: 700;
+      padding: 2rem 0;
+      width: 600px;
+      margin-top: 33px;
+
+   }
+   &__p1 {
+
+      font-size: 24px;
+   }
+
+   &__p2 {
+      font-size: 18px;
+
+   }
+   
+}
