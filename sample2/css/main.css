@@ -43,6 +43,25 @@ body {
 .content {
   width: 600px;
   padding: 5rem 0;
+  border: 1px solid red;
+}
+
+@media screen and (max-width: 700px) {
+  .content {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content {
+    width: 300px;
+  }
 }
 
 .content__p1, .content__p2 {
@@ -55,9 +74,15 @@ body {
   font-size: 54px;
   font-weight: 800;
   color: #083643;
-  line-height: 1.1;
+  line-height: 101.68%;
   text-align: left;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 500px) {
+  .content__heading {
+    font-size: 48px;
+  }
 }
 
 .content__ul {
@@ -65,9 +90,22 @@ body {
   font-size: 30px;
 }
 
+@media screen and (max-width: 500px) {
+  .content__ul {
+    font-size: 21px;
+    margin-top: 28px;
+  }
+}
+
 .content__ul--li {
   list-style: none;
   line-height: 41px;
+}
+
+@media screen and (max-width: 500px) {
+  .content__ul--li {
+    line-height: 29px;
+  }
 }
 
 .content__name, .content__email {
@@ -76,6 +114,24 @@ body {
   margin: 0 auto;
   width: 600px;
   margin-top: 33px;
+}
+
+@media screen and (max-width: 700px) {
+  .content__name, .content__email {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content__name, .content__email {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content__name, .content__email {
+    width: 300px;
+  }
 }
 
 .content__btn {
@@ -88,12 +144,42 @@ body {
   margin-top: 33px;
 }
 
+@media screen and (max-width: 700px) {
+  .content__btn {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content__btn {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content__btn {
+    width: 300px;
+  }
+}
+
 .content__p1 {
   font-size: 24px;
 }
 
+@media screen and (max-width: 500px) {
+  .content__p1 {
+    font-size: 18px;
+  }
+}
+
 .content__p2 {
   font-size: 18px;
+}
+
+@media screen and (max-width: 500px) {
+  .content__p2 {
+    font-size: 14px;
+  }
 }
 
 .header {
@@ -121,7 +207,7 @@ body {
   opacity: .3;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
   .main__img {
     position: relative;
     opacity: 1;
