@@ -1,8 +1,7 @@
 .wrapper-content {
    display: flex;
    justify-content: center;
-   align-items: center;
-   min-height: 89vh;
+
    
 }
 
@@ -11,9 +10,11 @@
    width: 600px;
    padding: 5rem 0;
 
-   @media screen and (max-height: 1000px){
-      // margin-top: 50px;
+   @media screen and (max-width: 1000px){
+      
    }
+
+
 
 
    &__p1, &__p2 {
