@@ -45,7 +45,6 @@ body {
 .content {
   width: 600px;
   padding: 5rem 0;
-  border: 1px solid red;
 }
 
 @media screen and (max-width: 755px) {
