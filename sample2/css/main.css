@@ -59,7 +59,7 @@ body {
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 450px) {
   .content {
     width: 300px;
   }
@@ -83,12 +83,6 @@ body {
 @media screen and (max-width: 1135px) {
   .content__heading {
     font-size: 2.933em;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .content__heading {
-    font-size: 2.3em;
   }
 }
 
@@ -140,7 +134,7 @@ body {
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 450px) {
   .content__name, .content__email {
     width: 300px;
   }
@@ -168,7 +162,7 @@ body {
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 450px) {
   .content__btn {
     width: 300px;
   }
