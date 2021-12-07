@@ -1,18 +1,18 @@
 .main {
-  position: relative;
-
-   &__img {
-      z-index: -1;
-      position: absolute;
-      width: 100%;
-      top: -100px;
-      opacity: .3;
-
-      @media screen and (max-width: 639px){
-         position: relative;
-         opacity: 1;
-         top: 0;
-      }
-   }
-}
-
+   position: relative;
+ 
+    &__img {
+       z-index: -1;
+       position: absolute;
+       width: 100%;
+       top: -100px;
+       opacity: .3;
+ 
+       @media screen and (max-width: 639px){
+          position: relative;
+          opacity: 1;
+          top: 0;
+       }
+    }
+ }
+ 

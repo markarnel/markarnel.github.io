@@ -81,6 +81,12 @@
       width: 600px;
       margin-top: 33px;
 
+      &:focus{
+         outline: none;
+         box-shadow: 0 1rem 2rem rgba(black, .1);
+     }
+
+
       @media screen and (max-width: 755px) {
          width: 500px;
       }
@@ -102,6 +108,12 @@
       padding: 2rem 0;
       width: 600px;
       margin-top: 33px;
+      cursor: pointer;
+
+      &:hover {
+         box-shadow: 0 1rem 2rem rgba(black, 0.2);
+
+      }
 
       @media screen and (max-width: 755px) {
          width: 500px;

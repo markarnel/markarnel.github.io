@@ -122,6 +122,11 @@ body {
   margin-top: 33px;
 }
 
+.content__name:focus, .content__email:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
 @media screen and (max-width: 755px) {
   .content__name, .content__email {
     width: 500px;
@@ -148,6 +153,11 @@ body {
   padding: 2rem 0;
   width: 600px;
   margin-top: 33px;
+  cursor: pointer;
+}
+
+.content__btn:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 755px) {
