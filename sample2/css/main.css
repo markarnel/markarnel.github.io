@@ -13,6 +13,7 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
+  font-size: calc(1rem + 0.75vw);
 }
 
 .mb-sm {
@@ -46,21 +47,15 @@ body {
   border: 1px solid red;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 639px) {
   .content {
     width: 500px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 540px) {
   .content {
     width: 400px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .content {
-    width: 300px;
   }
 }
 
@@ -79,9 +74,9 @@ body {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1135px) {
   .content__heading {
-    font-size: 48px;
+    font-size: 2.933em;
   }
 }
 
@@ -90,22 +85,15 @@ body {
   font-size: 30px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1135px) {
   .content__ul {
-    font-size: 21px;
-    margin-top: 28px;
+    font-size: 1.63em;
   }
 }
 
 .content__ul--li {
   list-style: none;
   line-height: 41px;
-}
-
-@media screen and (max-width: 500px) {
-  .content__ul--li {
-    line-height: 29px;
-  }
 }
 
 .content__name, .content__email {
@@ -116,21 +104,15 @@ body {
   margin-top: 33px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 639px) {
   .content__name, .content__email {
     width: 500px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 540px) {
   .content__name, .content__email {
     width: 400px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .content__name, .content__email {
-    width: 300px;
   }
 }
 
@@ -144,21 +126,15 @@ body {
   margin-top: 33px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 639px) {
   .content__btn {
     width: 500px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 540px) {
   .content__btn {
     width: 400px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .content__btn {
-    width: 300px;
   }
 }
 
@@ -166,9 +142,9 @@ body {
   font-size: 24px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1135px) {
   .content__p1 {
-    font-size: 18px;
+    font-size: 1.3em;
   }
 }
 
@@ -176,9 +152,9 @@ body {
   font-size: 18px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1135px) {
   .content__p2 {
-    font-size: 14px;
+    font-size: 1.07em;
   }
 }
 
@@ -191,7 +167,7 @@ body {
 }
 
 .header__logo {
-  margin-left: 5em;
+  margin-left: 1.5em;
   width: 13rem;
 }
 
@@ -207,7 +183,7 @@ body {
   opacity: .3;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 639px) {
   .main__img {
     position: relative;
     opacity: 1;

@@ -14,6 +14,7 @@ html {
 
 body {
    font-family: $font;
+   font-size: calc(1rem + 0.75vw);
 }
 
 .mb-sm { 
