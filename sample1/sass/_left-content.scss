@@ -4,7 +4,6 @@ position: absolute;
 top: 20%;
 margin: 0 4.8em;
 
-border: 1px solid red;
 
 @include respond(tab-port){
    position: relative;
