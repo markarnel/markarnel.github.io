@@ -177,7 +177,6 @@ body {
   border: none;
   text-align: center;
   cursor: pointer;
-  width: 60%;
 }
 
 .sidebar-contentright__btn:active, .sidebar-contentright__btn:focus {
@@ -187,7 +186,7 @@ body {
 }
 
 .sidebar-contentright__btn-1 {
-  padding: 1em;
+  padding: 1.3em 6em;
   color: white;
   text-decoration: none;
   font-size: .8em;
