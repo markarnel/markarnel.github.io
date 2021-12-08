@@ -177,9 +177,7 @@ body {
   border: none;
   text-align: center;
   cursor: pointer;
-  padding: .5em 0;
   width: 60%;
-  margin-top: 1.5em;
 }
 
 .sidebar-contentright__btn:active, .sidebar-contentright__btn:focus {
@@ -189,6 +187,7 @@ body {
 }
 
 .sidebar-contentright__btn-1 {
+  padding: 1em;
   color: white;
   text-decoration: none;
   font-size: .8em;
@@ -228,6 +227,10 @@ body {
   padding: 1.3em 2em;
   border: none;
   border-radius: 50px;
+}
+
+.sidebar-contentright__form__box:last-of-type {
+  margin-bottom: 2em;
 }
 
 .sidebar-contentright__form__box:active, .sidebar-contentright__form__box:focus {

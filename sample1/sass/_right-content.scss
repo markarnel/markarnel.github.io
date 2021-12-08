@@ -22,9 +22,9 @@
       border: none;
       text-align: center;
       cursor: pointer; 
-      padding: .5em 0;
+
       width: 60%;
-      margin-top: 1.5em;
+
      
      &:active,
      &:focus {
@@ -34,6 +34,7 @@
      }
 
       &-1 {
+         padding: 1em;
          color: white;
          text-decoration: none;
          font-size: .8em;
@@ -57,10 +58,9 @@
    }
 
    &__form {
-
       display: flex;
       flex-direction: column;
-      
+
       &__label {
         
          visibility: hidden;
@@ -77,12 +77,18 @@
          border: none;
          border-radius: 50px;
 
+            &:last-of-type{
+               margin-bottom: 2em;
+            }
+         
+
+
          &:active,
          &:focus {
          outline: none;
          transform: translateY(-1px);
          box-shadow: $shadow-box;
-     }
+      }
   
 
          &::placeholder{
@@ -95,6 +101,7 @@
                visibility: hidden;
             }
          }
+
       }
    }
 }
