@@ -9,12 +9,10 @@
 
    width: 600px;
    padding: 5rem 0;
-   
 
    @media screen and (max-width: 755px) {
       width: 500px;
    }
-
 
    @media screen and (max-width: 540px) {
       width: 400px;
@@ -23,21 +21,19 @@
    @media screen and (max-width: 450px) {
       width: 300px;
    }
-   
 
    &__p1, &__p2 {
       text-align: center;
       font-weight: 300;
       margin-top: 20px;
 
-      
    }
 
    &__heading {
       
       font-size: 54px;
       font-weight: 800;
-      color: $color;
+      color: #083643;
       line-height: 101.68%;
       text-align: left;
       margin: 0 auto; 
@@ -45,7 +41,6 @@
       @media screen and (max-width: 1135px) {
          font-size: 2.933em;
       }
-
 
    }
 
@@ -61,8 +56,6 @@
          font-size: 1.4em;
       }
 
-
-
       &--li {
          list-style: none;
          line-height: 41px;
@@ -70,12 +63,11 @@
          @media screen and (max-width: 450px) {
             line-height: 31px;
          }
-
       }
    }
 
    &__name, &__email {
-      border: 1.5px solid $color;
+      border: 1.5px solid #083643;
       padding: 1.5em 1em;
       margin: 0 auto;
       width: 600px;
@@ -85,7 +77,6 @@
          outline: none;
          box-shadow: 0 1rem 2rem rgba(black, .1);
      }
-
 
       @media screen and (max-width: 755px) {
          width: 500px;
@@ -111,8 +102,8 @@
       cursor: pointer;
 
       &:hover {
-         box-shadow: 0 1rem 2rem rgba(black, 0.2);
-
+         box-shadow: 0 1rem 2rem rgba(black, 0.1);
+         background-color: rgba($color, .96);
       }
 
       @media screen and (max-width: 755px) {
@@ -126,9 +117,8 @@
       @media screen and (max-width: 450px) {
          width: 300px;
       }
-      
-
    }
+
    &__p1 {
 
       font-size: 24px;
@@ -136,15 +126,14 @@
       @media screen and (max-width: 1135px) {
          font-size: 1.3em;
       }
-
    }
 
    &__p2 {
+
       font-size: 18px;
 
       @media screen and (max-width: 1135px) {
          font-size: 1.07em;
       }
    }
-   
 }
