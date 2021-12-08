@@ -5,93 +5,77 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Podcast Newsletter</title>
+  <title>LEAD52</title>
   <link rel="stylesheet" href="./css/main.css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div class="container">
 
-    <!-- LEFT SIDE BOXES  -->
-    <div class="rec-up">
-      <div class="rec-up__box">
+    <header class="logo-box">
+      <div class="logo">
+        <img src="./img/LogoWhite.png" alt="logo" class="logo">
+      </div>
+    </header>
+
+    <div class="sidebar">
+
+      <div class="sidebar-left">
+
+        <div class="sidebar-contentleft">
+
+          <h1 class="sidebar-contentleft__h1">
+            Your 5-minute weekly pass
+            to leadership intelligence
+          </h1>
+
+          <p class="sidebar-contentleft__p">
+            52 weeks of learning, delivered right to your inbox,
+            taking less than 5 minutes a week.
+            And it's all for free.
+          </p>
+
+          <p class="sidebar-contentleft__p">
+            Join us for a couple of weeks or stay for the entire year.
+            You can unsubscribe at any time.
+          </p>
+
+        </div>
+      </div>
+
+      <div class="sidebar-right">
+        <div class="sidebar-contentright">
+          <h2 class="sidebar-contentright__h2">Join the global community
+              of aspiring leaders
+          </h2>
+
+          <form class="sidebar-contentright__form">
+            <label for="name" class="sidebar-contentright__form__label">Name*</label>
+            <input type="name" class="sidebar-contentright__form__box" placeholder="Name:">
+
+            <label for="" class="sidebar-contentright__form__label">Email*</label>
+            <input type="email" class="sidebar-contentright__form__box" placeholder="Email:">
+
+            <label for="" class="sidebar-contentright__form__label">How did you hear about us?</label>
+            <input type="how" class="sidebar-contentright__form__box" placeholder="How did you hear about us?">
+
+          </form>
+
+          <div class="sidebar-contentright__btn">
+            <a href="#" class="sidebar-contentright__btn-1 sidebar-contentright__btn-1">Sign me up!</a>
+          </div>
+
+          <p class="sidebar-contentright__p">We respect your
+            <span class="sidebar-contentright__p-span">
+              email privacy.</span>
+          </p>
+        </div>
       </div>
     </div>
-
-    <div class="rec-down">
-      <div class="rec-down__box"></div>
-    </div>
-    <!-- LEFT SIDE BOXES  -->
-
-    <!-- SIDE BAR -->
-    <div class="side-bar">
-
-      <img src="./img/small-ppp-logo-white.png" alt="" class="side-bar__logo">
-      <img src="./img/andy-small.png" alt="" class="side-bar__img">
-      <div class="side-bar__white">
-      </div>
-
-    </div>
-    <!-- SIDE BAR- -->
-
-    <!-- CONTENT -->
-    <!-- AWEBER-FORM -->
-    <form method="post" class="content" accept-charset="UTF-8" action="https://www.aweber.com/scripts/addlead.pl">
-
-      <input type="hidden" name="meta_web_form_id" value="1454882642">
-      <input type="hidden" name="meta_split_id" value="">
-      <input type="hidden" name="listname" value="awlist3604182">
-      <input type="hidden" name="redirect" value="https://www.aweber.com/thankyou-coi.htm?m=text"
-        id="redirect_dbd9b95215a0c3ea11277dd186813ef3">
-      <input type="hidden" name="meta_adtracking" value="Podcast_Newsletter">
-      <input type="hidden" name="meta_message" value="1">
-      <input type="hidden" name="meta_required" value="name,email">
-      <input type="hidden" name="meta_tooltip" value="">
-      <!-- AWEBER-FORM -->
-
-      <h2 class="content__heading">
-        Join Listeners
-        Around The World!
-      </h2>
-
-      <ul class="content__ul">
-        <li class="content__ul--li">
-          &bull; Be the first to learn about new episodes
-        </li>
-        <li class="content__ul--li">
-          &bull; Earn free PDUs
-        </li>
-        <li class="content__ul--li">
-          &bull; Learn about free livestreams, webinars and
-          other learning opportunities.
-        </li>
-        <li class="content__ul--li">
-          &bull; Get behind-the-scenes news about upcoming episodes.
-        </li>
-      </ul>
-
-      <input type="text" name="name" class="content__name" placeholder="Name:">
-
-      <input type="text" name="email" class="content__email" placeholder="Email:">
-
-      <input name="submit" class="content__btn" type="submit" value="SUBSCRIBE!">
-
-      <p class="content__p1">
-        We respect your email privacy
-      </p>
-
-      <p class="content__p2">
-        You can unsubscribe at any time.
-      </p>
-
-    </form>
-    <!-- CONTENT -->
-
-
-
-
+  </div>
 </body>
 
 </html>

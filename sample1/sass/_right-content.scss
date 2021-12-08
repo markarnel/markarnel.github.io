@@ -1,0 +1,106 @@
+.sidebar-contentright {
+
+   border: 1px solid red;
+   position: absolute;
+   margin: 0 3em;
+
+   top: 20%;
+
+   @include respond(tab-port){
+      top: 0;
+      padding: 1em 0;
+      position: relative;
+   }
+
+   
+   &__h2 {
+
+      font-size: 1.5em; 
+      line-height: 1.29;
+      text-align: center;
+      font-weight: 700;
+   }
+
+   &__btn {
+      margin: 0 auto;
+      border-radius: 50px;
+      background-color: $light-color;
+      border: none;
+      text-align: center;
+      cursor: pointer; 
+      padding: .5em 0;
+      width: 60%;
+      margin-top: 1.5em;
+     
+     &:active,
+     &:focus {
+         outline: none;
+         transform: translateY(-1px);
+         box-shadow: $shadow-box;
+     }
+
+      &-1 {
+         color: white;
+         text-decoration: none;
+         font-size: .8em;
+         font-weight: 700;
+         
+   }
+}
+
+   &__p {
+      margin-top: 1em;
+      font-size: .75em;
+      text-align: center;
+
+      &-span {
+         
+         border-bottom: 2px solid white;
+         cursor: pointer; 
+         transition: all .1s; 
+
+      }     
+   }
+
+   &__form {
+
+      display: flex;
+      flex-direction: column;
+      
+      &__label {
+        
+         visibility: hidden;
+
+         @include respond(tab-land){
+            visibility: visible;
+            font-size: .6em;
+            margin: .6em 0;
+         }
+      }
+
+      &__box {
+         padding: 1.3em 2em;
+         border: none;
+         border-radius: 50px;
+
+         &:active,
+         &:focus {
+         outline: none;
+         transform: translateY(-1px);
+         box-shadow: $shadow-box;
+     }
+  
+
+         &::placeholder{
+            font-family: 'Poppins';
+            font-size: 1em;
+            font-weight: 400;
+            color: rgba(black, .2);
+
+            @include respond(tab-land){
+               visibility: hidden;
+            }
+         }
+      }
+   }
+}

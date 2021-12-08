@@ -1,0 +1,38 @@
+.logo-box {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    padding: 1em 2.5em 1em 5em;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: rosybrown;
+    background: rgba(172, 184, 190, 0.5);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    @include respond (tab-port) {
+      top: 3%;
+
+   }
+
+    @include respond (phone) {
+      top: 2%;
+      padding: 1em 2.5em 1em 3em;
+    }
+
+    @include respond (small-phone) {
+      padding: 1em 2.5em 1em 2em;
+    }
+ 
+ }
+ 
+ .logo {
+    height: 4.5rem;
+    
+    @include respond (phone) {
+      height: 3rem;
+    }
+
+    @include respond (small-phone) {
+      height: 2rem;
+    }
+ }
