@@ -1,15 +1,11 @@
 .sidebar-contentright {
-
    margin: 0 3em;
-
-   
 
    @include respond(tab-port){
       top: 0;
       padding: 1em 0;
       max-width: 450px;
    }
-
    
    &__h2 {
 
