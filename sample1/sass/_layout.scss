@@ -5,49 +5,38 @@
    background-repeat: no-repeat;
    background-size: cover;
 
+   min-height: 100vh;
    width: 100%;
-   min-height: 100%;
 }
 
 .sidebar {
    min-height: 100vh;
    display: flex;  
-
-
+   
    @include respond(tab-port){
       flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: space-between;
+     
    }
-
 }
 
 .sidebar-left {
 
    flex: 1;
-   display: flex;
-   justify-content: center;
-   align-items: center;
    position: relative;
 
    @include respond(tab-port){
-      padding: 1em 0;
-      position: none;
-
+     flex: 0;
    }
+
 }
 
 .sidebar-right {
    background: rgba(0, 46, 70, 0.5);
    flex: 0 0 35%;
-
+   position: relative;
    display: flex;
    align-items: center;
    justify-content: center;
-   border: 1px solid yellow;
-
-   @include respond(tab-port){
-      flex: 0 0 50%;
-
-   }
 
 }

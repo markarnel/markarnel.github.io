@@ -1,15 +1,14 @@
 .sidebar-contentright {
 
    border: 1px solid red;
-   position: absolute;
    margin: 0 3em;
 
-   top: 20%;
+   
 
    @include respond(tab-port){
       top: 0;
       padding: 1em 0;
-      position: relative;
+      max-width: 450px;
    }
 
    
