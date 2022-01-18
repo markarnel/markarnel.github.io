@@ -1,0 +1,58 @@
+// COLOR VARIABLES
+$dark-cyan: hsl(185, 75%, 39%);
+
+$dark-blue: hsl(229, 23%, 23%);
+$grayish-blue: hsl(227, 10%, 46%);
+
+$dark-gray: hsl(0, 0%, 59%);
+
+// FONT VARIABLES
+$font-primary: 'Kumbh Sans', sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+$bp-mobile: 23.4em;  //375px
+$bp-desktop: 90em;   //1440px
+
+// BOX SHADOW
+
+$box-shadow-light: 0px 0px 8px 8px rgba(0,0,0,0.05);
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 112.5%; // 18px
+}
+
+body {
+    font-family: $font-primary;
+}
+
+.container {
+    background-color: $dark-cyan;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 51vw bottom 25vh, 
+    left 42vw top 51vh;
+    background-size: 75.875rem;
+
+    @include respond(mobile){
+       
+     }
+
+}
+
+
+

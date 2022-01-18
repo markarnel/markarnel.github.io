@@ -1,0 +1,36 @@
+%heading {
+   font-family: $font-primary;
+   font-weight: 400;
+}
+
+.heading-2 {
+   @extend %heading;
+   
+}
+
+.heading-3 {
+   @extend %heading;
+   font-size: 1rem;
+   font-weight: 800;
+   
+}
+
+.heading-4 {
+   @extend %heading;
+
+}
+
+.heading-5 {
+   @extend %heading;
+   font-size: .85rem;
+   font-weight: 300;
+}
+
+.btn {
+
+}
+
+.mb-sm { margin-bottom: .5rem; } 
+.mb-md { margin-bottom: 1.5rem; } 
+.mb-lg { margin-bottom: 3rem; } 
+.mb-hg { margin-bottom: 4rem; } 
