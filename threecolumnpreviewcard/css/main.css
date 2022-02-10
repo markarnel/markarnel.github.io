@@ -98,6 +98,13 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   background-color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+  transition: all .3s ease-in-out;
+}
+
+.btn:hover {
+  color: #f2f2f2;
+  background: transparent;
 }
 
 .btn1 {

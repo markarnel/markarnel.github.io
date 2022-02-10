@@ -64,6 +64,7 @@
    margin-bottom: 5.6em;
    color: $transparent-white;
 
+
 }
 
 .btn {
@@ -75,6 +76,14 @@
     font-size: 1.5rem;
     font-weight: bold;
     background-color: $very-light-gray;
+    
+    border: 2px solid $very-light-gray;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      color: $very-light-gray;
+      background: transparent;
+    }
 }
 
 .btn1 {
