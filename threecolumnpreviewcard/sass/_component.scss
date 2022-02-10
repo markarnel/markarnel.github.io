@@ -1,0 +1,90 @@
+.components {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   border-radius: 7px;
+   overflow: hidden;
+   width: 920px;
+
+   @include respond(tablet){
+      margin: 2.5em;
+      grid-template-columns: 1fr;
+   }
+
+   @include respond(phone){
+      margin: 9em 2.5em;
+      
+   }
+}
+
+.box {
+   color: white;
+   padding: 48px;
+
+}
+
+.typeofcars1 {
+   background-color: $bright-orange;
+
+   &-img {
+      margin-bottom: 3.3em;
+   }
+   
+}
+
+.typeofcars2 {
+   background-color: $dark-cyan;
+
+   &-img {
+      margin-bottom: 3.3em;
+   }
+}
+
+.typeofcars3 {
+   background-color: $very-dark-cyan;
+   
+   &-img {
+      margin-bottom: 3.3em;
+   }
+}
+
+.heading-1 {
+   font-family: $font-bsd;
+   font-size: 4rem;
+   text-transform: uppercase;
+   margin-bottom: .6em;
+   color: $very-light-gray;
+
+}
+
+.paragraph-1 {
+   font-family: $font-ld;
+   font-size: 1.5rem;
+   font-weight: 400;
+   line-height: 25px;
+   margin-bottom: 5.6em;
+   color: $transparent-white;
+
+}
+
+.btn {
+   font-family: $font-ld;
+   text-decoration: none;
+   padding: 1em 2em;
+   border-radius: 26px;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: $very-light-gray;
+}
+
+.btn1 {
+    color: $bright-orange;
+}
+
+.btn2 {
+   color: $dark-cyan;
+}
+
+.btn3 {
+   color: $very-dark-cyan;
+}
