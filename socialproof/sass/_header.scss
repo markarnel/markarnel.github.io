@@ -1,0 +1,84 @@
+.top-cnt {
+   display: flex;
+   flex-direction: row;
+
+   @include respond(tablet){
+     flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   }
+
+   &-info {
+      
+         text-align: start;
+         display: flex;
+         flex-direction: column;
+         max-width: 27.0625rem;
+         margin-right: 2em;      
+
+         @include respond(laptop){
+           max-width: 22.5rem;         
+          
+         }
+
+         @include respond(tablet){
+            text-align: center;
+            margin: 0;
+            
+            max-width: 36.25rem;
+            margin-bottom: 3.5em;  
+           
+          }                 
+
+
+
+
+
+      &__h1 {
+         font-family: $spartan;
+         color: $dark-magenta;
+         font-size: 3rem;
+         font-weight: 700;
+         letter-spacing: -1.6px;
+         line-height: 2.972rem;
+         margin-bottom: 15px;
+
+         @include respond(laptop){
+            font-size: 2.5rem;
+            line-height: 2.45rem;
+         }
+
+         @include respond(tablet){       
+            margin-bottom: 24.5px;
+         }
+
+         @include respond(large-phone){
+            font-size: 2rem;      
+            line-height: 2rem;
+          }
+
+          @include respond(phone){
+            padding: 0 .5em;
+           
+           letter-spacing: -.8px;
+          }   
+         
+       }
+
+
+      &__p {
+         color: $grayish-magenta;
+         font-size: 14px;
+         line-height: 1.81;
+         font-weight: 500;
+         letter-spacing: .12px;
+
+         
+         @include respond(laptop){
+
+         }
+
+      }
+
+   }
+}

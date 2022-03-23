@@ -1,0 +1,373 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  font-size: 62.5%;
+  font-family: "Spartan", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+}
+
+@media only screen and (max-width: 812px) {
+  body {
+    background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+  }
+}
+
+.container {
+  padding: 13.2em 2.4em;
+  max-width: 72.75rem;
+  margin: 0 2.5%;
+}
+
+@media only screen and (max-width: 1080px) {
+  .container {
+    padding: 6.4em 2.4em;
+  }
+}
+
+@media only screen and (max-width: 812px) {
+  .container {
+    padding: 8em 2.4em;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    padding: 8em 1.42em;
+  }
+}
+
+.top-cnt {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 812px) {
+  .top-cnt {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.top-cnt-info {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  max-width: 27.0625rem;
+  margin-right: 2em;
+}
+
+@media only screen and (max-width: 1080px) {
+  .top-cnt-info {
+    max-width: 22.5rem;
+  }
+}
+
+@media only screen and (max-width: 812px) {
+  .top-cnt-info {
+    text-align: center;
+    margin: 0;
+    max-width: 36.25rem;
+    margin-bottom: 3.5em;
+  }
+}
+
+.top-cnt-info__h1 {
+  font-family: "Spartan", sans-serif;
+  color: #502050;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -1.6px;
+  line-height: 2.972rem;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 1080px) {
+  .top-cnt-info__h1 {
+    font-size: 2.5rem;
+    line-height: 2.45rem;
+  }
+}
+
+@media only screen and (max-width: 812px) {
+  .top-cnt-info__h1 {
+    margin-bottom: 24.5px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .top-cnt-info__h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .top-cnt-info__h1 {
+    padding: 0 .5em;
+    letter-spacing: -.8px;
+  }
+}
+
+.top-cnt-info__p {
+  color: #937b92;
+  font-size: 14px;
+  line-height: 1.81;
+  font-weight: 500;
+  letter-spacing: .12px;
+}
+
+.mid-cnt {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  min-height: 14.1875rem;
+  margin-bottom: 7.7em;
+}
+
+@media only screen and (max-width: 1080px) {
+  .mid-cnt {
+    margin-bottom: 3.4em;
+  }
+}
+
+@media only screen and (max-width: 812px) {
+  .mid-cnt {
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.mid-cnt__rating {
+  background-color: #f7f2f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  min-height: 5.8em;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 812px) {
+  .mid-cnt__rating {
+    min-height: 4.875rem;
+    margin-bottom: 1rem;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.mid-cnt__rating-stars {
+  margin-right: 2.47em;
+}
+
+@media only screen and (max-width: 812px) {
+  .mid-cnt__rating-stars {
+    margin-right: 0;
+    margin-bottom: 1.4em;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .mid-cnt__rating-stars {
+    margin-top: .5em;
+    margin-bottom: 1.1em;
+    font-weight: 700;
+  }
+}
+
+.mid-cnt__rating-stars img {
+  margin-right: .57em;
+}
+
+@media only screen and (max-width: 375px) {
+  .mid-cnt__rating-stars img {
+    margin-right: 0;
+    margin: 0 .25em;
+  }
+}
+
+.mid-cnt__vote {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: #502050;
+}
+
+.reviews {
+  margin-right: 6rem;
+  padding-left: 1.8rem;
+  padding-right: 5.6rem;
+}
+
+@media only screen and (max-width: 1080px) {
+  .reviews {
+    margin-right: 0rem;
+  }
+}
+
+@media only screen and (max-width: 812px) {
+  .reviews {
+    padding: 0;
+  }
+}
+
+.report_guru {
+  margin-right: 3rem;
+  padding-left: 1.8rem;
+  padding-right: 3.6rem;
+}
+
+@media only screen and (max-width: 1080px) {
+  .report_guru {
+    margin-right: 0rem;
+  }
+}
+
+@media only screen and (max-width: 812px) {
+  .report_guru {
+    padding: 0;
+  }
+}
+
+.best_tech {
+  padding-left: 1.8rem;
+  padding-right: 5.4rem;
+}
+
+@media only screen and (max-width: 812px) {
+  .best_tech {
+    padding: 0;
+  }
+}
+
+.btm-cnt {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+@media only screen and (max-width: 812px) {
+  .btm-cnt {
+    flex-direction: column;
+    max-width: 36.25rem;
+  }
+}
+
+.comment-box {
+  background-color: #502050;
+  padding: 4em 2.4em 3.8em 3.2em;
+  border-radius: 0.5rem;
+  flex-grow: 1;
+  flex-basis: 0;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1080px) {
+  .comment-box {
+    min-height: 20.9375rem;
+  }
+}
+
+@media only screen and (max-width: 812px) {
+  .comment-box {
+    min-height: 15.5625rem;
+    padding: 4em 2.4em 3.8em 3.2em;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .comment-box {
+    border: 1px solid magenta;
+    min-height: 17.5rem;
+  }
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.75rem;
+}
+
+.profile__img {
+  border-radius: 50px;
+  overflow: hidden;
+  display: flex;
+}
+
+.profile__img-1 {
+  width: 2.5rem;
+}
+
+.profile__info {
+  margin-left: 2.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.profile__info-name {
+  color: white;
+  font-size: 0.8125;
+  font-weight: 700;
+}
+
+.profile__info-verify {
+  color: #ee68a4;
+  font-size: 0.8125;
+  font-weight: 500;
+}
+
+.profile__comment {
+  color: #f7f2f7;
+  font-size: 0.838rem;
+  line-height: 1.4rem;
+  font-weight: 500;
+}
+
+.irene {
+  margin: 1.6em 3.2em 0;
+}
+
+@media only screen and (max-width: 1080px) {
+  .irene {
+    margin: 0em 3.2em 0;
+  }
+}
+
+@media only screen and (max-width: 812px) {
+  .irene {
+    margin: 1.58em 0;
+  }
+}
+
+.anne {
+  margin-top: 3.2em;
+}
+
+@media only screen and (max-width: 1080px) {
+  .anne {
+    margin-top: 0rem;
+  }
+}

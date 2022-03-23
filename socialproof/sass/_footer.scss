@@ -1,0 +1,122 @@
+.btm-cnt {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+
+   
+   @include respond(tablet){
+      flex-direction: column;
+      
+      max-width: 36.25rem; 
+      
+   }
+
+
+   
+}
+
+.comment-box {
+   background-color: $dark-magenta;
+   padding: 4em 2.4em 3.8em 3.2em;
+   border-radius: 0.5rem;
+   flex-grow: 1;
+   flex-basis: 0;
+   margin: 0;
+
+   @include respond(laptop){
+      min-height: 20.9375rem;
+     }
+
+     @include respond(tablet){
+      min-height: 15.5625rem;
+      padding: 4em 2.4em 3.8em 3.2em;
+     }
+
+     @include respond(phone){
+      border: 1px solid magenta;
+      min-height: 17.5rem;
+     }
+
+}
+
+.profile {
+
+      display: flex;
+      flex-direction: row;
+      //border: 1px solid red;
+      margin-bottom: 1.75rem;
+
+     
+
+      
+
+   &__img {
+      //border: 1px solid red;
+      border-radius: 50px;
+      overflow: hidden;
+      display: flex;
+
+      &-1 {
+         width: 2.5rem;
+        
+      }
+   }
+
+   &__info {
+      //border: 1px solid red;
+      margin-left: 2.2em;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      &-name {
+         color: $white;
+         font-size: 0.8125;
+         font-weight: 700;
+      }
+
+      &-verify {
+         color: $soft-pink;
+         font-size: 0.8125;
+         font-weight: 500;
+      }
+   }
+
+   &__comment {
+      //border: 1px solid white;
+      color: $light-magenta;
+      font-size: 0.838rem;
+      line-height: 1.4rem;
+      font-weight: 500;
+      //letter-spacing: -0.1px;
+   }
+}
+
+// .colton {
+
+// }
+
+.irene {
+   margin: 1.6em 3.2em 0;
+
+   @include respond(laptop){
+     margin: 0em 3.2em 0;
+        
+   }
+
+   @include respond(tablet){
+      margin: 1.58em 0;
+         
+    }
+  
+}
+
+.anne {
+
+   margin-top: 3.2em;
+
+   @include respond(laptop){
+      margin-top: 0rem;
+        
+   }
+}

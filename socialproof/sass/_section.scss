@@ -1,0 +1,133 @@
+.mid-cnt {
+
+   display: flex;
+   flex-direction: column;
+   flex-grow: 1;
+   align-items: flex-end;
+   justify-content: space-evenly;
+
+   min-height: 14.1875rem;
+
+   margin-bottom: 7.7em;
+
+   @include respond(laptop){
+      margin-bottom: 3.4em;
+       
+    }
+
+    @include respond(tablet){
+
+      align-items: center;
+      width: 100%; 
+
+     }
+
+   &__rating {
+      
+      background-color: $light-magenta;
+      display: flex;
+     
+      align-items: center;
+      justify-content: center;
+
+      flex-direction: row;
+      min-height: 5.8em;
+
+      border-radius: 8px;
+
+
+       @include respond(tablet){ 
+    
+         min-height: 4.875rem;
+         margin-bottom: 1rem;
+
+         flex-direction: column;
+         width: 100%; 
+        }
+
+
+
+
+      &-stars {
+         margin-right: 2.47em;
+
+         @include respond(tablet){
+            margin-right: 0;         
+            margin-bottom: 1.4em;
+           }
+
+           @include respond(phone){
+               
+            margin-top: .5em;
+            margin-bottom: 1.1em;
+            font-weight: 700;
+           }
+
+         
+         img {
+            margin-right: .57em;
+
+            @include respond(phone){
+               
+               margin-right: 0;
+               margin: 0 .25em
+
+              }
+           
+         }
+      }
+   }
+
+   &__vote {
+      font-size: 0.8125rem;
+      font-weight: 700;
+      color: $dark-magenta;
+
+   }
+}
+
+.reviews {
+
+   margin-right: 6rem;
+      padding-left: 1.8rem;
+      padding-right: 5.6rem;
+
+      @include respond(laptop){
+         margin-right: 0rem;
+           
+      }
+
+      @include respond(tablet){
+         padding: 0;
+           
+      }
+
+
+}
+
+.report_guru {
+   margin-right: 3rem;
+      padding-left: 1.8rem;
+      padding-right: 3.6rem;
+
+      @include respond(laptop){
+         margin-right: 0rem;
+           
+      }
+      @include respond(tablet){
+         padding: 0;
+           
+      }
+
+
+}
+
+.best_tech {
+   padding-left: 1.8rem;
+      padding-right: 5.4rem;
+      @include respond(tablet){
+         padding: 0;
+           
+      }
+
+}
