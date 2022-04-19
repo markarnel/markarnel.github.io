@@ -22,13 +22,16 @@
       left: 3rem;
    }
 
+   @media screen and (max-height: 43.75rem) {
+      top: 1.9rem;
+   }
 
 
 }
 
 .logo {
 
-
+  
    &-img {
 
       width: 21.2rem;
@@ -39,9 +42,9 @@
 
       @include respond(phone-big) {
          width: 16.5rem;
-      }
+   }
 
    }
 
-
+   
 }

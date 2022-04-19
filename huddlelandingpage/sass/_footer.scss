@@ -26,6 +26,9 @@
     bottom: 4.9rem;
   }
 
+  @media screen and (max-height: 43.75rem) {
+    bottom: 2.45rem;
+ }
 
 }
 
