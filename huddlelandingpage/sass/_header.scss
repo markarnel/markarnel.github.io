@@ -1,0 +1,46 @@
+.top-cnt {
+   position: absolute;
+   top: 5.3rem;
+   left: 7.2rem;
+
+   @include respond(laptop) {
+      top: 2.9rem;
+      left: 3.8rem;
+   }
+
+   @include respond(tablet) {
+      top: 3.4rem;
+      left: 5rem;
+   }
+
+   @include respond(phone-big) {
+      top: 3.8rem;
+      left: 4rem;
+   }
+
+   
+
+
+
+
+}
+
+.logo {
+
+  
+   &-img {
+
+      width: 21.2rem;
+
+      @include respond(tablet) {
+         width: 18rem;
+      }
+
+      @include respond(phone-big) {
+         width: 16.5rem;
+   }
+
+   }
+
+   
+}

@@ -1,0 +1,71 @@
+.social-section{
+
+   display: flex;
+   justify-content: flex-end;
+   font-size: 1.8rem;
+
+   position: absolute;
+   right: 7.85rem;
+   bottom: 4rem;
+
+   @include respond(laptop) {
+    
+    right: 50%;
+    transform: translate(50%);
+    bottom: 4.5rem;
+  }
+
+  @include respond(tablet) {
+    width: 16rem;
+    justify-content: space-between;
+
+  }
+
+  @include respond(phone) {
+    width: 12.9rem;
+    bottom: 4.9rem;
+  }
+
+}
+
+.icons {
+  text-decoration: none;
+}
+
+    .fa-facebook-f, .fa-twitter, .fa-instagram{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      border: 1px solid white;
+      border-radius: 50px;
+      width: 4rem;
+      height: 4rem;
+      margin-left: 1.6rem;
+      transition: 0.2s ease-in;
+      cursor: pointer;
+
+     &:hover {
+      color: $soft-magenta;
+      border: 1px solid $soft-magenta;
+    }
+
+    @include respond(tablet) {
+    
+      margin-left: 0;
+    
+    }
+  
+    @include respond(phone) {
+      width: 3.5rem;
+      height: 3.5rem;
+      
+    
+    }
+
+   }
+
+
+
+
+

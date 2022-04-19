@@ -1,0 +1,177 @@
+.mid-cnt {
+   display: flex;
+   flex-direction: row;
+   margin-top: 9.4rem;
+   position: relative;
+
+   @include respond(laptop-big) {
+      margin-top: 0rem;
+   }
+
+   @include respond(laptop) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+   }
+
+
+   &__illu {
+
+      @include respond(phone-big) {
+         margin-bottom: 8rem;
+      
+      }
+
+
+      &-img {
+
+         width: 71.1rem;
+
+         @include respond(laptop) {
+            width: 61.1rem;
+         }
+
+         @include respond(tablet) {
+            width: 51.2rem;
+         }
+
+         @include respond(phone-big) {
+            max-width: 37.8rem;
+         
+         }
+
+      }
+   }
+
+
+   &__content {
+
+      margin-left: 5.3rem;
+      margin-top: 4.2rem;
+      margin-right: 0.4375rem;
+
+      @include respond(laptop) {
+         text-align: center;
+         margin: 0;
+         margin-top: 2rem;
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+
+      }
+
+      @include respond(phone-big) {
+         margin-top: 0rem;
+      }
+
+
+
+
+
+      &-h1 {
+         font-family: $font-poppins;
+         color: white;
+         font-size: 4rem;
+         font-weight: 600;
+         letter-spacing: -.3px;
+         margin-bottom: 2.1rem;
+
+         @include respond(laptop) {
+            font-size: 3rem;
+         }
+
+         @include respond(tablet) {
+            width: 34rem;
+         }
+
+         @include respond(phone-big) {
+            margin-bottom: 2rem;
+         }
+
+
+         &-span {
+            letter-spacing: -.1px;
+         }
+      }
+
+      &-p {
+         
+         padding-right: 1rem;
+         color: white;
+         font-size: 1.7rem;
+         line-height: 2.7rem;
+         letter-spacing: .7px;
+         margin-bottom: 2.4rem;
+
+
+         @include respond(laptop) {
+
+            font-size: 1.8rem;
+            line-height: 3rem;
+            width: 64rem;
+            margin-bottom: 3.1rem;
+         }
+
+         @include respond(tablet) {
+            width: 49rem;
+            font-size: 1.9rem;
+            padding-right: 0;
+            letter-spacing: .44px;
+            font-weight: 200;
+         }
+
+        
+
+         @include respond(phone-big) {
+            width: 37rem;
+            margin-bottom: 3.2rem;
+         }
+
+      }
+
+      &__btn {
+
+        
+
+         &-b {
+            background-color: white;
+            color: $violet;
+            font-family: $font-poppins;
+            font-weight: 400;
+            font-size: 1.8em;
+            letter-spacing: .1px;
+            padding: 1.5rem 6.4rem;
+            border-radius: 30px;
+            border: none;
+            box-shadow: 0 8px 17px -8px rgba(0, 0, 0, .6);
+            cursor: pointer;
+
+            &:hover {
+               background-color: $soft-magenta;
+               color: white;
+               transition: 0.2s ease-in;
+            }
+
+            
+
+
+            @include respond(laptop) {
+               padding: 1.35rem 9.3rem;
+               font-size: 1.57em;
+               letter-spacing: -.5px;
+            }
+
+            @include respond(phone-big) {
+               font-size: 1.6em;
+               padding: 1.35rem 9.4rem;
+            }
+
+         }
+
+      }
+   }
+
+}
