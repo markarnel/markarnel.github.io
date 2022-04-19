@@ -18,8 +18,9 @@
       left: 4rem;
    }
 
-   
-
+   @include respond(phone) {
+      left: 3rem;
+   }
 
 
 
@@ -27,7 +28,7 @@
 
 .logo {
 
-  
+
    &-img {
 
       width: 21.2rem;
@@ -38,9 +39,9 @@
 
       @include respond(phone-big) {
          width: 16.5rem;
-   }
+      }
 
    }
 
-   
+
 }

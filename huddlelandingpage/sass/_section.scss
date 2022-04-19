@@ -41,6 +41,10 @@
          
          }
 
+         @include respond(phone) {
+            max-width: 33rem;
+         }
+
       }
    }
 
