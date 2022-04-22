@@ -26,6 +26,10 @@ html {
         font-size: 35%
     }
 
+    @media screen and (max-height: 25.625rem) {
+        font-size: 33%
+    }
+
 }
 
 body {
