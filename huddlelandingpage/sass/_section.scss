@@ -22,7 +22,6 @@
             width: 45rem;
          }
 
-
       }
    }
 
@@ -35,8 +34,6 @@
 
       padding-left: 5.6rem;
 
-
-
       @include respond(laptop) {
          justify-content: start;
       }
@@ -47,7 +44,6 @@
          width: 45rem;
          
       }
-
 
       &-h1 {
          font-family: $font-poppins;
@@ -88,17 +84,13 @@
             cursor: pointer;
             margin-bottom: 4rem;
 
-
             &:hover {
                background-color: $soft-magenta;
                color: white;
                transition: 0.2s ease-in;
             }
 
-
-
          }
-
       }
    }
 
