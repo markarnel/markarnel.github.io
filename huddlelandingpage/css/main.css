@@ -29,6 +29,12 @@ html {
   }
 }
 
+@media screen and (max-height: 29.6875rem) {
+  html {
+    font-size: 35%;
+  }
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #674baf;

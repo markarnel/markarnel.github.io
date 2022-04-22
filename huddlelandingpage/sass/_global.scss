@@ -22,12 +22,18 @@ html {
         font-size: 40%
     }
 
+    @media screen and (max-height: 29.6875rem) {
+        font-size: 35%
+    }
+
+
+
 
 
 }
 
 body {
- 
+
     font-family: $font-opensans;
     background-color: $violet;
     max-height: 100vh;
