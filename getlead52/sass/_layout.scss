@@ -11,12 +11,12 @@
 
 .sidebar {
    min-height: 100vh;
-   display: flex;  
-   
-   @include respond(tab-port){
+   display: flex;
+
+   @include respond(tab-port) {
       flex-direction: column;
       justify-content: space-between;
-     
+
    }
 }
 
@@ -25,8 +25,8 @@
    flex: 1;
    position: relative;
 
-   @include respond(tab-port){
-     flex: 0;
+   @include respond(tab-port) {
+      flex: 0;
    }
 
 }
