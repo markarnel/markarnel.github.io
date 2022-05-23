@@ -17,13 +17,13 @@
    }
 
    &__btn {
-      margin: 0 auto;
       border-radius: 50px;
       background-color: $light-color;
       border: none;
       text-align: center;
       cursor: pointer; 
-      
+      padding: 1.1225em 2em;
+
       &:hover {
          background-color: $dark-color;
          box-shadow: $shadow-box;
@@ -33,11 +33,12 @@
 
       &-1 {
          
-         padding: 1.1em 6em;
+
          color: white;
          text-decoration: none;
          font-size: .8em;
          font-weight: 700;
+
 
    }
 }
