@@ -5,15 +5,11 @@
    }
 
    @if $breakpoint == large-phone {
-    @media only screen and (max-width: 538px) { @content };   
+    @media only screen and (max-width: 577px) { @content };   
 }
 
-   @if $breakpoint == tablet {
-      @media only screen and (max-width: 927px) { @content };   
-  }
-
   @if $breakpoint == laptop {
-   @media only screen and (max-width: 1195px) { @content };   
+   @media only screen and (max-width: 958px) { @content };   
 }
 
 
