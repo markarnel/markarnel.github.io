@@ -1,0 +1,98 @@
+section {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   align-self: center;
+   justify-self: center;
+   column-gap: 1.6rem;
+   row-gap: 1.7rem;
+   padding: 0 2rem;
+
+   @include respond(laptop) {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+   }
+
+   @include respond(phone) {
+      row-gap: 1.5rem;
+ 
+}
+
+}
+
+.box {
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   border-radius: 6px;
+   box-shadow: 0px 5px 25px rgba($grayish_blue, 0.5);
+   max-width: 20.4rem;
+   padding: 1.55rem 1.8rem 1.8rem 1.9rem;
+   font-family: $poppins;
+   letter-spacing: .3px;
+
+   @include respond(laptop) {
+      max-width: 19.5rem;
+    }
+
+    @include respond(phone) {
+      padding: 1.55rem 1.5rem 1.6rem 1.9rem;
+ 
+}
+
+   &_title {
+      font-size: 1.15rem;
+      color: $very_dark_blue;
+      font-weight: 600;
+      margin-bottom: .5rem;
+   }
+
+   &_data {
+      font-size: .78rem;
+      color: $grayish_blue;
+      line-height: 1.3rem;
+      margin-bottom: 2.3rem;
+
+      @include respond(phone) {
+         margin-bottom: 1.9rem;
+    
+   }
+   }
+
+   &_icon {
+      display: flex;
+      justify-content: flex-end;
+      
+      img {
+         width: 3.8rem;
+      }
+   }
+}
+
+.supervisor {
+   border-top: 4px solid $cyan;
+   grid-row: 1 / -1;
+   align-self: center;
+}
+
+.team_builder {
+   border-top: 4px solid $red;
+   grid-column: 2 / 3;
+   
+}
+
+.karma {
+   border-top: 4px solid $orange;
+}
+
+.calculator {
+
+   border-top: 4px solid $blue;
+   grid-column: 3 / 4;
+   grid-row: 1 / -1;
+   align-self: center;
+
+}
