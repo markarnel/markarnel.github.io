@@ -2,132 +2,121 @@
 
    display: flex;
    flex-direction: column;
-   flex-grow: 1;
+
    align-items: flex-end;
-   justify-content: space-evenly;
+   justify-content: center;
 
-   min-height: 14.1875rem;
 
-   margin-bottom: 7.7em;
+   @include respond(laptop) {
+      align-items: flex-start;
+   }
 
-   @include respond(laptop){
-      margin-bottom: 3.4em;
-       
-    }
-
-    @include respond(tablet){
-
+   @include respond(large-phone) {
       align-items: center;
-      width: 100%; 
+      width: 100%;
+      padding: 0 .5rem;
+   
+   }
 
-     }
 
    &__rating {
-      
+
       background-color: $light-magenta;
       display: flex;
-     
       align-items: center;
       justify-content: center;
-
       flex-direction: row;
-      min-height: 5.8em;
-
       border-radius: 8px;
+      padding: 1.2rem 0;
 
+      
+      &:not(:last-child){   
+         margin-bottom: 1.2rem;
 
-       @include respond(tablet){ 
-    
-         min-height: 4.875rem;
-         margin-bottom: 1rem;
+         @include respond(large-phone) {
+            margin-bottom: 1rem;
+         }
+      }
 
+      @include respond(laptop) {
+         width: 100%;
+      }
+
+      @include respond(large-phone) {
          flex-direction: column;
-         width: 100%; 
-        }
+         padding: 1rem 0;
+      
+      }
 
-
-
+      @include respond(phone) {
+         
+      }
 
       &-stars {
-         margin-right: 2.47em;
+         padding-left: 1.6rem;
+         padding-right: 2rem;
+         display: flex;
 
-         @include respond(tablet){
-            margin-right: 0;         
-            margin-bottom: 1.4em;
-           }
-
-           @include respond(phone){
-               
-            margin-top: .5em;
-            margin-bottom: 1.1em;
-            font-weight: 700;
-           }
+         @include respond(large-phone) {
+            margin-bottom: 1rem;
+            
+         }
 
          
          img {
-            margin-right: .57em;
+            padding-left: .48rem;
 
-            @include respond(phone){
-               
-               margin-right: 0;
-               margin: 0 .25em
+            @include respond(large-phone) {
 
-              }
-           
+            }
+ 
          }
       }
    }
 
    &__vote {
+
       font-size: 0.8125rem;
       font-weight: 700;
       color: $dark-magenta;
+      letter-spacing: -.05px;
 
+      @include respond(large-phone) {
+
+         
+      }
    }
 }
 
 .reviews {
-
+   padding-right: 5.7rem;
    margin-right: 6rem;
-      padding-left: 1.8rem;
-      padding-right: 5.6rem;
 
-      @include respond(laptop){
-         margin-right: 0rem;
-           
-      }
-
-      @include respond(tablet){
-         padding: 0;
-           
-      }
-
+   @include respond(large-phone) {
+      padding-right: 0;
+      margin-right: 0rem;
+   }
 
 }
 
 .report_guru {
-   margin-right: 3rem;
-      padding-left: 1.8rem;
-      padding-right: 3.6rem;
+   padding-right: 3.67rem;
+   margin-right: 3.05rem;
 
-      @include respond(laptop){
-         margin-right: 0rem;
-           
+   @include respond(large-phone) {
+
+      padding-right: 0;
+      margin-right: 0rem;
       }
-      @include respond(tablet){
-         padding: 0;
-           
-      }
-
-
 }
 
 .best_tech {
-   padding-left: 1.8rem;
-      padding-right: 5.4rem;
-      @include respond(tablet){
-         padding: 0;
-           
+   padding-right: 5.6rem;
+
+   @include respond(large-phone) {
+
+      padding-right: 0;
       }
+
 
 }

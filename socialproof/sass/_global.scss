@@ -14,7 +14,6 @@ html {
 body {
 
    min-height: 100vh;
-   display: flex;
    font-size: 62.5%;
    font-family: $spartan;
    display: flex;
@@ -27,38 +26,31 @@ body {
 
    background-position: top left, bottom right;
 
-   @include respond(tablet){
 
-      background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
-
-   background-repeat: no-repeat, no-repeat;
-
-   background-position: top left, bottom right;
-   }
 }
 
 .container {
   
-    padding: 13.2em 2.4em;
-    max-width: 72.75rem;
-    margin: 0 2.5%;
+   max-width: 73.6rem;
+   margin-top: 2rem;
 
-    
+   padding: 0 2rem;
 
-    @include respond(laptop){
-        
-        padding: 6.4em 2.4em;
-     }
+    @include respond(laptop) {
+    margin-top: 0rem;
+    }
 
-     @include respond(tablet){
-        
-        padding: 8em 2.4em;
-     }
+    @include respond(tablet) {
 
-     @include respond(large-phone){
-        
-        padding: 8em 1.42em;
-     }
+        padding: 5.16rem 1.5rem;
+
+    }
+
+    @include respond(phone) {
+
+        padding: 5.1rem 1rem;
+
+    }
 
 
 

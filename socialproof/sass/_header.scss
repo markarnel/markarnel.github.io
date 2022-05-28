@@ -1,12 +1,27 @@
 .top-cnt {
    display: flex;
    flex-direction: row;
-
-   @include respond(tablet){
-     flex-direction: column;
-   justify-content: center;
+   padding-bottom: 4.4rem;
+   justify-content:  space-between;
    align-items: center;
+
+
+
+   @include respond(laptop) {
+      padding-bottom: 2.4rem; 
    }
+
+   @include respond(tablet) {
+      flex-direction: column;
+      
+   }
+
+   @include respond(phone) {
+      margin-bottom: .5rem;
+   }
+
+
+   
 
    &-info {
       
@@ -14,25 +29,14 @@
          display: flex;
          flex-direction: column;
          max-width: 27.0625rem;
-         margin-right: 2em;      
+         margin-right: 2em;   
 
-         @include respond(laptop){
-           max-width: 22.5rem;         
-          
-         }
-
-         @include respond(tablet){
+         @include respond(tablet) {
+            max-width: 27.0625rem;
             text-align: center;
-            margin: 0;
-            
-            max-width: 36.25rem;
-            margin-bottom: 3.5em;  
-           
-          }                 
-
-
-
-
+            margin-right: 0rem; 
+         }
+                       
 
       &__h1 {
          font-family: $spartan;
@@ -41,43 +45,44 @@
          font-weight: 700;
          letter-spacing: -1.6px;
          line-height: 2.972rem;
-         margin-bottom: 15px;
+         margin-bottom: 0.9375rem;
 
-         @include respond(laptop){
-            font-size: 2.5rem;
-            line-height: 2.45rem;
-         }
-
-         @include respond(tablet){       
-            margin-bottom: 24.5px;
-         }
-
-         @include respond(large-phone){
-            font-size: 2rem;      
+         @include respond(tablet) {
+            font-size: 2rem;
             line-height: 2rem;
-          }
+         }
 
-          @include respond(phone){
-            padding: 0 .5em;
-           
-           letter-spacing: -.8px;
-          }   
-         
+         @include respond(large-phone) {
+            letter-spacing: -.8px;
+         }
+
+         @include respond(phone) {
+            padding: 0 1rem;
+            margin-bottom: 1.6rem;
+         }
+
        }
 
 
       &__p {
          color: $grayish-magenta;
-         font-size: 14px;
+         font-size: 0.875rem;
          line-height: 1.81;
          font-weight: 500;
          letter-spacing: .12px;
 
-         
-         @include respond(laptop){
+         @include respond(tablet) {
+            margin-bottom: 2.5rem;
 
          }
 
+         @include respond(large-phone) {
+            letter-spacing: .12px;
+            padding: 0 .4rem;
+            margin-bottom: 2.3rem;
+
+         }
+      
       }
 
    }

@@ -1,57 +1,49 @@
 .btm-cnt {
-   display: flex;
-   flex-direction: row;
-   align-items: flex-start;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   column-gap: 1.8rem;
 
-   
-   @include respond(tablet){
-      flex-direction: column;
-      
-      max-width: 36.25rem; 
-      
+   @include respond(tablet) {
+      grid-template-columns: 1fr;
+      row-gap: 1rem;
+      max-width: 34rem;
+      margin: 0 auto;
    }
 
+   @include respond(phone) {
+      padding: 0 .5rem;
+   }
 
-   
 }
 
 .comment-box {
    background-color: $dark-magenta;
-   padding: 4em 2.4em 3.8em 3.2em;
    border-radius: 0.5rem;
-   flex-grow: 1;
-   flex-basis: 0;
-   margin: 0;
+   padding-top: 2.5rem;
+   padding-left: 2.1rem;
+   padding-right: 2rem;
+   padding-bottom: 2.35rem;
+   max-height: 14.64rem;
 
-   @include respond(laptop){
-      min-height: 20.9375rem;
-     }
+   
+   @include respond(laptop) {
+      max-height: 19rem;
+   }
 
-     @include respond(tablet){
-      min-height: 15.5625rem;
-      padding: 4em 2.4em 3.8em 3.2em;
-     }
+   @include respond(phone) {
+      max-height: 15.61rem;
+      padding-right: 1.8rem;
 
-     @include respond(phone){
-      border: 1px solid magenta;
-      min-height: 17.5rem;
-     }
-
+      padding-left: 1.95rem;
+   }
 }
 
 .profile {
-
       display: flex;
       flex-direction: row;
-      //border: 1px solid red;
-      margin-bottom: 1.75rem;
 
-     
-
-      
 
    &__img {
-      //border: 1px solid red;
       border-radius: 50px;
       overflow: hidden;
       display: flex;
@@ -63,60 +55,63 @@
    }
 
    &__info {
-      //border: 1px solid red;
-      margin-left: 2.2em;
+      padding-left: 1.5rem;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
 
+
+
       &-name {
+
          color: $white;
-         font-size: 0.8125;
+         font-size: .84rem;
          font-weight: 700;
+         letter-spacing: .3px;
+
+
       }
 
       &-verify {
+         margin-top: .2rem;
          color: $soft-pink;
-         font-size: 0.8125;
+         font-size: 0.8125rem;
          font-weight: 500;
       }
    }
 
    &__comment {
-      //border: 1px solid white;
+      
+      padding-top: 1.7rem;
       color: $light-magenta;
       font-size: 0.838rem;
       line-height: 1.4rem;
       font-weight: 500;
-      //letter-spacing: -0.1px;
+      letter-spacing: -0.1px;
+
+      @include respond(phone) {
+         padding-top: 1.7rem;
+   
+      }
+
    }
 }
 
-// .colton {
-
-// }
 
 .irene {
-   margin: 1.6em 3.2em 0;
+   margin-top: 1rem;
 
-   @include respond(laptop){
-     margin: 0em 3.2em 0;
-        
+   @include respond(laptop) {
+      margin-top: 0rem;
+
    }
-
-   @include respond(tablet){
-      margin: 1.58em 0;
-         
-    }
-  
 }
 
 .anne {
+   margin-top: 2rem;
 
-   margin-top: 3.2em;
-
-   @include respond(laptop){
+   @include respond(laptop) {
       margin-top: 0rem;
-        
+
    }
 }
