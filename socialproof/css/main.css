@@ -13,7 +13,7 @@ html {
 body {
   min-height: 100vh;
   font-size: 62.5%;
-  font-family: "Spartan", sans-serif;
+  font-family: "League Spartan", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -98,7 +98,7 @@ body {
 }
 
 .top-cnt-info__h1 {
-  font-family: "Spartan", sans-serif;
+  font-family: "League Spartan", sans-serif;
   color: #502050;
   font-size: 3rem;
   font-weight: 700;
