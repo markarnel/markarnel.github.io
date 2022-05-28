@@ -20,12 +20,19 @@ body {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+   background-image: url(../images/bg-pattern-top-desktop.svg), 
+   url(../images/bg-pattern-bottom-desktop.svg);
 
    background-repeat: no-repeat, no-repeat;
 
    background-position: top left, bottom right;
 
+   @include respond(large-phone) {
+       background-image: url(../images/bg-pattern-top-mobile.svg), 
+       url(../images/bg-pattern-bottom-mobile.svg);
+       background-repeat: no-repeat, no-repeat;
+       background-position: top left, bottom right;
+   }
 
 }
 
@@ -33,7 +40,6 @@ body {
   
    max-width: 73.6rem;
    margin-top: 2rem;
-
    padding: 0 2rem;
 
     @include respond(laptop) {
@@ -43,15 +49,11 @@ body {
     @include respond(tablet) {
 
         padding: 5.16rem 1.5rem;
-
     }
 
     @include respond(phone) {
 
         padding: 5.1rem 1rem;
-
     }
-
-
 
 }

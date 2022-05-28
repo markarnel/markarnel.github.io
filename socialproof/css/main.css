@@ -23,6 +23,14 @@ body {
   background-position: top left, bottom right;
 }
 
+@media only screen and (max-width: 514px) {
+  body {
+    background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+  }
+}
+
 .container {
   max-width: 73.6rem;
   margin-top: 2rem;

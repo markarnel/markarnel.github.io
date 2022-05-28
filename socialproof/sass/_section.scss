@@ -2,10 +2,8 @@
 
    display: flex;
    flex-direction: column;
-
    align-items: flex-end;
    justify-content: center;
-
 
    @include respond(laptop) {
       align-items: flex-start;
@@ -18,7 +16,6 @@
    
    }
 
-
    &__rating {
 
       background-color: $light-magenta;
@@ -28,7 +25,6 @@
       flex-direction: row;
       border-radius: 8px;
       padding: 1.2rem 0;
-
       
       &:not(:last-child){   
          margin-bottom: 1.2rem;
@@ -48,10 +44,6 @@
       
       }
 
-      @include respond(phone) {
-         
-      }
-
       &-stars {
          padding-left: 1.6rem;
          padding-right: 2rem;
@@ -61,15 +53,10 @@
             margin-bottom: 1rem;
             
          }
-
-         
+    
          img {
             padding-left: .48rem;
 
-            @include respond(large-phone) {
-
-            }
- 
          }
       }
    }
@@ -81,10 +68,6 @@
       color: $dark-magenta;
       letter-spacing: -.05px;
 
-      @include respond(large-phone) {
-
-         
-      }
    }
 }
 
@@ -117,6 +100,5 @@
 
       padding-right: 0;
       }
-
-
+      
 }

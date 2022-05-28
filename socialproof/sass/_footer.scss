@@ -25,7 +25,6 @@
    padding-bottom: 2.35rem;
    max-height: 14.64rem;
 
-   
    @include respond(laptop) {
       max-height: 19rem;
    }
@@ -33,7 +32,6 @@
    @include respond(phone) {
       max-height: 15.61rem;
       padding-right: 1.8rem;
-
       padding-left: 1.95rem;
    }
 }
@@ -41,7 +39,6 @@
 .profile {
       display: flex;
       flex-direction: row;
-
 
    &__img {
       border-radius: 50px;
@@ -60,15 +57,12 @@
       flex-direction: column;
       justify-content: space-evenly;
 
-
-
       &-name {
 
          color: $white;
          font-size: .84rem;
          font-weight: 700;
          letter-spacing: .3px;
-
 
       }
 
@@ -93,10 +87,8 @@
          padding-top: 1.7rem;
    
       }
-
    }
 }
-
 
 .irene {
    margin-top: 1rem;
