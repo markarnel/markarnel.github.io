@@ -4,17 +4,17 @@
    column-gap: 3rem;
    
 
-   @include respond(tablet) {
-      grid-template-columns: 1fr;
-      row-gap: 1.7rem;
-      max-width: 34rem;
-      margin: 0 auto;
-   }
+      @include respond(tablet) {
+         grid-template-columns: 1fr;
+         row-gap: 1.7rem;
+         max-width: 34rem;
+         margin: 0 auto;
+      }
 
-   @include respond(phone) {
-      padding: 0 .5rem;
-      row-gap: 1.7rem;
-   }
+      @include respond(phone) {
+         padding: 0 .5rem;
+         row-gap: 1.7rem;
+      }
 }
 
 .comment-box {
@@ -27,15 +27,15 @@
    max-height: 23.4rem;
 
 
-   @include respond(laptop) {
-      max-height: 28rem;
-   }
+      @include respond(laptop) {
+         max-height: 28rem;
+      }
 
-   @include respond(phone) {
-      max-height: 24.8rem;
-      padding-right: 3rem;
-      padding-left: 3.4rem;
-   }
+      @include respond(phone) {
+         max-height: 24.8rem;
+         padding-right: 3rem;
+         padding-left: 3.4rem;
+      }
 }
 
 .profile {
@@ -89,33 +89,28 @@
       letter-spacing: -0.04em;
 
 
-      @include respond(phone) {
-         padding-top: 2.4rem;
-   
-      }
+         @include respond(phone) {
+            padding-top: 2.4rem;
+      
+         }
    }
-}
-.colton {
-   //max-height: 23.4rem;
 }
 
 .irene {
    margin-top: 1.6rem;
    padding-right: 4rem;
-   //max-height: 23.4rem;
 
-   @include respond(laptop) {
-      margin-top: 0rem;
+      @include respond(laptop) {
+         margin-top: 0rem;
 
-   }
+      }
 }
 
 .anne {
    margin-top: 3.2rem;
-   //max-height: 23.4rem;
 
-   @include respond(laptop) {
-      margin-top: 0rem;
+      @include respond(laptop) {
+         margin-top: 0rem;
 
-   }
+      }
 }

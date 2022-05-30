@@ -6,20 +6,20 @@
    justify-content: center;
    margin-top: .5rem;
    
-   @include respond(laptop) {
-      align-items: flex-start;
-   }
+      @include respond(laptop) {
+         align-items: flex-start;
+      }
 
-   @include respond(large-phone) {
-      align-items: center;
-      width: 100%;
-      padding: 0 .5rem;
-   
-   }
+      @include respond(large-phone) {
+         align-items: center;
+         width: 100%;
+         padding: 0 .5rem;
+      
+      }
 
-   @include respond(phone) {
-      padding: 0 1.5rem;
-   }
+      @include respond(phone) {
+         padding: 0 1.5rem;
+      }
 
    &__rating {
 
@@ -39,15 +39,15 @@
          }
       }
 
-      @include respond(laptop) {
-         width: 100%;
-      }
+         @include respond(laptop) {
+            width: 100%;
+         }
 
-      @include respond(large-phone) {
-         flex-direction: column;
-         padding: 1.56rem 0;
-      
-      }
+         @include respond(large-phone) {
+            flex-direction: column;
+            padding: 1.56rem 0;
+         
+         }
 
       &-stars {
          padding-left: 2.4rem;
@@ -55,15 +55,15 @@
          display: flex;
 
 
-         @include respond(large-phone) {
-            margin-bottom: 1.4rem;
-            
-         }
+            @include respond(large-phone) {
+               margin-bottom: 1.4rem;
+               
+            }
 
-         @include respond(phone) {
-            margin-bottom: 1rem;
-            
-         }
+            @include respond(phone) {
+               margin-bottom: 1rem;
+               
+            }
     
          img {
             padding-left: .8rem;
@@ -90,29 +90,29 @@
    padding-right: 7.6rem;
    margin-right: 9.9rem;
 
-   @include respond(large-phone) {
-      padding-right: 0;
-      margin-right: 0rem;
+      @include respond(large-phone) {
+         padding-right: 0;
+         margin-right: 0rem;
 
-   }
+      }
 }
 
 .report_guru {
    padding-right: 4.8rem;
    margin-right: 4.8rem;
 
-   @include respond(large-phone) {
+      @include respond(large-phone) {
 
-      padding-right: 0;
-      margin-right: 0rem;
-      }
+         padding-right: 0;
+         margin-right: 0rem;
+         }
 }
 
 .best_tech {
    padding-right: 7.6rem;
 
-   @include respond(large-phone) {
+      @include respond(large-phone) {
 
-      padding-right: 0;
-      }
+         padding-right: 0;
+         }
 }
