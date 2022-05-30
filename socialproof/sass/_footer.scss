@@ -1,37 +1,40 @@
 .btm-cnt {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
-   column-gap: 1.8rem;
+   column-gap: 3rem;
+   
 
    @include respond(tablet) {
       grid-template-columns: 1fr;
-      row-gap: 1rem;
+      row-gap: 1.7rem;
       max-width: 34rem;
       margin: 0 auto;
    }
 
    @include respond(phone) {
       padding: 0 .5rem;
+      row-gap: 1.7rem;
    }
 }
 
 .comment-box {
    background-color: $dark-magenta;
    border-radius: 0.5rem;
-   padding-top: 2.5rem;
-   padding-left: 2.1rem;
-   padding-right: 2rem;
-   padding-bottom: 2.35rem;
-   max-height: 14.64rem;
+   padding-top: 4rem;
+   padding-left: 3.2rem;
+   padding-right: 2.9rem;
+   padding-bottom: 3.8rem;
+   max-height: 23.4rem;
+
 
    @include respond(laptop) {
-      max-height: 19rem;
+      max-height: 28rem;
    }
 
    @include respond(phone) {
-      max-height: 15.61rem;
-      padding-right: 1.8rem;
-      padding-left: 1.95rem;
+      max-height: 24.8rem;
+      padding-right: 3rem;
+      padding-left: 3.4rem;
    }
 }
 
@@ -40,57 +43,66 @@
       flex-direction: row;
 
    &__img {
+      height: 4rem;
+      width: 4rem;
       border-radius: 50px;
       overflow: hidden;
-      display: flex;
 
       &-1 {
-         width: 2.5rem;
-        
+         width: 100%;
       }
    }
 
    &__info {
-      padding-left: 1.5rem;
+      padding-left: 2.3rem;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
 
       &-name {
 
-         color: $white;
-         font-size: .84rem;
+         color: $light-magenta;
          font-weight: 700;
-         letter-spacing: .3px;
+         font-size: 1.8rem;
+         line-height: 125%;     
+         letter-spacing: -0.025em;
 
       }
 
       &-verify {
-         margin-top: .2rem;
          color: $soft-pink;
-         font-size: 0.8125rem;
          font-weight: 500;
+         font-size: 1.74rem;;
+         line-height: 125%;
+         margin-top: -.2rem;
       }
    }
 
    &__comment {
       
-      padding-top: 1.7rem;
+      padding-top: 2.5rem;
       color: $light-magenta;
-      font-size: 0.838rem;
-      line-height: 1.4rem;
-      font-weight: 500;
-      letter-spacing: -0.1px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.7rem;
+      line-height: 132%;
+      letter-spacing: -0.04em;
+
 
       @include respond(phone) {
-         padding-top: 1.7rem;
+         padding-top: 2.4rem;
    
       }
    }
 }
+.colton {
+   //max-height: 23.4rem;
+}
 
 .irene {
-   margin-top: 1rem;
+   margin-top: 1.6rem;
+   padding-right: 4rem;
+   //max-height: 23.4rem;
 
    @include respond(laptop) {
       margin-top: 0rem;
@@ -99,7 +111,8 @@
 }
 
 .anne {
-   margin-top: 2rem;
+   margin-top: 3.2rem;
+   //max-height: 23.4rem;
 
    @include respond(laptop) {
       margin-top: 0rem;

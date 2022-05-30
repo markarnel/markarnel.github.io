@@ -8,12 +8,12 @@
 
 html {
   box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "League Spartan", sans-serif;
 }
 
 body {
   min-height: 100vh;
-  font-size: 62.5%;
-  font-family: "League Spartan", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,14 +32,14 @@ body {
 }
 
 .container {
-  max-width: 73.6rem;
+  max-width: 115rem;
   margin-top: 2rem;
   padding: 0 2rem;
 }
 
 @media only screen and (max-width: 1060px) {
   .container {
-    margin-top: 0rem;
+    margin-top: 2rem;
   }
 }
 
@@ -51,6 +51,7 @@ body {
 
 @media only screen and (max-width: 375px) {
   .container {
+    margin-top: 3.2rem;
     padding: 5.1rem 1rem;
   }
 }
@@ -58,9 +59,10 @@ body {
 .top-cnt {
   display: flex;
   flex-direction: row;
-  padding-bottom: 4.4rem;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 4.4375rem;
+  margin-bottom: 2.6rem;
 }
 
 @media only screen and (max-width: 1060px) {
@@ -77,7 +79,7 @@ body {
 
 @media only screen and (max-width: 375px) {
   .top-cnt {
-    margin-bottom: .5rem;
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -85,54 +87,66 @@ body {
   text-align: start;
   display: flex;
   flex-direction: column;
-  max-width: 27.0625rem;
   margin-right: 2em;
 }
 
 @media only screen and (max-width: 851px) {
   .top-cnt-info {
-    max-width: 27.0625rem;
     text-align: center;
     margin-right: 0rem;
   }
 }
 
+@media only screen and (max-width: 375px) {
+  .top-cnt-info {
+    margin-bottom: 1rem;
+  }
+}
+
 .top-cnt-info__h1 {
-  font-family: "League Spartan", sans-serif;
   color: #502050;
-  font-size: 3rem;
+  font-family: 'League Spartan';
+  font-style: normal;
   font-weight: 700;
-  letter-spacing: -1.6px;
-  line-height: 2.972rem;
-  margin-bottom: 0.9375rem;
+  font-size: 5.6rem;
+  line-height: 48px;
+  letter-spacing: -0.035em;
+  margin-bottom: 2.6rem;
+  max-width: 34rem;
 }
 
 @media only screen and (max-width: 851px) {
   .top-cnt-info__h1 {
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 4rem;
+    line-height: 80%;
+    text-align: center;
+    letter-spacing: -0.04em;
+    margin: 0 auto;
+    margin-bottom: 3rem;
   }
 }
 
 @media only screen and (max-width: 514px) {
   .top-cnt-info__h1 {
-    letter-spacing: -.8px;
+    letter-spacing: -0.04em;
   }
 }
 
 @media only screen and (max-width: 375px) {
   .top-cnt-info__h1 {
     padding: 0 1rem;
-    margin-bottom: 1.6rem;
+    margin-bottom: 2.4rem;
   }
 }
 
 .top-cnt-info__p {
   color: #937b92;
-  font-size: 0.875rem;
-  line-height: 1.81;
-  font-weight: 500;
-  letter-spacing: .12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 125%;
+  letter-spacing: -0.045em;
+  max-width: 42rem;
 }
 
 @media only screen and (max-width: 851px) {
@@ -143,8 +157,10 @@ body {
 
 @media only screen and (max-width: 514px) {
   .top-cnt-info__p {
-    letter-spacing: .12px;
-    padding: 0 .4rem;
+    font-size: 1.9rem;
+    line-height: 131.5%;
+    letter-spacing: -0.03em;
+    padding: 0 1.2rem;
     margin-bottom: 2.3rem;
   }
 }
@@ -154,6 +170,7 @@ body {
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
+  margin-top: .5rem;
 }
 
 @media only screen and (max-width: 1060px) {
@@ -170,6 +187,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 375px) {
+  .mid-cnt {
+    padding: 0 1.5rem;
+  }
+}
+
 .mid-cnt__rating {
   background-color: #f7f2f7;
   display: flex;
@@ -177,16 +200,16 @@ body {
   justify-content: center;
   flex-direction: row;
   border-radius: 8px;
-  padding: 1.2rem 0;
+  padding: 1.8rem 0;
 }
 
 .mid-cnt__rating:not(:last-child) {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.6rem;
 }
 
 @media only screen and (max-width: 514px) {
   .mid-cnt__rating:not(:last-child) {
-    margin-bottom: 1rem;
+    margin-bottom: 1.6rem;
   }
 }
 
@@ -199,36 +222,47 @@ body {
 @media only screen and (max-width: 514px) {
   .mid-cnt__rating {
     flex-direction: column;
-    padding: 1rem 0;
+    padding: 1.56rem 0;
   }
 }
 
 .mid-cnt__rating-stars {
-  padding-left: 1.6rem;
-  padding-right: 2rem;
+  padding-left: 2.4rem;
+  padding-right: 3.24rem;
   display: flex;
 }
 
 @media only screen and (max-width: 514px) {
+  .mid-cnt__rating-stars {
+    margin-bottom: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
   .mid-cnt__rating-stars {
     margin-bottom: 1rem;
   }
 }
 
 .mid-cnt__rating-stars img {
-  padding-left: .48rem;
+  padding-left: .8rem;
 }
 
 .mid-cnt__vote {
-  font-size: 0.8125rem;
-  font-weight: 700;
+  display: flex;
+  font-family: 'League Spartan';
+  font-style: normal;
   color: #502050;
-  letter-spacing: -.05px;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 125%;
+  letter-spacing: 0.03em;
 }
 
 .reviews {
-  padding-right: 5.7rem;
-  margin-right: 6rem;
+  margin-top: .2rem;
+  padding-right: 7.6rem;
+  margin-right: 9.9rem;
 }
 
 @media only screen and (max-width: 514px) {
@@ -239,8 +273,8 @@ body {
 }
 
 .report_guru {
-  padding-right: 3.67rem;
-  margin-right: 3.05rem;
+  padding-right: 4.8rem;
+  margin-right: 4.8rem;
 }
 
 @media only screen and (max-width: 514px) {
@@ -251,7 +285,7 @@ body {
 }
 
 .best_tech {
-  padding-right: 5.6rem;
+  padding-right: 7.6rem;
 }
 
 @media only screen and (max-width: 514px) {
@@ -263,13 +297,13 @@ body {
 .btm-cnt {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 1.8rem;
+  column-gap: 3rem;
 }
 
 @media only screen and (max-width: 851px) {
   .btm-cnt {
     grid-template-columns: 1fr;
-    row-gap: 1rem;
+    row-gap: 1.7rem;
     max-width: 34rem;
     margin: 0 auto;
   }
@@ -278,30 +312,31 @@ body {
 @media only screen and (max-width: 375px) {
   .btm-cnt {
     padding: 0 .5rem;
+    row-gap: 1.7rem;
   }
 }
 
 .comment-box {
   background-color: #502050;
   border-radius: 0.5rem;
-  padding-top: 2.5rem;
-  padding-left: 2.1rem;
-  padding-right: 2rem;
-  padding-bottom: 2.35rem;
-  max-height: 14.64rem;
+  padding-top: 4rem;
+  padding-left: 3.2rem;
+  padding-right: 2.9rem;
+  padding-bottom: 3.8rem;
+  max-height: 23.4rem;
 }
 
 @media only screen and (max-width: 1060px) {
   .comment-box {
-    max-height: 19rem;
+    max-height: 28rem;
   }
 }
 
 @media only screen and (max-width: 375px) {
   .comment-box {
-    max-height: 15.61rem;
-    padding-right: 1.8rem;
-    padding-left: 1.95rem;
+    max-height: 24.8rem;
+    padding-right: 3rem;
+    padding-left: 3.4rem;
   }
 }
 
@@ -311,53 +346,58 @@ body {
 }
 
 .profile__img {
+  height: 4rem;
+  width: 4rem;
   border-radius: 50px;
   overflow: hidden;
-  display: flex;
 }
 
 .profile__img-1 {
-  width: 2.5rem;
+  width: 100%;
 }
 
 .profile__info {
-  padding-left: 1.5rem;
+  padding-left: 2.3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
 .profile__info-name {
-  color: white;
-  font-size: .84rem;
+  color: #f7f2f7;
   font-weight: 700;
-  letter-spacing: .3px;
+  font-size: 1.8rem;
+  line-height: 125%;
+  letter-spacing: -0.025em;
 }
 
 .profile__info-verify {
-  margin-top: .2rem;
   color: #ee68a4;
-  font-size: 0.8125rem;
   font-weight: 500;
+  font-size: 1.74rem;
+  line-height: 125%;
+  margin-top: -.2rem;
 }
 
 .profile__comment {
-  padding-top: 1.7rem;
+  padding-top: 2.5rem;
   color: #f7f2f7;
-  font-size: 0.838rem;
-  line-height: 1.4rem;
-  font-weight: 500;
-  letter-spacing: -0.1px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 132%;
+  letter-spacing: -0.04em;
 }
 
 @media only screen and (max-width: 375px) {
   .profile__comment {
-    padding-top: 1.7rem;
+    padding-top: 2.4rem;
   }
 }
 
 .irene {
-  margin-top: 1rem;
+  margin-top: 1.6rem;
+  padding-right: 4rem;
 }
 
 @media only screen and (max-width: 1060px) {
@@ -367,7 +407,7 @@ body {
 }
 
 .anne {
-  margin-top: 2rem;
+  margin-top: 3.2rem;
 }
 
 @media only screen and (max-width: 1060px) {
