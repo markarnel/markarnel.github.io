@@ -1,7 +1,10 @@
 .container {
-   min-height: 100vh;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   margin-top: 4.2rem;
+   width: 92rem;
 
+   @include respond(tablet){
+      margin-top: 0rem;
+      
+   }
+   
 }
