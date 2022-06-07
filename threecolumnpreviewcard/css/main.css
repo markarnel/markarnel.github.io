@@ -117,11 +117,19 @@ body {
 .btn {
   max-width: 14.6rem;
   font-family: "Lexend Deca", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.45rem;
   background-color: white;
   border-radius: 50px;
   padding: 1.5rem 3.4rem;
   margin-top: 8.3rem;
+  transition: all .3s ease-in;
+  border: 2px solid white;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border: 2px solid white;
+  cursor: pointer;
 }
 
 .btn1 {
@@ -129,12 +137,24 @@ body {
   text-decoration: none;
 }
 
+.btn1:hover {
+  color: white;
+}
+
 .btn2 {
   color: #006970;
   text-decoration: none;
 }
 
+.btn2:hover {
+  color: white;
+}
+
 .btn3 {
   color: #004241;
   text-decoration: none;
+}
+
+.btn3:hover {
+  color: white;
 }

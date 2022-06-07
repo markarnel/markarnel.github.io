@@ -5,7 +5,7 @@
    border-radius: 7px;
    overflow: hidden;
 
-   @include respond(tablet){
+   @include respond(tablet) {
       margin: 2.5em;
       grid-template-columns: 1fr;
    }
@@ -28,12 +28,12 @@
 }
 
 .icon {
-   
+
    margin-bottom: 3.3rem;
 
    @include respond(tablet) {
       margin-bottom: 3.2rem;
-}
+   }
 }
 
 .typeofcars1 {
@@ -54,7 +54,7 @@
 
 .heading-1 {
 
-   
+
    color: $very-light-gray;
    text-transform: uppercase;
    font-size: 4rem;
@@ -62,7 +62,7 @@
 
    @include respond(tablet) {
       margin-bottom: 2.6rem;
-}
+   }
 }
 
 .paragraph-1 {
@@ -76,34 +76,57 @@
 
    @include respond(tablet) {
       margin-bottom: 4rem;
-}
+   }
 }
 
 .btn {
    max-width: 14.6rem;
    font-family: $font-ld;
-   font-size: 1.4rem;
+   font-size: 1.45rem;
    background-color: white;
    border-radius: 50px;
    padding: 1.5rem 3.4rem;
    margin-top: 8.3rem;
-   
+   transition: all .3s ease-in;
+   border: 2px solid white;
+
+   &:hover {
+      background-color: transparent;
+      border: 2px solid white;
+      cursor: pointer;
+   }
+
 }
 
 .btn1 {
-    color: $bright-orange;
-    text-decoration: none;
+   color: $bright-orange;
+   text-decoration: none;
 
-    
+   &:hover {
+
+      color: white;
+   }
+
+
 }
 
 .btn2 {
    color: $dark-cyan;
    text-decoration: none;
 
+   &:hover {
+
+      color: white;
+   }
+
 }
 
 .btn3 {
    color: $very-dark-cyan;
    text-decoration: none;
+
+   &:hover {
+
+      color: white;
+   }
 }
