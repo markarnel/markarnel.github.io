@@ -3,7 +3,7 @@
    color: white;
 
    //border: 1px solid red;
- 
+
    &_box {
       height: 24.37rem;
       margin: 0 5.05rem;
@@ -13,13 +13,13 @@
       @include respond(tablet) {
 
          height: 30.462rem;
-         flex-direction:row;
-         flex-wrap:wrap;
+         flex-direction: row;
+         flex-wrap: wrap;
       }
 
 
       @include respond(large-phone) {
-         flex-wrap:nowrap;
+         flex-wrap: nowrap;
          flex-direction: column;
          height: 42.94rem;
          margin: 0 2.45rem;
@@ -29,11 +29,11 @@
       }
 
       &-icons {
-         
+
          padding-top: 6.75rem;
          display: flex;
          flex-direction: column;
-         
+
          @include respond(tablet) {
             width: 50%;
          }
@@ -46,7 +46,7 @@
 
          &-logo {
             width: 10.95rem;
-            filter:  brightness(0) invert(1);
+            filter: brightness(0) invert(1);
             margin-bottom: 1.57rem;
 
             @include respond(large-phone) {
@@ -65,14 +65,14 @@
                margin-left: .1rem;
                width: 1.8em;
                height: 1.8em;
-               
+
             }
 
             &-p {
                font-family: $Open_Sans;
                font-size: 1.02rem;
                margin-left: 1.2rem;
-               
+
             }
          }
 
@@ -91,7 +91,7 @@
                font-family: $Open_Sans;
                font-size: 1.02rem;
                margin-left: 1.1rem;
-               
+
             }
          }
       }
@@ -124,7 +124,7 @@
       }
 
       &-ul1 {
-         
+
          font-family: $Open_Sans;
          display: flex;
          flex-direction: column;
@@ -137,16 +137,16 @@
             padding-bottom: 3.05rem;
          }
 
-      &-li {
+         &-li {
             font-size: 1rem;
             list-style: none;
 
             &:not(:last-child) {
                margin-bottom: 1rem;
             }
-            
+
             a {
-               color: white;         
+               color: white;
                text-decoration: none;
 
             }
@@ -157,7 +157,7 @@
          font-family: $Open_Sans;
          display: flex;
          flex-direction: column;
-         
+
 
 
          &-li {
@@ -167,9 +167,9 @@
             &:not(:last-child) {
                margin-bottom: 1rem;
             }
-            
+
             a {
-               color: white;         
+               color: white;
                text-decoration: none;
 
             }
@@ -184,21 +184,19 @@
       justify-content: flex-start;
       width: 23.5%;
 
-      
+
 
       @include respond(laptop) {
          justify-content: center;
-      } 
+      }
 
       @include respond(tablet) {
 
-         
-            margin: 0 auto;
+
+         margin: 0 auto;
       }
 
-      @include respond(large-phone) {
-
-      }
+      @include respond(large-phone) {}
 
       &-icons {
          color: #fff;
@@ -213,25 +211,25 @@
             @include respond(large-phone) {
                margin-right: .6rem;
             }
-            
+
          }
 
-         
+
 
          // @include respond(tablet) {
          //    margin-right: .8rem;
          // }
-         
+
       }
    }
 
 }
 
-.fa-bands {
+.fa-bands {}
 
-}
-
-.fa-facebook-f, .fa-twitter, .fa-instagram{
+.fa-facebook-f,
+.fa-twitter,
+.fa-instagram {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -243,23 +241,22 @@
    font-size: .9rem;
    margin-right: .8rem;
    cursor: pointer;
-   
+
    &:hover {
       color: #5c8ff5;
       border: 1px solid #5c8ff5;
-     }
+   }
 
-     @include respond(laptop) {
+   @include respond(laptop) {
       margin-right: 0rem;
-   } 
+   }
 
-     
 
-     @include respond(large-phone) {
+
+   @include respond(large-phone) {
       width: 1.6875rem;
       height: 1.6875rem;
 
    }
 
 }
-

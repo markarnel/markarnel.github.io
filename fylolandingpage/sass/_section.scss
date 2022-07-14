@@ -28,14 +28,14 @@
       }
 
 
-      &-h1{
+      &-h1 {
 
-         font-weight: 700;      
+         font-weight: 700;
          line-height: 3.7rem;
          margin-bottom: .9rem;
          font-family: $Open_Sans;
          font-size: clamp(1rem, 2.8vw, 2.5rem);
-         
+
 
          @include respond(laptop) {
             font-size: clamp(1rem, 2.5vw, 2.5rem);
@@ -62,7 +62,7 @@
          }
 
       }
-   
+
       &-p {
          font-family: $Open_Sans;
          font-weight: 400;
@@ -76,13 +76,12 @@
          @include respond(tablet) {
 
             text-align: center;
-            padding-right: 0rem;
             width: 80%;
             margin: 0 auto;
             margin-bottom: 1.94rem;
          }
 
-         @include respond(large-phone){
+         @include respond(large-phone) {
             font-size: 0.85rem;
             line-height: 1.32rem;
             width: 92%;
@@ -98,24 +97,24 @@
          }
 
       }
-   
+
       &-form {
-            width: 100%;
-            display: flex;
-            align-items: center;
+         width: 100%;
+         display: flex;
+         align-items: center;
 
-            @include respond(tablet) {
-               justify-content: center;
-               flex-direction: column;
-               //width: 304px;
-            }
+         @include respond(tablet) {
+            justify-content: center;
+            flex-direction: column;
+            //width: 304px;
+         }
 
-                
+
 
          &-btn {
             width: 50%;
             font-size: .9rem;
-            padding:.8rem;
+            padding: .8rem;
             font-weight: 400;
             letter-spacing: .7px;
             border-radius: 3px;
@@ -134,31 +133,31 @@
 
 
             &:focus {
-              
+
                outline-offset: 0px;
                outline: none;
             }
 
             &::placeholder {
                color: rgba($Light_Gray, .5);
-               padding-left: .4rem;     
-               
-               @include respond(large-phone){
+               padding-left: .4rem;
+
+               @include respond(large-phone) {
                   font-size: 0.72rem;
                }
             }
 
-            
+
          }
 
       }
-   
+
       &-btn {
          font-size: .9rem;
          font-weight: 700;
          margin-left: 1rem;
          width: 31.3%;
-         padding:.9rem;
+         padding: .9rem;
          background-color: $Bright_Blue;
          color: $Grayish_Blue;
          border: none;
@@ -184,7 +183,7 @@
    }
 
    &_right {
-      
+
 
       &-img {
          width: 44.445vw;
@@ -200,8 +199,3 @@
       }
    }
 }
-
-
-
-
-

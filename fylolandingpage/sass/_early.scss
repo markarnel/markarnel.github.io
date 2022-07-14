@@ -23,21 +23,21 @@
 
       }
 
-      
+
 
       &-left {
          margin-top: 2rem;
 
          @include respond(tablet) {
             margin-top: 0rem;
-            
+
          }
 
          &-h1 {
 
             // font-size:  clamp(1rem, 2.8vw, 2.5rem);
-            font-size:  clamp(1rem, 2.8vw, 2rem);
-            font-weight: 700;      
+            font-size: clamp(1rem, 2.8vw, 2rem);
+            font-weight: 700;
             line-height: 3.7rem;
             color: white;
             letter-spacing: .2px;
@@ -72,27 +72,27 @@
             width: 69%;
             line-height: 1.5rem;
             margin-bottom: 1.47rem;
-            color: white; 
+            color: white;
 
             @include respond(tablet) {
                width: 100%;
                text-align: center;
             }
 
-            @include respond(large-phone){
+            @include respond(large-phone) {
                font-size: 0.85rem;
                line-height: 1.32rem;
                width: 90%;
                letter-spacing: 0px;
                margin: 0 auto;
-               
+
             }
 
             @include respond(phone) {
                font-size: clamp(0.65rem, 3.63vw, 0.85rem);
             }
 
-            
+
 
          }
 
@@ -127,7 +127,7 @@
                width: 100%;
                font-family: $Raleway;
                font-size: .78rem;
-               padding: 1.03rem;              
+               padding: 1.03rem;
                font-weight: 400;
                border-radius: 2px;
                border: none;
@@ -141,10 +141,10 @@
 
 
                &:focus {
-              
+
                   outline-offset: 0px;
                   outline: none;
-                  
+
                }
 
                &::placeholder {
@@ -152,7 +152,7 @@
                   padding-left: .5rem;
                   transform: translateY(-2px);
                }
-            }         
+            }
          }
 
          &-btn {

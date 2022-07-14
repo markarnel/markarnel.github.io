@@ -199,7 +199,6 @@ body {
 @media only screen and (max-width: 913px) {
   .section_left-p {
     text-align: center;
-    padding-right: 0rem;
     width: 80%;
     margin: 0 auto;
     margin-bottom: 1.94rem;
@@ -1053,7 +1052,9 @@ body {
   }
 }
 
-.fa-facebook-f, .fa-twitter, .fa-instagram {
+.fa-facebook-f,
+.fa-twitter,
+.fa-instagram {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1067,19 +1068,25 @@ body {
   cursor: pointer;
 }
 
-.fa-facebook-f:hover, .fa-twitter:hover, .fa-instagram:hover {
+.fa-facebook-f:hover,
+.fa-twitter:hover,
+.fa-instagram:hover {
   color: #5c8ff5;
   border: 1px solid #5c8ff5;
 }
 
 @media only screen and (max-width: 1114px) {
-  .fa-facebook-f, .fa-twitter, .fa-instagram {
+  .fa-facebook-f,
+  .fa-twitter,
+  .fa-instagram {
     margin-right: 0rem;
   }
 }
 
 @media only screen and (max-width: 559px) {
-  .fa-facebook-f, .fa-twitter, .fa-instagram {
+  .fa-facebook-f,
+  .fa-twitter,
+  .fa-instagram {
     width: 1.6875rem;
     height: 1.6875rem;
   }
