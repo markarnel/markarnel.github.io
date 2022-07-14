@@ -150,11 +150,11 @@ body {
 }
 
 .section_left-h1 {
-  font-size: 2.5rem;
   font-weight: 700;
   line-height: 3.7rem;
   margin-bottom: .9rem;
   font-family: "Open Sans", sans-serif;
+  font-size: clamp(1rem, 2.8vw, 2.5rem);
 }
 
 @media only screen and (max-width: 1114px) {
@@ -191,9 +191,9 @@ body {
   font-weight: 400;
   font-size: 1.1rem;
   letter-spacing: -.5px;
-  padding-right: 2rem;
   line-height: 1.55rem;
   margin-bottom: 1.47rem;
+  width: 90%;
 }
 
 @media only screen and (max-width: 913px) {

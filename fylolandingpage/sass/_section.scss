@@ -29,14 +29,12 @@
 
 
       &-h1{
-         //40px 27.85px
 
-         font-size: 2.5rem;
          font-weight: 700;      
          line-height: 3.7rem;
          margin-bottom: .9rem;
          font-family: $Open_Sans;
-
+         font-size: clamp(1rem, 2.8vw, 2.5rem);
          
 
          @include respond(laptop) {
@@ -70,9 +68,10 @@
          font-weight: 400;
          font-size: 1.1rem;
          letter-spacing: -.5px;
-         padding-right: 2rem;
          line-height: 1.55rem;
          margin-bottom: 1.47rem;
+
+         width: 90%;
 
          @include respond(tablet) {
 
