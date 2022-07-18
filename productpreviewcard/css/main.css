@@ -200,6 +200,11 @@ button {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
+  cursor: pointer;
+}
+
+.right_button:hover {
+  background-color: #1d543f;
 }
 
 .right_button-img {

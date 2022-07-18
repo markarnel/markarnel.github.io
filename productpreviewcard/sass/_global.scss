@@ -2,24 +2,24 @@
 *::before,
 *::after {
 
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
 
 }
 
 html {
-   
+
    font-family: $font_mnt;
    font-size: 62.5%;
    box-sizing: border-box;
-    
+
 }
 
 body {
 
    background-color: $cream;
-   
+
 
 }
 
@@ -49,10 +49,7 @@ main {
 
    }
 
-   @include respond(large-phone) {
-
-
-   }
+   @include respond(large-phone) {}
 
 }
 
@@ -82,5 +79,3 @@ button {
    height: 4.8rem;
 
 }
-
-
