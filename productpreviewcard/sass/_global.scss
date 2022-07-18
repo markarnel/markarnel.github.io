@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+}
+
+html {
+   
+   font-family: $font_mnt;
+   font-size: 62.5%;
+   box-sizing: border-box;
+    
+}
+
+body {
+
+   background-color: $cream;
+   
+
+}
+
+main {
+
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: auto 0;
+
+}
+
+.card {
+
+   background-color: white;
+   margin: 2rem;
+   border-radius: 10px;
+   overflow: hidden;
+   display: flex;
+   width: 600px;
+
+   @include respond(large-phone) {
+
+      flex-direction: column;
+      margin: 2.75rem 1.5rem;
+
+   }
+
+   @include respond(large-phone) {
+
+
+   }
+
+}
+
+h1 {
+
+   font-family: $font_frs;
+   font-size: 3.2rem;
+
+}
+
+p {
+
+   font-weight: 400;
+   font-size: 1.4rem;
+   line-height: 23px;
+
+}
+
+button {
+
+   font-size: 1.4rem;
+   font-weight: 700;
+   font-family: $font_mnt;
+   background-color: $dark_cyan;
+   color: white;
+   border: none;
+   height: 4.8rem;
+
+}
+
+
