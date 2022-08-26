@@ -8,7 +8,7 @@
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%;   
+    font-size: 62.5%;
 
 }
 
@@ -19,12 +19,17 @@ body {
 
 }
 
-h1,h2,h3,h4,h5,h6{
-    
-    font-family: $font-poppins;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: $font-poppins  !important;
 }
 
 p {
-    font-family: 'Open Sans';
-    font-weight: 400;
+    font-family: 'Open Sans' !important;
+    font-weight: 400 !important;
 }
