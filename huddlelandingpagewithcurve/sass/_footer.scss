@@ -258,7 +258,7 @@
             margin-right: 35px;
             outline: none;
             padding: 0 20px;
-
+            border: none;
 
             @include respond(laptop) {
                margin-bottom: 15px;
@@ -286,7 +286,9 @@
             background-color: $pink;
             font-family: $font-opensans;
             color: white;
-            outline: none;
+            border: none;
+
+
 
             &:hover {
                background-color: #FF8ED6;

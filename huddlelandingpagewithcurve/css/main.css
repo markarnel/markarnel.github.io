@@ -22,12 +22,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Poppins", sans-serif;
 }
 
 p {
-  font-family: 'Open Sans' !important;
-  font-weight: 400 !important;
+  font-family: 'Open Sans';
+  font-weight: 400;
 }
 
 .header {
@@ -180,6 +180,7 @@ p {
   font-weight: 700;
   line-height: 20px;
   cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
 }
 
 .section1_row-cta:hover {
@@ -685,6 +686,7 @@ p {
   font-size: 20px;
   font-weight: 700;
   line-height: 20px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
 }
 
 .section5_row-cta:hover {
@@ -933,6 +935,7 @@ p {
   margin-right: 35px;
   outline: none;
   padding: 0 20px;
+  border: none;
 }
 
 @media only screen and (max-width: 926px) {
@@ -963,7 +966,7 @@ p {
   background-color: #ff52bf;
   font-family: "Open Sans", sans-serif;
   color: white;
-  outline: none;
+  border: none;
 }
 
 .footer_col2-form-cta:hover {
