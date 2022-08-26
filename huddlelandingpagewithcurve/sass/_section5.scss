@@ -1,0 +1,74 @@
+.section5 {
+
+   
+   background-image: url(../images/bg-section-bottom-desktop-2.svg), url(../images/bg-footer-top-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, bottom;
+    background-size: 100vw;
+
+    padding-top: 303px;
+    padding-bottom: 186px;
+
+    @include respond(tablet) {
+      background-image: url(../images/bg-section-bottom-mobile-2.svg), url(../images/bg-footer-top-mobile.svg);
+      background-repeat: no-repeat, no-repeat;
+      background-position: top, bottom;
+      padding-top: 168px;
+      padding-bottom: 134px;
+    }
+
+    &_container {
+
+        max-width: 1260px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 28px;
+        padding-right: 28px;
+     }
+  
+     &_row {
+  
+        text-align: center;
+        margin-bottom: 179px;
+  
+        &-h1 {
+  
+           font-size: 40px;//
+           //font-size: 24px;
+           font-size: clamp(24px, 2.7778vw, 40px);
+           font-weight: 700;
+           line-height: 54px;//
+           letter-spacing: -0.009em;
+           margin-bottom: 71px;
+
+           @include respond(tablet) {
+
+            line-height: 150.68%;
+            margin-bottom: 48px;
+           }
+  
+        }
+  
+        &-cta {
+  
+           color: $pale_blue;
+           background-color: $pink;
+           padding: 27px 100px;//
+           font-size: 20px;//
+           font-weight: 700;
+           line-height: 20px;//
+
+           &:hover {
+            background-color: #FF8ED6;
+         }
+
+           @include respond(tablet) {
+            padding: 3vw 10.7vw;
+            font-size: clamp(12px, 2.6316vw, 20px);
+         }
+  
+       }
+        
+    
+     }
+}
