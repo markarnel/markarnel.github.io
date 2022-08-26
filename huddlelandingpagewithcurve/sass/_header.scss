@@ -27,18 +27,15 @@
 
       &-logo {
 
+         width: 240px;
 
-         &-img {
+         @include respond(tablet) {
 
-            width: 240px;
+            margin-top: 2px;
+            width: clamp(96px, 25.5789vw, 240px);
 
-            @include respond(tablet) {
-
-               margin-top: 2px;
-               width: clamp(96px, 25.5789vw, 240px);
-
-            }
          }
+
       }
 
       &-cta {

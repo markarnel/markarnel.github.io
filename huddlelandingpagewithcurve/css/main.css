@@ -50,12 +50,12 @@ p {
   align-items: center;
 }
 
-.header_row-logo-img {
+.header_row-logo {
   width: 240px;
 }
 
 @media only screen and (max-width: 760px) {
-  .header_row-logo-img {
+  .header_row-logo {
     margin-top: 2px;
     width: clamp(96px, 25.5789vw, 240px);
   }
