@@ -38,9 +38,9 @@
 
       &-h1 {
 
-         font-size: 49px;//
+         font-size: 49px; //
          //font-size: 24px;
-         
+
          font-weight: 700;
          letter-spacing: -0.009em;
          margin-bottom: 24px;
@@ -52,7 +52,7 @@
             margin-right: auto;
          }
 
-         
+
 
          @include respond(tablet) {
 
@@ -61,7 +61,7 @@
             margin-right: auto;
             line-height: 150.68%;
 
-            margin-bottom: clamp(23px, 4.0789vw,24px);
+            margin-bottom: clamp(23px, 4.0789vw, 24px);
          }
 
       }
@@ -74,11 +74,11 @@
          font-size: clamp(14px, 2.6316vw, 20px);
          line-height: 148%;
          width: 583px;
-         
+
          margin: 0 auto;
          margin-bottom: 77px;
 
-         
+
 
          @include respond(tablet) {
             width: clamp(300px, 53.8159vw, 409px);
@@ -184,7 +184,7 @@
                @include respond(tablet) {
                   margin-left: 0; //
                   margin-bottom: 2px;
-                  
+
                }
 
             }
@@ -206,12 +206,12 @@
                   margin-bottom: 6px;
                }
 
-               
+
             }
 
             &-p {
 
-                font-size: 24px; //
+               font-size: 24px; //
 
 
                @include respond(tablet) {
@@ -245,7 +245,7 @@
                }
 
                @include respond(tablet) {
-                  
+
                   margin-left: 4px;
                   margin-bottom: 3px;
                }
@@ -254,17 +254,17 @@
 
             &-h1 {
 
-               font-family: $font-opensans;           
+               font-family: $font-opensans;
                font-size: 96px;
                line-height: 1.41;
                margin-bottom: 8px;
 
-               
+
                @include respond(laptop) {
 
                   font-size: clamp(53px, 10.3672vw, 96px);
                }
-               
+
                @include respond(tablet) {
                   margin-bottom: 2px;
                }
@@ -278,14 +278,14 @@
 
                @include respond(tablet) {
 
-                  
+
                   font-size: 13px;
                   font-size: clamp(13px, 3.1579vw, 24px);
                   line-height: 155%;
                   letter-spacing: 0.05em;
                   margin-right: 0px;
-                  
-                  
+
+
 
                   @include respond(phone) {
                      text-align: center;
