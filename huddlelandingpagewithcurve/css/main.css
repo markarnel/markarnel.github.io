@@ -846,6 +846,17 @@ p {
   display: flex;
 }
 
+.footer_col1-icon-img {
+  color: white;
+  font-size: 36px;
+}
+
+@media only screen and (max-width: 760px) {
+  .footer_col1-icon-img {
+    font-size: 26px;
+  }
+}
+
 .footer_col1-icon-img:not(:last-child) {
   margin-right: 24px;
 }
@@ -853,17 +864,6 @@ p {
 @media only screen and (max-width: 760px) {
   .footer_col1-icon-img:not(:last-child) {
     margin-right: 18px;
-  }
-}
-
-.footer_col1-icon-img-a {
-  color: white;
-  font-size: 36px;
-}
-
-@media only screen and (max-width: 760px) {
-  .footer_col1-icon-img-a {
-    font-size: 26px;
   }
 }
 
