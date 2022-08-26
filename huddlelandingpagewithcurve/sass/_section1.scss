@@ -1,0 +1,304 @@
+.section1 {
+
+
+   padding-bottom: clamp(115px, 0.1553vw, 118px);
+   background-image: url(../images/bg-section-top-desktop-1.svg);
+   background-repeat: no-repeat;
+   background-position: bottom;
+   background-size: 100vw;
+
+
+   @include respond(tablet) {
+      background-image: url(../images/bg-section-top-mobile-1.svg);
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 100vw;
+
+
+   }
+
+
+   &_container {
+
+      max-width: 1260px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 28px;
+      padding-right: 28px;
+   }
+
+   &_row {
+
+      text-align: center;
+      margin-bottom: 184px;
+
+      @include respond(tablet) {
+         margin-bottom: 0px;
+      }
+
+      &-h1 {
+
+         font-size: 49px; //
+         //font-size: 24px;
+
+         font-weight: 700;
+         letter-spacing: -0.009em;
+         margin-bottom: 24px;
+
+         @include respond(laptop-big) {
+            font-size: clamp(24px, 4.5923vw, 49px);
+            width: 77%;
+            margin-left: auto;
+            margin-right: auto;
+         }
+
+
+
+         @include respond(tablet) {
+
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 150.68%;
+
+            margin-bottom: clamp(23px, 4.0789vw, 24px);
+         }
+
+      }
+
+      &-p {
+
+         color: $dark_cyan;
+         font-size: 20px; //
+         //font-size: 14px;
+         font-size: clamp(14px, 2.6316vw, 20px);
+         line-height: 148%;
+         width: 583px;
+
+         margin: 0 auto;
+         margin-bottom: 77px;
+
+
+
+         @include respond(tablet) {
+            width: clamp(300px, 53.8159vw, 409px);
+            margin-bottom: clamp(57px, 10.3947vw, 79px);
+
+         }
+
+         @include respond(phone) {
+            width: 100%;
+         }
+      }
+
+
+      &-cta {
+
+         color: $pale_blue;
+         background-color: $pink;
+         padding: 26.5px 100px; //
+         font-size: 20px; //
+         font-weight: 700;
+         line-height: 20px; //
+         cursor: pointer;
+         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+
+         &:hover {
+            background-color: #FF8ED6;
+         }
+
+
+         @include respond(tablet) {
+
+            padding: 3.1526vw 11vw;
+            font-size: clamp(12px, 2.6316vw, 20px);
+
+         }
+
+      }
+
+      &-svg {
+
+
+         width: clamp(302px, 71.875vw, 1035px);
+
+         margin-top: 139px;
+         margin-bottom: 116px;
+
+         @include respond(tablet) {
+            margin-top: 29.6053vw;
+            margin-bottom: 119px;
+            margin-bottom: clamp(119px, 15.6579vw, 116px);
+         }
+
+         @include respond(phone) {
+
+            width: clamp(200px, 80.5333vw, 302px);
+         }
+
+
+
+      }
+
+
+      &-stats {
+
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         //padding-left: 163px;
+         //padding-right: 163px;
+         padding-left: 11.3194vw;
+         padding-right: 11.3194vw;
+
+         @include respond(tablet) {
+
+            flex-direction: column;
+
+         }
+
+         ////////////// COLUMN 1
+
+         &-col1 {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+
+            @include respond(tablet) {
+               margin-bottom: 94px;
+            }
+
+            &-icon {
+
+               margin-left: 4px; //
+
+               width: 46px;
+
+               @include respond(laptop) {
+                  width: 31px;
+                  width: clamp(31px, 4.9676vw, 46px);
+
+               }
+
+               @include respond(tablet) {
+                  margin-left: 0; //
+                  margin-bottom: 2px;
+
+               }
+
+            }
+
+
+            &-h1 {
+
+               font-family: $font-opensans;
+               font-size: 96px;
+               line-height: 1.33;
+               margin-bottom: 11px; //
+
+               @include respond(laptop) {
+
+                  font-size: clamp(60px, 10.3672vw, 96px);
+               }
+
+               @include respond(tablet) {
+                  margin-bottom: 6px;
+               }
+
+
+            }
+
+            &-p {
+
+               font-size: 24px; //
+
+
+               @include respond(tablet) {
+                  font-size: 15px;
+                  font-size: clamp(15px, 3.1579vw, 24px);
+               }
+
+
+            }
+         }
+
+
+         ////////////// COLUMN 2
+
+         &-col2 {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            &-icon {
+
+
+               width: 40px;
+               margin-left: 11px;
+               margin-top: 1px;
+
+               @include respond(laptop) {
+                  width: 23px;
+                  width: clamp(23px, 4.31965vw, 40px);
+               }
+
+               @include respond(tablet) {
+
+                  margin-left: 4px;
+                  margin-bottom: 3px;
+               }
+
+            }
+
+            &-h1 {
+
+               font-family: $font-opensans;
+               font-size: 96px;
+               line-height: 1.41;
+               margin-bottom: 8px;
+
+
+               @include respond(laptop) {
+
+                  font-size: clamp(53px, 10.3672vw, 96px);
+               }
+
+               @include respond(tablet) {
+                  margin-bottom: 2px;
+               }
+
+            }
+
+            &-p {
+
+               font-size: 24px; //
+               margin-right: 37px;
+
+               @include respond(tablet) {
+
+
+                  font-size: 13px;
+                  font-size: clamp(13px, 3.1579vw, 24px);
+                  line-height: 155%;
+                  letter-spacing: 0.05em;
+                  margin-right: 0px;
+
+
+
+                  @include respond(phone) {
+                     text-align: center;
+                     width: 60px;
+                     margin-left: 38px;
+                  }
+
+               }
+
+            }
+         }
+      }
+
+   }
+}
