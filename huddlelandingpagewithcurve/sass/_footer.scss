@@ -53,22 +53,16 @@
 
       }
 
-      
-
       &-logo {
 
          filter: brightness(0) invert(1);
-         
-         &-img {
-
-            margin-bottom: 23px;
+         margin-bottom: 23px;
 
             @include respond(tablet) {
                width: 200px;
                margin-bottom: 13px;
             }
 
-         }
 
       }
 

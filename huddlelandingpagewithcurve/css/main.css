@@ -744,14 +744,11 @@ p {
 
 .footer_col1-logo {
   filter: brightness(0) invert(1);
-}
-
-.footer_col1-logo-img {
   margin-bottom: 23px;
 }
 
 @media only screen and (max-width: 760px) {
-  .footer_col1-logo-img {
+  .footer_col1-logo {
     width: 200px;
     margin-bottom: 13px;
   }
