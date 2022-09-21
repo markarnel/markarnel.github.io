@@ -1,0 +1,142 @@
+.subscribe {
+   position: relative;
+   z-index: 100;
+
+
+   &_container {
+
+      //width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 30px;
+      padding-right: 30px;
+      border-radius: 12px;
+      box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.05);
+      background-color: white;
+
+      width: 800px;
+      //width: 55.5%;
+      width: clamp(352px, 74.5573vw, 800px);
+
+      @include respond(phone-big) {
+         //width: 352px;
+      }
+
+      @include respond(phone-mid) {
+         border-radius: 16px;
+         padding-left: 16px;
+      padding-right: 16px;
+      width: 94%;
+
+      }
+   }
+
+   &_row {
+      padding-top: 63px;
+      padding-bottom: 52px;
+
+
+      @include respond(phone-mid) {
+         padding-bottom: 41px;
+         padding-top: 40px;
+      }
+
+   }
+
+   &_col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      
+
+      &-h1 {
+         font-weight: 600;
+         font-size: 32px;
+         line-height: 48px;
+         letter-spacing: -0.012em;
+         margin-bottom: 36px;
+         //font-size: 18px;
+         //font-size: clamp(18px, 3.9506vw, 32px);
+         @include respond(tablet) {
+            font-size: 25px;
+         }
+
+         @include respond(phone-big) {
+            text-align: center;
+            line-height: 36px;
+         }
+
+         @include respond(phone-mid) {
+            font-size: 18px;
+            width: 100%;
+            margin-bottom: 19px;
+         }
+
+         @include respond(phone-small) {
+            font-size: 18px;
+            width: 75%;
+            margin-bottom: 19px;
+         }
+      }
+
+      &-cta {
+         background-color: $pink;
+         color: white;
+         padding: 26.5px 99px;
+         font-weight: 700;
+         font-size: 20px;
+         line-height: 27px;
+
+         @include respond(tablet){
+            padding: 22.5px 74px;
+            font-size: 15px;
+            //padding: 12px 49px;
+         }
+
+         @include respond(phone-big) {
+            padding: 12px 49px;
+
+         }
+
+         @include respond(phone-mid) {
+            font-size: 10px;
+
+            padding: 6.5px 49px;
+         }
+
+         @include respond(phone-small) {
+            padding: 6.5px 49px;
+            padding: 3.125px 24.5px;
+         }
+
+
+
+
+      }
+   }
+
+   &_rectangle {
+      z-index: -50;
+      top: 182px;
+      position: absolute;
+      height: 97px;
+      width: 100%;
+      background-color: $dark-cyan;
+      
+
+      @include respond(phone-big) {
+         top: 176px
+      }
+
+      @include respond(phone-mid) {
+         top: 109px;
+      }
+
+      @include respond(phone-small) {
+         top: 115px;
+      }
+
+   }
+}
