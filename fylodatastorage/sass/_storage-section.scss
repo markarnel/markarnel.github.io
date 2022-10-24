@@ -2,9 +2,9 @@
 
    border-radius: 10px;
 
-   padding-top: 3rem; //39px
+   padding-top: 3rem;
 
-   padding-bottom: 2.375rem; //40px
+   padding-bottom: 2.375rem;
    padding-left: 2.5rem;
    padding-right: 2.6875rem;
 
@@ -25,6 +25,7 @@
 
 .bar {
 
+   width: 28.5625rem;
    height: 1.25rem;
    padding: 0.25rem;
    border-radius: 50px;
@@ -35,6 +36,7 @@
   @include respond(tablet) {
    margin-bottom: 0.5rem;
    padding: 0.125rem;
+   width: 100%;
   }
 
 

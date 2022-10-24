@@ -235,6 +235,7 @@ span {
 }
 
 .bar {
+  width: 28.5625rem;
   height: 1.25rem;
   padding: 0.25rem;
   border-radius: 50px;
@@ -246,6 +247,7 @@ span {
   .bar {
     margin-bottom: 0.5rem;
     padding: 0.125rem;
+    width: 100%;
   }
 }
 
