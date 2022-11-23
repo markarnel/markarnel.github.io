@@ -1,0 +1,132 @@
+.logo {
+   width: 86px;
+   margin-bottom: 49px;
+
+   @include respond(tablet) {
+      width: 107px;
+      height: 32px;
+      margin-bottom: 75px;
+   }
+}
+
+.heading-1 {
+   font-weight: 400;
+   font-size: 48px;
+   line-height: 58px;
+   margin-bottom: 14px;
+   color: var(--color-neutral-100);
+
+   @include respond(tablet) {
+      font-size: 44px;
+      margin-bottom: 31px;
+   }
+}
+
+.primary-span {
+   font-weight: 700;
+   color: var(--color-neutral-200);
+}
+
+.main-body {
+   font-weight: 400;
+   font-size: 20px;
+   margin-bottom: 36px;
+
+   @include respond(tablet) {
+      font-size: 24px;
+      margin-bottom: 60px;
+   }
+}
+
+.validate {
+   border: 1px solid red;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   flex: 1;
+
+
+   @include respond(tablet) {
+      
+   }
+}
+
+#email {
+   flex: 1;
+   order: 1;
+   padding-left: 30px;
+   padding-right: 30px;
+   padding-top: 14px;
+   padding-bottom: 14px;
+   border-radius: 100vmax;
+   border: 1px solid var(--color-secondary-100);
+
+   &:focus {
+      outline: 0;
+   }
+
+   @include respond(tablet) {
+      // width: 562px;
+      width: 100%;
+      padding-left: 64px;
+      padding-right: 64px;
+      padding-top: 21px;
+      padding-bottom: 20px;
+      font-size: 24px;
+      margin-bottom: 13px
+
+   }
+}
+
+#error {
+   margin-right: auto;
+   padding-left: 29px;
+   order: 3;
+   font-style: italic;
+   font-weight: 400;
+   font-size: 12px;
+   letter-spacing: 0.01em;
+   color: var(--color-secondary-200);
+   display: none;
+
+
+   @include respond(tablet) {
+      font-size: 20px;
+      margin-left: auto;
+      order: 2;
+      margin-bottom: 38px;
+      margin-top: 3px;
+   }
+}
+
+#button {
+   order: 2;
+   padding-left: 63px;
+   padding-right: 61px;
+   padding-top: 16px;
+   padding-bottom: 16px;
+   border-radius: 100vmax;
+   background-color: var(--color-primary-100);
+   color: white;
+   font-weight: 600;
+   font-size: 16px;
+
+   @include respond(tablet) {
+
+      padding-top: 22px;
+      padding-bottom: 22px;
+      font-size: 24px;
+      order: 3;
+      
+   }
+}
+
+::placeholder {
+   color: var(--color-secondary-100);
+
+   @include respond(tablet) {
+      font-size: 24px;
+   }
+}
+
+
