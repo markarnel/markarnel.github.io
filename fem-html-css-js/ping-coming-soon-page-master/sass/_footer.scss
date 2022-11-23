@@ -1,0 +1,43 @@
+.footer__row {
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 12px;
+   margin-bottom: 21px;
+   color: var(--color-primary-100);
+   cursor: pointer;
+
+   @include respond(tablet) {
+      gap: 28px;
+      margin-bottom: 53px;
+   }
+}
+
+.fab {
+
+   text-align: center;
+   padding: 6px;
+   width: 31px;
+   height: 31px;
+   border-radius: 100vmax;
+   border: 1px solid var(--color-secondary-100);
+   font-size: 14px;
+
+   &:hover {
+      background-color: var(--color-primary-100);
+      color: white;
+   }
+   
+}
+
+
+.footer__span {
+   font-weight: 400;
+   font-size: 12px;
+   color: var(--color-neutral-100);
+
+   @include respond(tablet) {
+      font-size: 20px;
+   }
+}

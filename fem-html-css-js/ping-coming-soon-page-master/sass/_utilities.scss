@@ -1,0 +1,26 @@
+body {
+   padding-top: 86px;
+   padding-right: 30px;
+   padding-left: 30px;
+   padding-bottom: 49px;
+
+
+
+
+
+   @include respond(tablet) {
+      // padding-top: 170px;
+      // padding-right: 56px;
+      // padding-left: 56px;
+      // margin-bottom: 194px;
+
+   }
+}
+
+
+.container {
+   max-width: 640px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
