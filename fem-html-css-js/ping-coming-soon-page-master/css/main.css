@@ -37,13 +37,10 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: var(--ff-primary);
-  padding-bottom: 49px;
-}
-
-@media only screen and (max-width: 750px) {
-  body {
-    padding-bottom: 72px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* A elements that don't have a class get default styles */
@@ -91,76 +88,20 @@ a {
 i {
   color: var(--color-primary-100);
   cursor: pointer;
+  line-height: 1.4 !important;
 }
 
-main {
+body {
   padding-top: 86px;
   padding-right: 30px;
   padding-left: 30px;
   padding-bottom: 49px;
-  margin-bottom: 22px;
-}
-
-@media only screen and (max-width: 750px) {
-  main {
-    padding-top: 170px;
-    padding-right: 56px;
-    padding-left: 56px;
-    margin-bottom: 194px;
-  }
-}
-
-footer {
-  text-align: center;
 }
 
 .container {
   max-width: 640px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.flex-column {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-}
-
-.flex-row {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  row-gap: 7px;
-  column-gap: 16px;
-  margin-bottom: 86px;
-  width: 100%;
-  justify-content: center;
-}
-
-@media only screen and (max-width: 750px) {
-  .flex-row {
-    flex-direction: column;
-    margin-bottom: 136px;
-    width: 88%;
-  }
-}
-
-.flex-row-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 12px;
-  margin-bottom: 21px;
-}
-
-@media only screen and (max-width: 750px) {
-  .flex-row-icons {
-    gap: 28px;
-    margin-bottom: 53px;
-  }
 }
 
 .logo {
@@ -176,7 +117,15 @@ footer {
   }
 }
 
-.heading-1 {
+.main__row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.heading__1 {
   font-weight: 400;
   font-size: 48px;
   line-height: 58px;
@@ -185,36 +134,46 @@ footer {
 }
 
 @media only screen and (max-width: 750px) {
-  .heading-1 {
+  .heading__1 {
     font-size: 44px;
     margin-bottom: 31px;
   }
 }
 
-.primary-span {
+.primary__span {
   font-weight: 700;
   color: var(--color-neutral-200);
 }
 
-.main-body {
+.main__body {
   font-weight: 400;
   font-size: 20px;
   margin-bottom: 36px;
 }
 
 @media only screen and (max-width: 750px) {
-  .main-body {
+  .main__body {
     font-size: 24px;
     margin-bottom: 60px;
   }
 }
 
-.validate {
-  border: 1px solid red;
+.main__form {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
+  row-gap: 7px;
+  column-gap: 16px;
   width: 100%;
-  flex: 1;
+  justify-content: center;
+  margin-bottom: 86px;
+}
+
+@media only screen and (max-width: 750px) {
+  .main__form {
+    flex-direction: column;
+    width: 88%;
+  }
 }
 
 #email {
@@ -266,7 +225,7 @@ footer {
   }
 }
 
-#button {
+.button {
   order: 2;
   padding-left: 63px;
   padding-right: 61px;
@@ -277,10 +236,15 @@ footer {
   color: white;
   font-weight: 600;
   font-size: 16px;
+  cursor: pointer;
+}
+
+.button:active, .button:focus {
+  background-color: #7195F5;
 }
 
 @media only screen and (max-width: 750px) {
-  #button {
+  .button {
     padding-top: 22px;
     padding-bottom: 22px;
     font-size: 24px;
@@ -298,35 +262,50 @@ footer {
   }
 }
 
-.icon {
+.main__hero {
+  margin-bottom: 71px;
+}
+
+.footer__row {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 31px;
-  width: 31px;
-  border-radius: 100vmax;
-  border: 1px solid var(--color-secondary-100);
-  font-size: 14px;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 21px;
   color: var(--color-primary-100);
   cursor: pointer;
 }
 
 @media only screen and (max-width: 750px) {
-  .icon {
-    height: 60px;
-    width: 60px;
-    font-size: 32px;
+  .footer__row {
+    gap: 28px;
+    margin-bottom: 53px;
   }
 }
 
-.footer-span {
+.fab {
+  text-align: center;
+  padding: 6px;
+  width: 31px;
+  height: 31px;
+  border-radius: 100vmax;
+  border: 1px solid var(--color-secondary-100);
+  font-size: 14px;
+}
+
+.fab:hover {
+  background-color: var(--color-primary-100);
+  color: white;
+}
+
+.footer__span {
   font-weight: 400;
   font-size: 12px;
   color: var(--color-neutral-100);
 }
 
 @media only screen and (max-width: 750px) {
-  .footer-span {
+  .footer__span {
     font-size: 20px;
   }
 }

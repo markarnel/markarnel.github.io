@@ -27,50 +27,41 @@
   </header>
 
   <main class="container">
+    <div class="main__row">
+      <h1 class="heading__1">
+        We are launching <span class="primary__span">soon!</span>
+      </h1>
+      <p class="main__body">
+        Subscribe and get notified
+      </p>
 
+      <form class="main__form">
+        <input type="email" name="email" id="email" placeholder="Your email address...">
+        <span id="error">Please provide a valid email address</span>
+        <button type="button" class="button" aria-label="notify">Notify Me</button>
+      </form>
 
-
-
-    <h1 class="heading-1">
-      We are launching <span class="primary-span">soon!</span>
-    </h1>
-    <p class="main-body">
-      Subscribe and get notified
-    </p>
-
-
-    <form class="flex-row form">
-      <input type="email" name="email" id="email" placeholder="Your email address...">
-      <span id="error">Please provide a valid email address</span>
-      <button type="button" id="button" aria-label="notify">Notify Me</button>
-    </form>
-
-
-    <img src="./images/illustration-dashboard.png" alt="hero">
-
-
-
+      <img src="./images/illustration-dashboard.png" class="main__hero" alt="hero">
+    </div>
   </main>
 
   <footer class="container">
 
+    <div class="footer__row">
+      <a href="#" aria-label="visit us on facebook"><i class="fab fa-facebook-f">
+        </i></a>
 
-    <ul class="flex-row-icons">
-      <li class="icon">
-        <a href="#" aria-label="Visit our Facebook profile"><i class="fa-brands fa-facebook-f"></i></i></a>
-      </li>
-      <li class="icon">
-        <a href="#" <a href="#" aria-label="Visit our Twitter profile"></a>><i class="fa-brands fa-twitter"></i></a>
-      </li>
-      <li class="icon">
-        <a href="#" <a href="#" aria-label="Visit our Twitter profile"></a>><i class="fa-brands fa-instagram"></i></a>
-      </li>
-    </ul>
+      <a href="#" aria-label="visit us on twitter"><i class="fab fa-twitter">
+        </i></a>
 
-    <span class="footer-span">
+      <a href="#" aria-label="visit us on instagram"><i class="fab fa-instagram">
+        </i></a>
+
+    </div>
+
+    <span class="footer__span">
       &copy; Copyright Ping. All rights reserved.
     </span>
-
 
   </footer>
 

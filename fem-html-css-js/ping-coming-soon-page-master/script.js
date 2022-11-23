@@ -1,5 +1,5 @@
-let btn = document.getElementById("button")
-let fr = document.querySelector(".flex-row")
+let btn = document.querySelector(".button")
+let form = document.querySelector(".main__form")
 let err = document.getElementById("error")
 
 btn.addEventListener('click',
@@ -24,7 +24,7 @@ btn.addEventListener('click',
          err.setAttribute
             ('style', 'display: none;')
 
-         fr.setAttribute
+         form.setAttribute
             ('style', 'margin-bottom: 136px;')
 
       } else if (validation === false) {
@@ -35,7 +35,7 @@ btn.addEventListener('click',
          email.setAttribute
             ('style', 'margin-bottom: 0px;')
 
-         fr.setAttribute
+         form.setAttribute
             ('style', 'margin-bottom: 74px;')
 
 

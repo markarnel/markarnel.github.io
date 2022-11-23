@@ -1,15 +1,12 @@
-.logo {
-   width: 86px;
-   margin-bottom: 49px;
-
-   @include respond(tablet) {
-      width: 107px;
-      height: 32px;
-      margin-bottom: 75px;
-   }
+.main__row {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
 }
 
-.heading-1 {
+.heading__1 {
    font-weight: 400;
    font-size: 48px;
    line-height: 58px;
@@ -22,12 +19,12 @@
    }
 }
 
-.primary-span {
+.primary__span {
    font-weight: 700;
    color: var(--color-neutral-200);
 }
 
-.main-body {
+.main__body {
    font-weight: 400;
    font-size: 20px;
    margin-bottom: 36px;
@@ -38,16 +35,21 @@
    }
 }
 
-.validate {
-   border: 1px solid red;
-   display: flex;
-   flex-direction: column;
-   width: 100%;
-   flex: 1;
 
+.main__form {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   row-gap: 7px;
+   column-gap: 16px;
+   width: 100%;
+   justify-content: center;
+   margin-bottom: 86px;
 
    @include respond(tablet) {
-      
+      flex-direction: column;
+      width: 88%;
+
    }
 }
 
@@ -74,7 +76,6 @@
       padding-bottom: 20px;
       font-size: 24px;
       margin-bottom: 13px
-
    }
 }
 
@@ -99,7 +100,7 @@
    }
 }
 
-#button {
+.button {
    order: 2;
    padding-left: 63px;
    padding-right: 61px;
@@ -110,6 +111,13 @@
    color: white;
    font-weight: 600;
    font-size: 16px;
+   cursor: pointer;
+
+   &:active,
+   &:focus {
+      background-color: #7195F5;
+   }
+
 
    @include respond(tablet) {
 
@@ -117,9 +125,10 @@
       padding-bottom: 22px;
       font-size: 24px;
       order: 3;
-      
+
    }
 }
+
 
 ::placeholder {
    color: var(--color-secondary-100);
@@ -129,4 +138,6 @@
    }
 }
 
-
+.main__hero {
+   margin-bottom: 71px;
+}

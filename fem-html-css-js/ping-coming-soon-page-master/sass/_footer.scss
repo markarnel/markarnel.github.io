@@ -1,24 +1,38 @@
-.icon {
+.footer__row {
+
    display: flex;
-   justify-content: center;
    align-items: center;
-   height: 31px;
-   width: 31px;
-   border-radius: 100vmax;
-   border: 1px solid var(--color-secondary-100);
-   font-size: 14px;
+   justify-content: center;
+   gap: 12px;
+   margin-bottom: 21px;
    color: var(--color-primary-100);
    cursor: pointer;
 
    @include respond(tablet) {
-      height: 60px;
-      width: 60px;
-      font-size: 32px;
+      gap: 28px;
+      margin-bottom: 53px;
+   }
+}
+
+.fab {
+
+   text-align: center;
+   padding: 6px;
+   width: 31px;
+   height: 31px;
+   border-radius: 100vmax;
+   border: 1px solid var(--color-secondary-100);
+   font-size: 14px;
+
+   &:hover {
+      background-color: var(--color-primary-100);
+      color: white;
    }
    
 }
 
-.footer-span {
+
+.footer__span {
    font-weight: 400;
    font-size: 12px;
    color: var(--color-neutral-100);
