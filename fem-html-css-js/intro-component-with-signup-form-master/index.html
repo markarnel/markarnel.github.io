@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <link rel="stylesheet" href="./css/main.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/b01b141dfc.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <main>
+    <section class="container">
+
+      <div class="card__left">
+        <h1 class="primary__heading">
+          Learn to code by watching others
+        </h1>
+        <p class="primary__body">
+          See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+          but understanding how developers think is invaluable.
+        </p>
+      </div>
+
+
+      <div class="card__right">
+        <div class="card">
+          <p class="secondary__body">Try it free 7 days
+            <span class="secondary__body-span">
+              then $20/mo. thereafter
+            </span>
+          </p>
+        </div>
+
+        <!-- FORM -->
+
+        <form action="#" class="form" id="form">
+          <!-- First Name  -->
+          <div class="form-control">
+            <input type="text" placeholder="First Name" class="input__name" id="first-name">
+            <img src="./images/icon-error.svg" alt="">
+            <small id="small"></small>
+          </div>
+          <!-- Last Name  -->
+          <div class="form-control ">
+            <input type="text" placeholder="Last Name" class="input__name" id="last-name">
+            <img class="error__icon" src="./images/icon-error.svg" alt="">
+            <small></small>
+          </div>
+          <!-- Email  -->
+          <div class="form-control">
+            <input type="text" class="input__name" id="email-address" placeholder="Email Address" autocomplete="off">
+            <img class="error__icon" src="./images/icon-error.svg" alt="">
+            <small></small>
+          </div>
+          <!-- Password  -->
+          <div class="form-control">
+            <input type="password" placeholder="Password" class="input__name" id="password" autocomplete="off">
+            <img class="error__icon" src="./images/icon-error.svg" alt="">
+            <small class="error__message hidden">Password cannot be empty</small>
+          </div>
+          <!-- Button  -->        
+
+          <button type="submit" class="btn" id="submit" value="submit">
+            Claim your free trial
+          </button>
+
+          <p class="agreement">
+            By clicking the button, you are agreeing to our
+            <span class="agreement-span">
+              Terms and Services
+            </span>
+          </p>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+  
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
