@@ -41,13 +41,18 @@ body {
   padding-inline: 32px;
 
   @include respond(tablet) {
-    
     padding-inline: 64px;
+    background: url(../images/bg-intro-mobile.png);
+    background-color: var(--clr-primary-100);
+    background-repeat: no-repeat;
+    background-size: cover;
+
   }
 
   @include respond(big-phone) {
     padding-inline: 24px;
- }
+
+  }
 
 }
 
@@ -81,4 +86,3 @@ svg {
     scroll-behavior: auto !important;
   }
 }
-

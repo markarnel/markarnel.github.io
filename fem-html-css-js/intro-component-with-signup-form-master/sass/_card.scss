@@ -64,28 +64,36 @@
    position: relative;
    display: flex;
    flex-direction: column;
-   padding: 38px 40px;
+   padding: 40px;
    background-color: white;
    border-radius: 10px;
 
    -webkit-box-shadow: 0px 8px 3px 0px rgba(0, 0, 0, 0.2);
    -moz-box-shadow: 0px 8px 3px 0px rgba(0, 0, 0, 0.2);
    box-shadow: 0px 8px 3px 0px rgba(0, 0, 0, 0.2);
+
+   @include respond(big-phone) {
+      padding: 23px;
+   }
 }
 
 .form-control {
    margin-bottom: 20px;
    position: relative;
 
+   @include respond(big-phone) {
+      margin-bottom: 16px;
+   }
+
    input {
       width: 100%;
-      padding-top: 16px;
+      padding-top: 17px;
       padding-bottom: 14px;
       padding-left: 32px;
       padding-right: 64px;
       border-radius: 6px;
 
-      border: 2px solid var(--clr-neutral-200);
+      border: 1px solid var(--clr-neutral-200);
       font-weight: 600;
       font-size: 14px;
       line-height: 160%;
@@ -94,7 +102,15 @@
       letter-spacing: 0.015em;
 
       &:focus {
-         border: 2px solid var(--clr-neutral-100);
+         border: 1px solid var(--clr-neutral-100);
+      }
+
+      @include respond(big-phone) {
+         border: 1px solid var(--clr-neutral-200);
+         padding-bottom: 15px;
+         padding-top: 17px;
+         padding-left: 19px;
+         padding-right: 54px;
       }
    }
 
@@ -105,7 +121,7 @@
       line-height: 160%;
       font-style: italic;
       letter-spacing: -0.005em;
-      color: #e74c3c;
+      color: var(--clr-primary-100);
       position: absolute;
       bottom: -42%;
       right: 0%;
@@ -127,22 +143,22 @@
 
    &.success img {
       display: none;
-      color: green;
+      color: var(--clr-primary-200);
    }
 
    &.error img {
       display: block;
-      color: red;
+      color: var(--clr-primary-100);
    }
 
 
    &.success input {
-      border-color: green;
+      border-color: var(--clr-primary-200);
    }
 
 
    &.error input {
-      border-color: red;
+      border-color: var(--clr-primary-100);
    }
 
    &.error small {
@@ -174,6 +190,10 @@
 
    &:hover {
       opacity: var(--opacity);
+   }
+
+   @include respond(big-phone) {
+      padding-bottom: 10px;
    }
 
 }

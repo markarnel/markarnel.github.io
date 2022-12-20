@@ -57,6 +57,10 @@ body {
 @media only screen and (max-width: 903px) {
   body {
     padding-inline: 64px;
+    background: url(../images/bg-intro-mobile.png);
+    background-color: var(--clr-primary-100);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -213,10 +217,16 @@ svg {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 38px 40px;
+  padding: 40px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 8px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 597px) {
+  .form {
+    padding: 23px;
+  }
 }
 
 .form-control {
@@ -224,14 +234,20 @@ svg {
   position: relative;
 }
 
+@media only screen and (max-width: 597px) {
+  .form-control {
+    margin-bottom: 16px;
+  }
+}
+
 .form-control input {
   width: 100%;
-  padding-top: 16px;
+  padding-top: 17px;
   padding-bottom: 14px;
   padding-left: 32px;
   padding-right: 64px;
   border-radius: 6px;
-  border: 2px solid var(--clr-neutral-200);
+  border: 1px solid var(--clr-neutral-200);
   font-weight: 600;
   font-size: 14px;
   line-height: 160%;
@@ -241,7 +257,17 @@ svg {
 }
 
 .form-control input:focus {
-  border: 2px solid var(--clr-neutral-100);
+  border: 1px solid var(--clr-neutral-100);
+}
+
+@media only screen and (max-width: 597px) {
+  .form-control input {
+    border: 1px solid var(--clr-neutral-200);
+    padding-bottom: 15px;
+    padding-top: 17px;
+    padding-left: 19px;
+    padding-right: 54px;
+  }
 }
 
 .form-control small {
@@ -250,7 +276,7 @@ svg {
   line-height: 160%;
   font-style: italic;
   letter-spacing: -0.005em;
-  color: #e74c3c;
+  color: var(--clr-primary-100);
   position: absolute;
   bottom: -42%;
   right: 0%;
@@ -271,20 +297,20 @@ svg {
 
 .form-control.success img {
   display: none;
-  color: green;
+  color: var(--clr-primary-200);
 }
 
 .form-control.error img {
   display: block;
-  color: red;
+  color: var(--clr-primary-100);
 }
 
 .form-control.success input {
-  border-color: green;
+  border-color: var(--clr-primary-200);
 }
 
 .form-control.error input {
-  border-color: red;
+  border-color: var(--clr-primary-100);
 }
 
 .form-control.error small {
@@ -313,6 +339,12 @@ svg {
 
 .btn:hover {
   opacity: var(--opacity);
+}
+
+@media only screen and (max-width: 597px) {
+  .btn {
+    padding-bottom: 10px;
+  }
 }
 
 .agreement {
