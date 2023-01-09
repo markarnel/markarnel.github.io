@@ -1,0 +1,95 @@
+:root {
+
+   --ff-primary: 'Manrope', sans-serif;
+
+   --fw-500: 500;
+   --fw-700: 700;
+
+   --clr-primary-100: hsl(217, 19%, 35%);
+   --clr-primary-200: hsl(214, 17%, 51%);
+   --clr-primary-300: hsl(212, 23%, 69%);
+   --clr-primary-400: hsl(210, 46%, 95%);
+
+
+}
+
+@-webkit-keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
+   }
+}
+
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
+
+   }
+}
+
+@-webkit-keyframes fadeOut {
+   from {
+      opacity: 1;
+   }
+
+   to {
+      opacity: 0;
+   }
+}
+
+@keyframes fadeOut {
+   from {
+      opacity: 1;
+   }
+
+   to {
+      opacity: 0;
+   }
+}
+
+@-webkit-keyframes zoomIn {
+   from {
+      scale: 1;
+   }
+
+   to {
+      scale: 1.25;
+   }
+}
+
+@keyframes zoomIn {
+   from {
+      scale: 1;
+   }
+
+   to {
+      scale: 1.25;
+   }
+}
+
+@-webkit-keyframes zoomOut {
+   from {
+      scale: 1.25;
+   }
+
+   to {
+      scale: 1;
+   }
+}
+
+@keyframes zoomOut {
+   from {
+      scale: 1.25;
+   }
+
+   to {
+      scale: 1;
+   }
+}
