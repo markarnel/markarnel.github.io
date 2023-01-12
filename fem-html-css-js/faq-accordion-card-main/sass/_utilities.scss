@@ -1,0 +1,49 @@
+.f__center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.primary-heading {
+   font-weight: var(--fw-bold);
+   font-size: 32px;
+   line-height: 40px;
+   text-transform: uppercase;
+   color: var(--clr-text-100);
+   margin-bottom: 38px;
+
+   @include respond(laptop) {
+      text-align: center;
+      margin-bottom: 32px;
+   }
+}
+
+.primary-body {
+   font-weight: var(--fw-reg);
+   font-size: 14px;
+   line-height: 17px;
+   color: var(--clr-primary-body);
+
+   &:hover {
+      color: var(--clr-text-200);
+   }
+}
+
+.secondary-body {
+   font-weight: var(--fw-reg);
+   font-size: 12px;
+   line-height: 17px;
+   margin-bottom: 20px;
+
+   @include respond(laptop) {
+      margin-bottom: 17px;
+   }
+}
+
+.primary-bg {
+    background: linear-gradient(270deg, var(--clr-bg-100), var(--clr-bg-200));
+    background-size: 400% 400%;
+    animation: bgGlow 6s ease infinite;
+}
+
+
