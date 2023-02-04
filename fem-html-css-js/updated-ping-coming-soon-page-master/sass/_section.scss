@@ -1,0 +1,111 @@
+.container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   max-width: 704px;
+   padding-inline: 32px;
+   padding-top: 86px;
+   margin-bottom: 72px;
+
+   @include respond(tablet) {
+      padding-top: 170px;
+      margin-bottom: 239px;
+   }
+
+   @include respond(phone-big) {
+      width: 100%;
+      padding-top: 86px;
+      margin-bottom: 72px;
+   }
+
+   @include respond(phone) {
+      padding-top: 64px;
+      margin-bottom: 48px;
+   }
+
+}
+
+.ping-logo {
+
+   margin-bottom: 41px;
+
+   @include respond(tablet) {
+      margin-bottom: 73px;
+   }
+
+   @include respond(phone-big) {
+      margin-bottom: 41px;
+   }
+
+   @include respond(phone) {
+      margin-bottom: 36px;
+   }
+
+}
+
+
+.wrapper {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+
+   gap: 16px;
+   margin-bottom: 61px;
+
+   @include respond(tablet) {
+      flex-direction: column;
+      gap: 45px;
+      margin-bottom: 73px;
+      padding-left: 38px;
+      padding-right: 38px;
+   }
+
+   @include respond(phone-big) {
+      padding-left: 18px;
+      padding-right: 18px;
+      gap: 16px;
+      margin-bottom: 61px;
+   }
+
+   @include respond(phone) {
+      padding-left: 8px;
+      padding-right: 8px;
+      gap: 12px;
+      margin-bottom: 48px;
+   }
+}
+
+.form {
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+
+   @include respond(tablet) {
+      width: 100%;
+   }
+}
+
+.notify {
+
+   padding: 18px 64px 19px;
+
+   @include respond(tablet) {
+
+      font-size: 24px;
+      padding: 30px 30px 31px;
+
+   }
+
+   @include respond(phone-big) {
+      font-size: 16px;
+      padding: 18px 64px 19px;
+   }
+
+   @include respond(phone) {
+      font-size: 14px;
+
+   }
+}
