@@ -1,0 +1,132 @@
+.footer {
+   background-color: #F5F6F8;
+   margin-top: 150px;
+
+   @include respond(phone) {
+      margin-top: 170px;
+   }
+
+   &_container {
+
+      max-width: 1176px;
+
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 32px;
+      padding-right: 32px;
+
+   }
+
+   &_row {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 39px;
+      padding-bottom: 39px;
+
+      // @include respond(laptop) {
+      //    align-items: center;
+      //    padding-top: 0px;
+      // }
+
+      @include respond(tablet) {
+         flex-direction: column;
+         justify-content: center; 
+         align-items: center;
+
+      }
+
+      &-logo {
+         margin-top: 4px;
+         
+         width: 55px;
+         height: 55px;
+
+         @include respond(tablet) {
+            margin-top: 13px; 
+            margin-bottom: 41px;
+         }
+      }
+
+
+      &-info {
+         
+         margin-top: 5px;
+
+         &-box {
+            font-weight: 400;;
+            padding-right: 164px;
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            column-gap: 71px;
+            row-gap: 13px;
+
+            @include respond(laptop) {
+               padding-right: 0px;
+               padding-right: 30px;
+               padding-left: 30px;
+            }
+
+            @include respond(tablet) {
+               grid-template-columns: 1fr;
+               text-align: center;
+            }
+
+            // @include respond(laptop) {
+            //    padding-right: 30px;
+            //    padding-left: 30px;
+            //    text-align: center;
+            //    margin-top: 41px;
+            // }
+
+            // @include repeat(tablet) {
+            //    grid-template-columns: auto;
+            // }
+         
+         &--li {
+            font-size: 18px;
+            letter-spacing: 0.2px;
+            line-height: 29px;
+
+            @include respond(tablet) {
+               margin-bottom: 8px;
+            }
+
+            a {
+               text-decoration: none;
+
+               
+            }
+            
+         }
+      }
+      }
+
+      &-social {
+         display: flex;
+         align-items: center;
+         margin-bottom: 1px;
+
+         @include respond(tablet) {
+            margin-top: 39px;
+            margin-left: auto;
+            margin-right: auto;
+         }
+         &--icons {
+
+
+            &:not(:last-child){
+               margin-right: 22px;
+
+               @include respond(tablet) {
+                  margin-right: 37px;
+               }
+            }
+         }
+      }
+   }
+}
+
+.fa-square-facebook { font-size: 28px; }
+.fa-twitter { font-size: 27px; }
+.fa-instagram { font-size: 28px; }

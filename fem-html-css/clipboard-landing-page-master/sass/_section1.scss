@@ -1,0 +1,183 @@
+.section1 {
+   margin-top: 148px;
+
+   @include respond(tablet) {
+      margin-top: 160px;
+   }
+   
+   &_container {
+
+      margin-right: auto;
+      margin-left: auto;
+
+      @include respond(laptop) {
+         padding-right: 20px;
+      }
+
+      @include respond(tablet) {
+         padding-left: 32px;
+         padding-right: 32px;
+      }
+
+
+
+
+   }
+
+   &_row1 {
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 80px;
+
+      @include respond(tablet) {
+         text-align: center;
+         margin-bottom: 65px;
+      }
+
+      &-h2 {
+         font-size: 36px;
+         line-height: 45px;    
+         letter-spacing: -0.009em;
+         margin-bottom: 21px;
+
+         @include respond(tablet) {
+            font-size: 28px;
+            line-height: 35px;
+            margin-bottom: 16px;
+         }
+      }
+
+      &-p {
+         font-size: 18px;
+         line-height: 30px;
+         width: 710px;
+         text-align: center;
+         letter-spacing: 0.007em;
+
+         @include respond(tablet) {
+            width: 94%;
+            font-size: 16px;
+            line-height: 26px;
+         }
+         
+      }
+   }
+
+
+
+   &_row2 {
+      display: flex;   
+
+      @include respond(laptop) {
+         align-items: center;
+
+      }
+
+
+      @include respond(tablet) {
+         flex-direction: column;
+         justify-content: center;
+         text-align: center;
+      }
+
+   }
+
+   &_col1 {
+
+      margin-right: 110px;
+
+
+      @include respond(tablet) {
+         margin-right: 0px;
+      }
+
+      &-img {
+         margin-left: -33px;
+         width: 752px;
+
+         @include respond(laptop) {
+            width: clamp(313px,  62.6666vw,752px);
+         }
+
+         @include respond(tablet) {
+
+            width: 98%;
+            margin-left: 0px;
+
+         }
+
+         @include respond(phone) {
+
+            width: 100%;
+
+         }
+      }
+   }
+
+   &_col2 {
+      display: flex;
+      flex-direction: column;
+      padding-top: 63px;
+      padding-bottom: 98px;
+      
+
+      @include respond(tablet) {
+         padding-top: 49px;
+
+      }
+      
+      &-option {
+         
+         &-h3 {
+            font-size: 24px;
+            line-height: 160%;
+            margin-bottom: 4px;
+            font-weight: 600;
+            letter-spacing: -0.6px;
+
+            @include respond(tablet) {
+               margin-bottom: 6px;
+               letter-spacing: -0.02em;
+            }
+         }
+
+         &-p {
+            font-size: 16px;
+            line-height: 30px;
+            letter-spacing: 0.007em;
+            width: 356px;
+
+            @include respond(laptop) {
+               width: 100%;
+            }
+
+            @include respond(tablet) {
+               line-height: 26px;
+               width: 100%;
+            }
+         }
+      }
+   }
+}
+
+.search {
+
+   margin-bottom: 52.3px;
+
+   @include respond(tablet) {
+
+   margin-bottom: 44.3px;
+
+}
+}
+.sync {
+   margin-bottom: 51.5px;
+
+   @include respond(tablet) {
+      margin-bottom: 43.7px;
+   } 
+}
+//.history {}
