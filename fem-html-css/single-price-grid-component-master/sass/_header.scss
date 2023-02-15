@@ -1,0 +1,37 @@
+.header {
+   background-color: white;
+   grid-column: 1 / -1;
+   padding: 5em;
+   height: 290.667px;
+
+   @media only screen and (max-width: $bp-desktop){
+      padding: 4rem;
+      height: 216.389px;
+   }
+
+   @media only screen and (max-width: $bp-mobile) {
+      height: 255.111px;
+      padding: 2.5rem;       
+      }
+      
+  
+   
+   &__text {
+      font-size: 2.15rem;
+      line-height: 1.5;
+      font-weight: 400;
+      color: rgba($color-nuetral-dark, .7);
+      &--span {
+         display: block;
+      }
+
+      @media only screen and (max-width: $bp-desktop){
+        font-size: 1.6rem;
+      }
+
+      @media only screen and (max-width: $bp-mobile) {
+         font-size: 1.2rem; 
+         line-height: 2.1;    
+         }
+   }
+}
