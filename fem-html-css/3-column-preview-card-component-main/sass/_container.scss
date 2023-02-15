@@ -1,0 +1,10 @@
+.container {
+   margin-top: 4.2rem;
+   width: 92rem;
+
+   @include respond(tablet){
+      margin-top: 0rem;
+      
+   }
+   
+}
