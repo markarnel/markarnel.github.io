@@ -1,0 +1,164 @@
+
+// FONT
+
+.ff-primary {
+   font-family: 'Rubik', sans-serif;
+}
+
+
+// COLOR BACKGROUND
+
+.bg-sub-heading {
+   background-color: $Pale-Violet;
+}
+
+.bg-chat-left {
+   background-color: $Moderate-Violet;
+}
+
+.bg-chat-right {
+   background-color: $Desaturated-Dark-Violet;
+}
+
+.bg-app {
+   background-color: $Light-Grayish-Violet;
+}
+
+.bg-btn-submit {
+   background-color: $Very-Dark-Desaturated-Violet;
+}
+
+.bg-btn-radio {
+   background-color: $Very-Light-Magenta;
+}
+
+.bg-gradient {
+   background: linear-gradient(180deg, $Light-Magenta 0%, $Light-Violet 100%);
+}
+
+// COLOR TEXT
+
+.clr-placeholder-text {
+   color: $Grayish-Blue;
+}
+
+.clr-main-heading {
+   color: $Very-Dark-Desaturated-Violet;
+}
+
+.clr-paragraph {
+   color: $Dark-Grayish-Violet;
+}
+
+// TEXT
+
+.txt-main-heading {
+    font-size: $fs-xll;
+    font-weight: $fw-m;
+}
+
+.txt-sub-heading {
+   font-size: $fs-xl;
+   font-weight: $fw-r;
+}
+
+.txt-name {
+    font-size: $fs-l;
+    font-weight: $fw-m;
+}
+
+.txt-available {
+   font-size: $fs-xs;
+   font-weight: $fw-r;
+}
+
+.txt-chat  {
+   font-size: $fs-xs;
+   font-weight: $fw-r;
+}
+
+.txt-type {
+   font-size: $fs-s;
+   font-weight: $fw-m;
+}
+
+
+
+.flex {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.flex-direction {
+   flex-direction: row;
+}
+
+.grid {
+   display: grid;
+   grid-template-columns: auto auto;
+
+   @include respond(tablet) {
+      grid-template-columns: auto;
+   }
+  
+}
+
+.mb-heading-xs {
+   margin-bottom: 0.4375rem;
+
+   @include respond(tablet) {
+      margin-bottom: 0;
+   }
+}
+
+.mb-heading-l {
+   margin-bottom: 1.0625rem;
+}
+
+
+.letter-space {
+   letter-spacing: -0.12px;
+}
+
+
+.lh-b {
+   line-height: 1.75rem;
+}
+
+.mb-chat-xs {
+   margin-bottom: 0.5rem;
+}
+
+.mb-chat-s {
+   margin-bottom: 0.5625rem;
+}
+
+.mb-chat-m {
+   margin-bottom: 0.9375rem;
+}
+
+.mb-chat-l {
+   margin-bottom: 1rem;
+}
+
+.shadow-box-text1 {
+   -webkit-box-shadow: 0px 6px 20px -13px rgba(0,0,0,0.3);
+   -moz-box-shadow: 0px 6px 20px -13px rgba(0,0,0,0.3);
+   box-shadow: 0px 6px 20px -13px rgba(0,0,0,0.3);
+
+   box-shadow: 0px 6px 20px -9px  rgba(0,0,0,0.3);
+  
+}
+
+.shadow-box-text2 {
+   -webkit-box-shadow: 0px 6px 20px -8px rgba(0,0,0,0.3);
+-moz-box-shadow: 0px 6px 20px -8px rgba(0,0,0,0.3);
+box-shadow: 0px 6px 20px -8px rgba(0,0,0,0.3);
+}
+
+
+
+
+
+

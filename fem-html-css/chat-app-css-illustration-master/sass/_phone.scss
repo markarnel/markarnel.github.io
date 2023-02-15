@@ -1,0 +1,100 @@
+main {
+   position: relative;
+   min-height: 100vh;
+   width: 100%;
+   overflow: hidden;
+
+}
+
+.bg-shape-left {
+   background-color: $Light-Moderate-Violet;
+   border-radius: 252.5px 252.5px 0 0;
+   height: 48.4375rem;
+   width: 31.5625rem;
+   position: absolute;
+   right: -11.3125rem;
+   bottom: -5.5625rem;
+   z-index: -2;
+
+   @include respond(tablet) {
+
+      right: -19.75rem;
+      bottom: -16.875rem;
+   }
+}
+
+.bg-shape-right {
+
+   background: linear-gradient(180deg, $Light-Magenta 0%, $Light-Violet 100%);
+   border-radius: 0 0 252.5px 252.5px;
+   height: 48.4375rem;
+   width: 31.5625rem;
+   position: absolute;
+   left: -5.3125rem;
+   top: -4.6875rem;
+   z-index: -1;
+
+
+   @include respond(tablet) {
+      left: -19.875rem;
+      top: -16.625rem;
+   }
+}
+
+.container {
+   max-width: 60.75rem;
+   padding-left: 8.0625rem;
+   align-items: center;
+   column-gap: 7.75rem;
+   padding-right: 1.875rem;
+   padding-top: 1.875rem;
+   padding-bottom: 1.875rem;
+
+
+   @include respond(tablet) {
+      padding-left: 1.875rem;
+      padding-right: 1.875rem;
+
+      column-gap: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+   }
+
+}
+
+
+.phone {
+
+   width: 15.5rem;
+   padding: 0.6875rem 0.6875rem 0.625rem 0.625rem;
+   background-color: $White;
+   border-radius: 31px;
+   position: relative;
+
+   -webkit-box-shadow: 5px 30px 70px -20px rgba(0, 0, 0, 0.3);
+   -moz-box-shadow: 5px 30px 70px -20px rgba(0, 0, 0, 0.3);
+   box-shadow: 5px 30px 70px -20px rgba(0, 0, 0, 0.3);
+
+
+   &::before {
+      background-color: white;
+      border-radius: 0 0 0.9375rem 0.9375rem;
+      content: "";
+      height: 1.4375rem;
+      left: 50%;
+      position: absolute;
+      top: 0.4375rem;
+      transform: translateX(-50%);
+      width: 8.125rem;
+   }
+
+   @include respond(tablet) {
+      margin-bottom: 3.625rem;
+   }
+
+
+
+}
