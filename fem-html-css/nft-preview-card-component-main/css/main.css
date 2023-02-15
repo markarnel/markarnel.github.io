@@ -1,0 +1,169 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: #14253d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 2rem 2.6rem 2rem;
+  border-radius: 15px;
+}
+
+.b-img {
+  display: flex;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1.8em;
+}
+
+.b-img-1 {
+  height: 243px;
+  width: 243px;
+}
+
+.b-img-s {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 255, 247, 0.5);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.b-img-s:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.b-img-s-1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading-2 {
+  color: white;
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.15px;
+  cursor: pointer;
+  margin-bottom: .75em;
+}
+
+.heading-2:hover {
+  color: #00fff7;
+}
+
+.text-e {
+  color: #8bacda;
+  font-size: 1.45rem;
+  width: 243px;
+  font-weight: 300;
+  letter-spacing: -0.15px;
+  line-height: 21px;
+  margin-bottom: 1.3em;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+.eth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eth-img {
+  height: 1.5em;
+  margin-right: .4em;
+}
+
+.eth-sp {
+  font-family: "Outfit", sans-serif;
+  color: #00fff7;
+  font-size: 1.25em;
+  font-weight: 600;
+  letter-spacing: -0.15px;
+}
+
+.days {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.days-img {
+  height: 1.4em;
+  margin-right: .5em;
+}
+
+.days-sp {
+  color: #8bacda;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.25em;
+  font-weight: 600;
+  letter-spacing: -0.15px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(139, 172, 218, 0.2);
+}
+
+.user-img {
+  border: 1px solid white;
+  border-radius: 100px;
+  width: 27px;
+  margin-right: 1.3em;
+  margin-top: 1.3em;
+}
+
+.user-sp {
+  font-family: "Outfit", sans-serif;
+  color: #8bacda;
+  font-size: 1.28em;
+  font-weight: 600;
+  letter-spacing: -0.15px;
+  margin-top: 1em;
+}
+
+.user-sp-name {
+  color: white;
+  cursor: pointer;
+}
+
+.user-sp-name:hover {
+  color: #00fff7;
+}
+
+.container {
+  background-color: #0d192b;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
