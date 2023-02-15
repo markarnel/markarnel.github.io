@@ -1,0 +1,132 @@
+.main {
+
+   padding-left: 30px;
+   padding-right: 30px;
+   margin-bottom: 42px;
+
+   @include respond(tablet) {
+
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-bottom: 64px;
+   }
+
+
+   &__grid {
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, auto);
+
+      grid-template-areas:
+         "  hero hero side "
+         "  pr-h body side "
+         "  f1 f2 f3 ";
+
+      column-gap: 30px;
+      row-gap: 30px;
+
+      @include respond(tablet) {
+
+         grid-template-columns: 1fr;
+         grid-template-rows: 1fr;
+
+         grid-template-areas:
+         "  hero "
+         "  hero "
+         "  pr-h "
+         "  body "
+         "  side "
+         "  side ";
+
+         row-gap: 0px;
+      }
+
+      &--item1 {
+         grid-area: hero;
+         background-image: url("../assets/images/image-web-3-desktop.jpg");
+
+         background-repeat: no-repeat;
+         background-size: cover;
+
+         height: 300px;
+
+         @include respond(tablet) {
+            background-image: url("../assets/images/image-web-3-mobile.jpg");
+
+            margin-bottom: 20px;
+         }
+
+      }
+
+      &--item2 {
+         grid-area: hero;
+
+         
+
+
+      }
+
+      &--item3 {
+         background-color: var(--color-neutral-400);
+         grid-area: side;
+         padding-top: 24px;
+         padding-left: 24px;
+         padding-right: 25px;
+         padding-bottom: 24px;
+
+         @include respond(tablet) {
+            padding-top: 17px;
+            padding-left: 21px;
+            padding-right: 21px;
+            padding-bottom: 24px;
+         }
+
+
+      }
+
+      &--item4 {
+
+         grid-area: pr-h;
+
+      }
+
+      &--item5 {
+
+         grid-area: body;
+
+         @include respond(tablet) {
+            margin-bottom: 64px;
+         }
+
+
+      }
+
+      &--item6 {
+
+         grid-area: side;
+
+      }
+
+      &--item7 {
+         grid-area: f1;
+         background-color: gray;
+
+      }
+
+      &--item8 {
+         grid-area: f2;
+         background-color: gray;
+
+      }
+
+      &--item9 {
+         grid-area: f3;
+         background-color: gray;
+
+      }
+
+
+   }
+
+}

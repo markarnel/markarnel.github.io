@@ -1,0 +1,121 @@
+.header {
+
+   padding-top: 89px;
+   background-color: white;
+   padding-left: 30px;
+   padding-right: 30px;
+   padding-bottom: 55px;
+
+
+   @include respond(tablet) {
+      padding-top: 28px;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-bottom: 32px;
+   }
+
+
+   &__row {
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+
+   }
+
+
+   &__logo {
+      width: 64px;
+      height: 40px;
+
+      @include respond(tablet) {
+         width: 45px;
+         height: 28px;
+      }
+
+   }
+
+
+   .header__btn {
+
+      display: none;
+
+      @include respond(tablet) {
+
+         &:checked~.header__menu {
+            display: flex;
+         }
+
+         &:checked~label #check__bars {
+            display: none;
+         }
+
+         &:checked~label #check__cancel {
+            display: block;
+            position: fixed;
+            right: 20px;
+            top: 27px;
+            z-index: 2;
+         }
+
+
+      }
+
+      &--checked {
+         display: none;
+
+         @include respond(tablet) {
+            display: block;
+         }
+
+         // &-menu {
+
+
+
+         // }
+
+         &-cancel {
+
+            @include respond(tablet) {
+               display: none;
+
+
+            }
+         }
+      }
+
+   }
+
+
+
+   &__menu {
+      display: flex;
+      gap: 38px;
+
+
+
+      @include respond(tablet) {
+         display: none;
+         position: fixed;
+         top: -28px;
+         right: -16px;
+         flex-direction: column;
+         width: 256px;
+         height: 104vh;
+         z-index: 1;
+         background-color: white;
+         font-size: 18px;
+
+         padding-top: 143px;
+         padding-left: 24px;
+
+         gap: 21px;
+
+      }
+
+
+
+   }
+
+}
