@@ -1,0 +1,130 @@
+.right {
+
+   width: 300px;
+   display: flex;
+   flex-direction: column;
+   padding-left: 3.2rem;
+   padding-right: 3.2rem;
+   padding-top: 2.6rem;
+   padding-bottom: 3.2rem;
+
+   @include respond(large-phone) {
+
+      width: 100%;
+
+   }
+
+   @include respond(large-phone) {
+
+      padding-top: 2rem;
+      padding-left: 2.6rem;
+      padding-right: 2.6rem;
+
+   }
+
+   &_p {
+
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      letter-spacing: 0.37em;
+      margin-bottom: 1.75rem;
+
+      @include respond(large-phone) {
+
+         letter-spacing: 0.34em;
+         margin-bottom: .9rem;
+
+      }
+   }
+
+   &_h1 {
+
+      line-height: 32px;
+      letter-spacing: -0.03em;
+      margin-bottom: 2.24rem;
+
+      @include respond(large-phone) {
+
+         margin-bottom: 1.5rem;
+
+      }
+   }
+
+   &_p1 {
+
+      margin-bottom: 2.75rem;
+      width: 100%;
+
+      @include respond(large-phone) {
+
+         margin-bottom: 4.5rem;
+      }
+
+      @include respond(phone) {
+
+         font-size: 1.3rem;
+      }
+
+   }
+
+   &_price {
+
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      margin-bottom: 2.625rem;
+
+      @include respond(large-phone) {
+
+         margin-bottom: 1.5rem;
+
+      }
+
+      &-h1 {
+
+         color: $dark_cyan;
+         letter-spacing: -0.025em;
+         margin-right: 2.2rem;
+         letter-spacing: -0.02em;
+
+         @include respond(large-phone) {
+
+            letter-spacing: -0.035em;
+            margin-right: 2.5rem;
+
+         }
+      }
+
+      &-p {
+
+         font-size: 1.25rem;
+         letter-spacing: -0.02em;
+         text-decoration: line-through;
+
+         @include respond(large-phone) {
+
+            letter-spacing: 0em;
+
+         }
+      }
+   }
+
+   &_button {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      cursor: pointer;
+
+      &:hover {
+         background-color: hsl(158, 49%, 22%);
+      }
+
+      &-img {
+         margin-right: 1rem;
+      }
+   }
+
+}
