@@ -1,0 +1,117 @@
+.section1 {
+
+   margin-bottom: 40px;
+
+
+   &_container {
+
+      //max-width: 1232px;
+      width: clamp(334px, 92.6316vw, 1232px);
+      //min-width: 334px;
+      //width: 92.355%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 30px;
+      padding-right: 30px;
+      box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.05);
+      border-radius: 15px;
+
+      @include respond(phone-mid) {
+         width: 90%;
+         padding-left: 22.5px;
+          padding-right: 22.5px;
+       }
+   }
+
+   &_row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @include respond(tablet) {
+         flex-direction: column-reverse;
+         text-align: center;
+         justify-content: center;
+         align-items: center;
+      }
+
+
+   }
+
+   &_col1 {
+      padding-left: 90px;
+      padding-top: 155px;
+      padding-bottom: 149px;
+
+      @include respond(laptop) {
+         padding-left: 45px;
+      }
+
+      @include respond(tablet) {
+         padding-left: 0px;
+         padding-top: 55px;
+         padding-bottom: 33px;
+      }
+
+      @include respond(phone-mid) {
+         padding-top: 47px;
+      }
+
+      &-h1 {
+         font-weight: 600;
+         font-size: 28px;
+         line-height: 42px;
+         margin-bottom: 12px;
+
+         @include respond(phone-mid) {
+            font-size: 20px;
+            margin-bottom: 8px;
+         }
+
+      }
+
+      &-p {
+         font-weight: 400;
+         font-size: 18px;
+         line-height: 151.2%;
+         width: 75%;
+
+         @include respond(tablet) {
+            width: 100%;
+         }
+
+         @include respond(phone-mid) {
+            font-size: 14px;
+            padding-left: 14px;
+            padding-right: 14px;
+            
+         }
+      }
+   }
+
+   &_col2 {
+
+      margin-top: 5px;
+      margin-right: 3px;
+
+      @include respond(tablet) {
+         margin-right: 0px;
+         margin-top: 0px;
+      }
+
+
+      &-svg {
+
+         //width: 406px;
+         //width: 236px;
+         width: clamp(236px, 30.5493vw, 406px);
+
+         @include respond(tablet) {
+            width: 100%;
+            padding-left: 28px;
+            padding-right: 28px;
+            padding-top: 55px;
+         }
+      }
+   }
+}
