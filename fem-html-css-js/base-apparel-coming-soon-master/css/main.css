@@ -1,15 +1,12 @@
 :root {
-  --clr-primary-100: hsl(0, 36%, 70%);
+  --clr-primary-100: #ce9797;
   --clr-primary-200: hsl(0, 93%, 68%);
   --clr-neutral-100: hsl(0, 6%, 24%);
   --clr-bg-100: hsl(0, 0%, 100%);
   --clr-bg-200: hsl(0, 100%, 98%);
   --clr-bg-300: hsl(0, 80%, 86%);
-  --clr-bg-400: hsl(0, 74%, 74%);
+  --clr-bg-400: #ee8c8c;
   --ff-primary: 'Josefin Sans', sans-serif;
-  --fs-64: 64px;
-  --fs-16: 16px;
-  --fs-13: 13px;
   --fw-300: 300;
   --fw-400: 400;
   --fw-600: 600;
@@ -92,7 +89,7 @@ svg {
 }
 
 .primary-heading {
-  font-weight: 300;
+  font-weight: var(--fw-300);
   font-size: 64px;
   line-height: 107%;
   letter-spacing: 0.265em;
@@ -120,7 +117,7 @@ svg {
 }
 
 .primary-body {
-  font-weight: 400;
+  font-weight: var(--fw-400);
   font-size: 16px;
   line-height: 174%;
   width: 65%;
@@ -147,7 +144,7 @@ svg {
 }
 
 .fw-600 {
-  font-weight: 600;
+  font-weight: var(--fw-600);
 }
 
 .bg-neutral-100 {
@@ -343,4 +340,108 @@ svg {
   .wrapper {
     padding-top: 211px;
   }
+}
+
+.error {
+  opacity: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.secondary-heading {
+  font-weight: var(--fw-400);
+  font-size: 48px;
+  color: var(--clr-neutral-100);
+  margin-bottom: 7px;
+}
+
+.secondary-heading__span {
+  font-weight: var(--fw-600);
+  color: var(--clr-primary-200);
+}
+
+@media only screen and (max-width: 970px) {
+  .secondary-heading {
+    font-size: 34px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .secondary-heading {
+    font-size: 28px;
+  }
+}
+
+.close-modal {
+  padding: 18px 64px 19px;
+  width: 100%;
+  background: var(--clr-bg-400);
+  border: none;
+  border-radius: 100vmax;
+  color: #fff;
+}
+
+@media only screen and (max-width: 970px) {
+  .close-modal {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .close-modal {
+    font-size: 12px;
+    padding: 12px 48px 12px;
+  }
+}
+
+.secondary-body {
+  font-weight: var(--fw-400);
+  font-size: 20px;
+  color: var(--clr-primary-100);
+  text-align: center;
+  margin-bottom: 37px;
+}
+
+@media only screen and (max-width: 970px) {
+  .secondary-body {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .secondary-body {
+    font-size: 14px;
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+@media only screen and (max-width: 970px) {
+  .modal {
+    padding: 2rem;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
 }
