@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    
+}
+
+body {
+
+   min-height: 100vh;
+   font-size: 62.5%;
+   font-family: $Raleway;
+
+
+}
+
+
+
+.container {
+
+   //margin: 4rem 5rem;
+   padding: 0 5rem;
+   display: flex;
+   flex-direction: column;
+   padding-top: 4rem;
+   padding-bottom: 7rem;
+
+   background-image: url(../images/bg-curve-desktop.svg);
+   background-repeat: no-repeat;
+   background-position: bottom;
+   background-size: 100vw;
+
+   @include respond(tablet) {
+      padding: 0 2.5rem;
+      padding-top: 4rem;
+      padding-bottom: 7rem;
+   }
+
+
+   @include respond(large-phone) {
+      padding: 0 1.45rem;
+      padding-top: 1.47rem;
+      padding-bottom: 0rem;
+      background-image: url(../images/bg-curve-mobile.svg);
+      background-repeat: no-repeat;
+      background-position: bottom;
+
+   }
+}
