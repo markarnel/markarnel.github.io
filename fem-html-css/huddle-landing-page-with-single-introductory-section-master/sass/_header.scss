@@ -1,0 +1,20 @@
+.top-cnt {
+
+}
+
+.logo {
+   
+  
+   &-img {
+
+      width: 21.2rem;
+      
+      @include respond(tablet) {
+         width: 18rem;
+         margin-bottom: 3rem;
+      }
+
+   }
+
+   
+}
