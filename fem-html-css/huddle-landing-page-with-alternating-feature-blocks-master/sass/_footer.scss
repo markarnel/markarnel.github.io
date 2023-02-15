@@ -1,0 +1,256 @@
+.footer {
+   background-color: $dark_cyan;
+   padding-top: 95px;
+   padding-bottom: 64px;
+   padding-right: 20px;
+   padding-left: 20px;
+
+
+   @include respond(phone-mid) {
+      padding-top: 72px;
+      padding-right: 16px;
+   padding-left: 16px;
+   padding-bottom: 48px;
+   }
+   
+   &_container {
+
+      max-width: 1280px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 40px;
+
+      @include respond(phone-mid) {
+         padding-left: 0px;
+      }
+   }
+
+   &_row1 {
+
+      &-logo {
+
+         filter: brightness(0) invert(1);
+         margin-bottom: 36px;
+
+         @include respond(phone-mid) {
+            width: 168px;
+            height: 26px;
+            margin-bottom: 21px;
+         }
+      }
+
+   }
+
+   &_row2 {
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      
+   }
+
+   &_col1 {
+
+      padding-right: 18px;
+
+      &-address {
+
+         display: flex;
+         margin-bottom: 23px;
+         align-items: flex-start;
+
+         &-svg {
+            width: 12px;
+            height: 18px;
+            margin-right: 24px;
+            margin-top: 8px;
+
+            @include respond(phone-mid) {
+               margin-right: 28px;
+            }
+         }
+
+         &-p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 151.2%;
+            color: white;
+            width: 332px;
+
+            @include respond(phone-big) {
+               width: 86%;
+            }
+         }
+      }
+
+      &-contact {
+
+         display: flex;
+         margin-bottom: 24px;
+         align-items: center;
+         
+
+         &-svg {
+            margin-top: 1px;
+            width: 18px;
+            height: 18px;
+            margin-right: 20px;
+            margin-left: 3px;
+
+         }
+
+         &-p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 151.2%;
+            color: white;
+         }
+      }
+
+      &-email {
+
+         display: flex;
+         align-items: center;
+
+         &-svg {
+            margin-top: 1px;
+            width: 20px;
+            height: 16px;
+            margin-right: 18px;
+            margin-left: 2px;
+         }
+
+         &-p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 151.2%;
+            color: white;
+         }
+      }
+
+   }
+
+   &_col2 {
+      margin-top: 1px;
+      display: flex;
+      margin-right: 32px;
+
+      @include respond(tablet) {
+         margin-top: 79px;
+      }
+
+      @include respond(phone-mid) {
+         margin-top: 58px;
+         flex-direction: column;
+      }
+
+      &-ul1 {
+         margin-right: 120px;
+
+         &-li {
+            list-style: none;
+
+            &:not(last-child) {
+               margin-bottom: 19px;
+            }
+
+            &-a {
+               text-decoration: none;
+               color: white;
+               font-size: 18px;
+            }
+            
+         }
+
+
+      }
+
+      &-ul2 {
+         
+         
+         &-li {
+            list-style: none;
+
+            &:not(last-child) {
+               margin-bottom: 19px;
+            }
+
+            &-a {
+               font-size: 18px;
+               text-decoration: none;
+               color: white;
+            }
+         }
+      }
+
+   }
+
+   &_col3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      
+      @include respond(laptop) {
+         width: 100%;
+         align-items: center;
+         margin-top: 52px;
+      }
+
+      @include respond(phone-mid) {
+         margin-top: 36px;
+      }
+
+
+      &-social {
+         display: flex;
+         flex-direction: row;
+
+         &-icons {
+            
+            &:not(:last-child) {
+               margin-right: 13px;
+            }
+
+         }
+      }
+
+      &-p {
+         color: white;
+         font-weight: 400;
+         font-size: 12px;
+         line-height: 151.2%;
+         margin-top: 177px;
+         letter-spacing: 0.17px;
+
+         @include respond(laptop) {
+            margin-top: 24px;
+   
+         }
+
+         @include respond(phone-mid) {
+            font-size: 11px;
+         }
+
+      }  
+   }
+
+
+}
+
+.fa-brands {
+   font-weight: 400;
+}
+
+.fa-facebook-f, .fa-twitter, .fa-instagram {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 31px;
+    height: 31px;
+    font-size: 14px;
+    cursor: pointer;
+}
