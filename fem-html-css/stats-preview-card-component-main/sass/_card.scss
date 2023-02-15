@@ -1,0 +1,139 @@
+.card {
+   background: $card-bg;
+   color: white;
+   border-radius: 6px;
+   overflow: hidden;
+   margin: 0 2.5%;
+   display: flex;
+
+   @include respond(tablet){
+      flex-direction: column;
+      margin: 8.8rem 6.5%;
+   }
+
+   &-content{
+
+      padding-top: 6em;
+      padding-right: 6em;
+      padding-bottom: 1rem;
+      padding-left: 5.9em;
+
+     
+
+      @include respond(tablet){
+         order: 1;
+         padding-top: 3.9em;
+         padding-right: 3em;
+         padding-left: 3em;
+         
+      }
+
+        h1 {
+         font-family: $inter;
+         font-size: 3rem;
+
+         margin-bottom: .79em;
+
+
+         @include respond(tablet){
+            
+            text-align: center;
+            line-height: 3.25rem;  
+            margin-bottom: .6em;      
+         }
+
+        }
+
+        span {
+         color: $accent;
+        }
+
+        p {
+         font-family: $inter;
+         font-size: 1.23rem;
+         font-weight: 400;
+         letter-spacing: .4px;
+         color: $stats-h;
+         line-height: 1.7em;
+         margin-right: 3.5em;
+         margin-bottom: 4.85em;
+
+         @include respond(laptop){
+            margin-bottom: 2em;
+         }
+
+         
+         @include respond(tablet){
+            text-align: center;
+            font-size: 1.4rem;
+            margin-right: 0;
+            line-height: 1.78em;
+            margin-bottom: 2.9em;
+
+         }
+
+        }
+
+        .stats {
+           display: flex;
+           justify-content: space-between;
+           margin-right: 6.4em;
+
+           @include respond(tablet){
+            margin-right: 0;
+            text-align: center;
+         }
+
+           @include respond(phone){
+            flex-direction: column;
+
+         }
+           
+         &-block {
+
+            @include respond(laptop){
+             
+              padding-right: 1em;
+            }
+
+            @include respond(phone){
+               margin-bottom: 3.2em;
+            }
+         }
+
+         &-num {
+            font-family: $inter;
+            font-size: 2.1rem;
+            font-weight: 700;
+            margin-bottom: .25em;
+
+            @include respond(phone){
+               font-size: 2.3rem;
+               
+            }
+         }
+
+         &-title {
+            text-transform: uppercase;
+            font-family: $lexend;
+            font-size: 1.08rem;
+            font-weight: 400;
+            letter-spacing: .3px;
+            color: $stats-h;
+
+            @include respond(tablet){
+               margin-bottom: 2em;
+   
+            }
+
+            @include respond(phone){
+               font-size: 1.2rem;
+               letter-spacing: 1px;
+   
+            }
+         }
+        }
+
+
+   }
+}
