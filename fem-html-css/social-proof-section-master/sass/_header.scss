@@ -1,0 +1,97 @@
+.top-cnt {
+   display: flex;
+   flex-direction: row;
+   justify-content:  space-between;
+   align-items: center;
+   padding-bottom: 4.4375rem;
+   margin-bottom: 2.6rem;
+
+
+      @include respond(laptop) {
+         padding-bottom: 2.4rem; 
+      }
+
+      @include respond(tablet) {
+         flex-direction: column;
+         
+      }
+
+      @include respond(phone) {
+         margin-bottom: 2.5rem;
+
+      }
+
+   &-info {
+      
+         text-align: start;
+         display: flex;
+         flex-direction: column;
+         margin-right: 2em; 
+         
+ 
+            @include respond(tablet) {
+
+               text-align: center;
+               margin-right: 0rem; 
+            }     
+            
+            @include respond(phone) {
+               margin-bottom: 1rem;
+            }
+
+      &__h1 {
+
+         color: $dark-magenta;
+         font-family: 'League Spartan';
+         font-style: normal;
+         font-weight: 700;
+         font-size: 5.6rem;
+         line-height: 48px;
+         letter-spacing: -0.035em;
+         margin-bottom: 2.6rem;
+         max-width: 34rem;
+
+            @include respond(tablet) {
+               font-size: 4rem;
+               line-height: 80%;
+               text-align: center;
+               letter-spacing: -0.04em;
+               margin: 0 auto;
+               margin-bottom: 3rem;
+            }
+
+            @include respond(large-phone) {
+               letter-spacing: -0.04em;
+            }
+
+            @include respond(phone) {
+               padding: 0 1rem;
+               margin-bottom: 2.4rem;
+            }
+       }
+
+      &__p {
+         color: $grayish-magenta;
+         font-style: normal;
+         font-weight: 400;
+         font-size: 2rem;
+         line-height: 125%;
+         letter-spacing: -0.045em;
+         max-width: 42rem;
+
+            @include respond(tablet) {
+               margin-bottom: 2.5rem;
+
+            }
+
+            @include respond(large-phone) {
+               font-size: 1.9rem;
+               line-height: 131.5%;
+               letter-spacing: -0.03em;
+               padding: 0 1.2rem;
+               margin-bottom: 2.3rem;
+
+            }   
+      }
+   }
+}
