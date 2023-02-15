@@ -1,0 +1,75 @@
+
+
+.img {
+   width: 8.4375rem;
+   height: 2.5rem;
+   
+}
+
+
+.flex {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+} 
+
+.space {
+   justify-content: space-between;
+
+}
+
+.fs-l {
+   font-size: $fs-l;
+   color: $Very-Dark-Blue;
+}
+
+.fs-s {
+   font-size: $fs-s;
+}
+
+
+.mb-s {
+   margin-bottom: 0.375rem;
+}
+
+.mb-m {
+   margin-bottom: 1.5rem;
+}
+
+.mb-l {
+   margin-bottom: 2.0625rem;
+}
+
+
+.bg-icon {
+   background-color: $Very-Dark-Blue;
+}
+
+.bg-box {
+   background-color: $Dark-Blue;
+}
+
+.bg-bar {
+   background-color: $Very-Dark-Blue;
+}
+
+.bg-gradient {
+   background: linear-gradient(90deg, $gradient-100 0%, $gradient-200 100%);
+}
+
+.bg-white {
+   background-color: white;
+
+}
+
+.mt-s {
+   margin-top: 0.25rem;
+}
+
+.shadow {
+   -webkit-box-shadow:  0px 30px 71px 0px  rgba(0,0,0,0.3);
+-moz-box-shadow: 0px 30px 71px 0px rgba(0,0,0,0.3);
+box-shadow: 0px 30px 71px 0px rgba(0,0,0,0.3);
+}
+
+
