@@ -1,0 +1,124 @@
+
+.error {
+   opacity: 0;
+}
+
+.hidden {
+   display: none;
+}
+
+.modal-img {
+
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 32px;
+
+   @include respond(phone) {
+      width: 144px;
+      height: 97px;
+      margin-bottom: 25px;
+   }
+}
+
+.select-rating {
+   border-radius: 100vmax;
+   width: 194px;
+   padding-top: 5px;
+   padding-bottom: 2px;
+   margin-left: auto;
+   margin-right: auto;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 157.6%;
+   /* or 25px */
+
+   letter-spacing: -0.025em;
+   color: var(--clr-primary-110);
+   background-color: var(--clr-neutral-350);
+   margin-bottom: 31px;
+
+   @include respond(phone) {
+      font-size: 15px;
+      margin-bottom: 25px;
+      width: 166px;
+   }
+}
+
+.modal-heading {
+
+   font-weight: var(--fw-bold);
+   font-size: 28px;
+   color: var(--clr-neutral-100);
+   margin-bottom: 7px;
+
+   @include respond(phone) {
+      font-size: 24px;
+      margin-bottom: 8px;
+   }
+}
+
+.modal-body {
+   font-weight: var(--fw-reg);
+   font-size: 15px;
+   color: var(--clr-neutral-200);
+   line-height: 157.6%;
+   text-align: center;
+
+   @include respond(phone) {
+      font-size: 14px;
+   }
+
+}
+
+.modal {
+
+   max-width: 411px;
+   width: 100%;
+   border-radius: 27px;
+   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+   text-align: center;
+   background: linear-gradient(225deg, var(--clr-bg-100), var(--clr-bg-200));
+
+   
+   padding-top: 47px;
+   padding-bottom: 47px;
+   padding-left: 32px;
+   padding-right: 36px;
+
+   position: relative;
+   
+
+   @include respond(phone) {
+      
+      max-width: 326px;
+      width: 100%;
+      padding-top: 32px;
+      padding-left: 28px;
+      padding-right: 28px;
+      padding-bottom: 39px;
+      border-radius: 15px;
+   }
+}
+
+
+.close-modal {
+   padding: 18px 64px 19px;
+   width: 100%;
+   background: var(--clr-bg-400);
+   border: none;
+   border-radius: 100vmax;
+   color: #fff;
+
+}
+
+
+.overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   // background-color: rgba(0, 0, 0, 0.6);
+   // backdrop-filter: blur(3px);
+   z-index: 5;
+}
