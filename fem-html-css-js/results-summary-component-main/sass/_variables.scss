@@ -1,0 +1,68 @@
+@font-face {
+   font-family: 'HankenGrotesk';
+   font-display: swap;
+   font-weight: 100 900;
+   src: url('../assets/fonts/HankenGrotesk-VariableFont_wght.ttf') 
+        format('truetype');
+ }
+
+:root {
+
+   --clr-primary-100: hsl(0, 100%, 67%);
+   --clr-primary-200: hsl(39, 100%, 56%);
+   --clr-primary-300: hsl(166, 100%, 37%);
+   --clr-primary-400: hsl(234, 85%, 45%);
+
+   --clr-primary-500: #303B59;
+
+   --clr-secondary-100: #fff6f5;
+   --clr-secondary-200: #FFFBF2;
+   --clr-secondary-300: #F2FBFA;
+   --clr-secondary-400: #F3F3FD;
+
+   --clr-gradient-100: hsl(252, 100%, 67%);
+   --clr-gradient-200: hsl(241, 81%, 54%);
+   --clr-gradient-300: hsl(256, 72%, 46%);
+   --clr-gradient-400: rgba(36, 33, 202, 0);
+
+   --clr-neutral-100: hsl(0, 0%, 100%);
+   --clr-neutral-200: hsl(221, 100%, 96%);
+   --clr-neutral-300: hsl(241, 100%, 89%);
+   --clr-neutral-400: hsl(224, 30%, 27%);
+   --clr-neutral-500: #a7a6a5;
+
+   --gradient-primary: linear-gradient(270deg,
+      var(--clr-gradient-100),
+      var(--clr-gradient-300)
+   );
+
+   --gradient-bg: linear-gradient(270deg,
+      var(--clr-gradient-100),
+      var(--clr-gradient-300)
+   );
+
+   --gradient-secondary: linear-gradient(
+      var(--clr-gradient-200),
+      var(--clr-gradient-400)
+   );
+
+   --bg-shadow: 8px 16px 48px 0px rgba(48,59,90,0.2);
+
+   --ff-primary: 'HankenGrotesk', sans-serif;
+
+   --fs-100: 1rem; //16px
+   --fs-200: 1.125rem; //18px
+   --fs-300: 1.1875rem; //19px
+   --fs-400: 1.5rem; //24px
+   --fs-500: 2rem; //32px
+   --fs-600: 3.5rem; //56px
+   --fs-700: 4.5rem; //72px
+
+
+   --fw-m: 500; 
+   --fw-b: 700;
+   --fw-xb: 800;
+   --fw-bl: 900;
+
+}
+
