@@ -1,0 +1,301 @@
+:root {
+  --clr-primary-100: hsl(259, 100%, 65%);
+  --clr-primary-200: hsl(0, 100%, 67%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(0, 0%, 94%);
+  --clr-neutral-300: hsl(0, 0%, 86%);
+  --clr-neutral-400: hsl(0, 1%, 44%);
+  --clr-neutral-500: hsl(0, 0%, 8%);
+  --ff-primary: 'Poppins', sans-serif;
+  --fw-r: 400;
+  --fw-b: 700;
+  --fw-xb: 800;
+  --fs-100: 0.75rem;
+  --fs-200: 0.875rem;
+  --fs-300: 1.25rem;
+  --fs-400: 2rem;
+  --fs-500: 3.5rem;
+  --fs-600: 6.375rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: var(--ff-primary);
+  display: grid;
+  place-items: center;
+  background-color: var(--clr-neutral-200);
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 816px) {
+  body {
+    padding: 1rem;
+  }
+}
+
+main {
+  background-color: var(--clr-neutral-100);
+  padding-inline: 3.5rem;
+  padding-block: 3.5rem 2rem;
+  border-radius: 24px 24px 200px 24px;
+  max-width: 52.5rem;
+  width: 100%;
+}
+
+@media only screen and (max-width: 816px) {
+  main {
+    padding-inline: 1.5rem;
+    padding-block: 3rem 2rem;
+    border-radius: 23px 23px 100px 23px;
+  }
+}
+
+@media only screen and (max-width: 372px) {
+  main {
+    padding-inline: 1rem;
+  }
+}
+
+hr {
+  width: 100%;
+  opacity: 50%;
+}
+
+small {
+  line-height: 21px;
+  font-style: italic;
+  font-weight: var(--fw-r);
+  font-size: var(--fs-200);
+  color: var(--clr-primary-200);
+}
+
+@media only screen and (max-width: 476px) {
+  small {
+    font-size: var(--fs-100);
+  }
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+  line-height: 0;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+.btn {
+  background-color: var(--clr-neutral-500);
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: var(--clr-neutral-500);
+}
+
+.btn:active {
+  background-color: var(--clr-neutral-500);
+  top: 3px;
+}
+
+.result h1 {
+  font-style: italic;
+  font-weight: var(--fw-xb);
+  font-size: var(--fs-600);
+  line-height: 113px;
+}
+
+@media only screen and (max-width: 816px) {
+  .result h1 {
+    font-size: 4.75rem;
+    line-height: 87.5px;
+  }
+}
+
+@media only screen and (max-width: 476px) {
+  .result h1 {
+    font-size: var(--fs-500);
+    line-height: 62px;
+  }
+}
+
+@media only screen and (max-width: 372px) {
+  .result h1 {
+    font-size: 2.5rem;
+    line-height: 49.25px;
+  }
+}
+
+.result span {
+  color: var(--clr-primary-100);
+  letter-spacing: 0.17em;
+}
+
+@media only screen and (max-width: 816px) {
+  .result span {
+    letter-spacing: 0;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__container {
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 816px) {
+  .form__container {
+    gap: 1rem;
+  }
+}
+
+.input__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input__container--label {
+  font-size: var(--fs-200);
+  font-weight: var(--fw-b);
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--clr-neutral-400);
+  margin-bottom: .5rem;
+}
+
+@media only screen and (max-width: 476px) {
+  .input__container--label {
+    font-size: var(--fs-100);
+  }
+}
+
+.input__container--number {
+  border-radius: 0.5rem;
+  border: 0.5px solid var(--clr-neutral-300);
+  font-size: var(--fs-400);
+  padding-left: 1.5rem;
+  padding-right: 1rem;
+  padding-block: 0.75rem;
+  width: 10rem;
+  outline: none;
+}
+
+.input__container--number:focus {
+  border: 2px solid var(--clr-primary-100);
+}
+
+.input__container--number::placeholder {
+  opacity: .5;
+}
+
+@media only screen and (max-width: 816px) {
+  .input__container--number {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: .5rem;
+  }
+}
+
+@media only screen and (max-width: 476px) {
+  .input__container--number {
+    font-size: var(--fs-300);
+  }
+}
+
+@media only screen and (max-width: 372px) {
+  .input__container--number {
+    font-size: 1rem;
+    padding-left: .5rem;
+    padding-right: .25rem;
+  }
+}
+
+.submit {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  height: 6rem;
+  transition: all 0.4s;
+}
+
+@media only screen and (max-width: 816px) {
+  .submit {
+    justify-content: center;
+    height: 8rem;
+  }
+}
+
+@media only screen and (max-width: 476px) {
+  .submit {
+    justify-content: center;
+    height: 6rem;
+  }
+}
+
+.submit__btn {
+  all: unset;
+  position: absolute;
+  background-color: var(--clr-primary-100);
+  border-radius: 50%;
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  border: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 816px) {
+  .submit__btn {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+@media only screen and (max-width: 476px) {
+  .submit__btn {
+    height: 4rem;
+    width: 4rem;
+  }
+}

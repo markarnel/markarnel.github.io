@@ -1,0 +1,25 @@
+:root {
+
+   --clr-primary-100: hsl(259, 100%, 65%);
+   --clr-primary-200: hsl(0, 100%, 67%);
+
+   --clr-neutral-100: hsl(0, 0%, 100%);
+   --clr-neutral-200: hsl(0, 0%, 94%);
+   --clr-neutral-300: hsl(0, 0%, 86%);
+   --clr-neutral-400: hsl(0, 1%, 44%);
+   --clr-neutral-500: hsl(0, 0%, 8%);
+
+   --ff-primary: 'Poppins', sans-serif;
+
+   --fw-r: 400;   //regular
+   --fw-b: 700;   //bold
+   --fw-xb: 800;  //extrabold
+
+   --fs-100: 0.75rem;   //12px
+   --fs-200: 0.875rem;  //14px
+   --fs-300: 1.25rem;   //20   
+   --fs-400: 2rem;      //32px
+   --fs-500: 3.5rem;    //56px
+   --fs-600: 6.375rem;  //102px
+}
+

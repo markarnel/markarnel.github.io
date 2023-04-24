@@ -1,0 +1,133 @@
+.form {
+   display: flex;
+   flex-direction: column;
+
+
+   &__container {
+      display: flex;
+      gap: 2rem;
+      flex-direction: row;
+
+      @include respond(tablet) {
+         gap: 1rem;
+      }
+
+
+   }
+
+}
+
+.input__container {
+
+   display: flex;
+   flex-direction: column;
+
+
+
+   &--label {
+      font-size: var(--fs-200);
+      font-weight: var(--fw-b);
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--clr-neutral-400);
+      margin-bottom: .5rem;
+
+      @include respond(phone) {
+         font-size: var(--fs-100);
+      }
+   }
+
+   &--number {
+      border-radius: 0.5rem;
+      border: .5px solid var(--clr-neutral-300);
+
+
+      font-size: var(--fs-400);
+      padding-left: 1.5rem;
+      padding-right: 1rem;
+      padding-block: 0.75rem;
+
+      width: 10rem;
+      outline: none;
+
+
+      &:focus {
+         border: 2px solid var(--clr-primary-100);
+      }
+
+      &::placeholder {
+         opacity: .5;
+      }
+
+      @include respond(tablet) {
+
+         width: 100%;
+         padding-left: 1rem;
+         padding-right: .5rem;
+      }
+
+      @include respond(phone) {
+         font-size: var(--fs-300);
+      }
+
+      @include respond (mini) {
+         font-size: 1rem;
+         padding-left: .5rem;
+         padding-right: .25rem;
+      }
+
+   }
+
+}
+
+.submit {
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: flex-end;
+   height: 6rem;
+
+   transition: all 0.4s;
+
+   @include respond(tablet) {
+      justify-content: center;
+      height: 8rem;
+   }
+
+   @include respond(phone) {
+      justify-content: center;
+      height: 6rem;
+   }
+
+   &__btn {
+      all: unset;
+      position: absolute;
+      background-color: var(--clr-primary-100);
+      border-radius: 50%;
+
+      width: 6rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      aspect-ratio: 1 / 1;
+
+      border: none;
+      cursor: pointer;
+
+
+      @include respond(tablet) {
+
+         height: 5rem;
+         width: 5rem;
+      }
+
+      @include respond(phone) {
+         height: 4rem;
+         width: 4rem;
+      }
+
+   }
+}
+
