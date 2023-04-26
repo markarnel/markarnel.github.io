@@ -1,0 +1,270 @@
+:root {
+  --clr-primary-100: hsl(1, 90%, 64%);
+  --clr-primary-200: hsl(219, 85%, 26%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(210, 60%, 98%);
+  --clr-neutral-300: hsl(211, 68%, 94%);
+  --clr-neutral-400: hsl(205, 33%, 90%);
+  --clr-neutral-500: hsl(219, 14%, 63%);
+  --clr-neutral-600: hsl(219, 12%, 42%);
+  --clr-neutral-700: hsl(224, 21%, 14%);
+  --ff-primary: 'Plus Jakarta Sans', sans-serif;
+  --fs-100: 0.875rem;
+  --fs-200: 1rem;
+  --fs-300: 1.25rem;
+  --fs-400: 1.5rem;
+  --fw-m: 500;
+  --fw-b: 700;
+  --fw-ex: 800;
+}
+
+@media only screen and (max-width: 514px) {
+  :root {
+    --fs-200: 0.875rem;
+    --fs-300: 1rem;
+    --fs-400: 1.25rem;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: var(--ff-primary);
+  display: grid;
+  place-items: center;
+  background-color: var(--clr-neutral-200);
+}
+
+main {
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 514px) {
+  main {
+    padding: 0;
+  }
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+  line-height: 0;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+.pm {
+  font-size: var(--fs-200);
+  font-weight: var(--fw-ex);
+  color: var(--clr-neutral-500);
+  cursor: pointer;
+}
+
+.pm:hover {
+  color: var(--clr-primary-200);
+}
+
+.ntf-content__pm.hidden {
+  display: none;
+}
+
+.unread {
+  cursor: pointer;
+  background-color: var(--clr-neutral-200);
+}
+
+.icon-notify {
+  display: inline-block;
+  width: .5rem;
+  height: .5rem;
+  background-color: var(--clr-primary-100);
+  border-radius: 100vmax;
+}
+
+.container {
+  background-color: var(--clr-neutral-100);
+  border-radius: 1rem;
+  padding: 2.125rem 2rem;
+  max-width: 45.625rem;
+  width: 100%;
+}
+
+@media only screen and (max-width: 514px) {
+  .container {
+    padding: 1.5rem 1rem;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 514px) {
+  .header {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.header__ntf {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.header__ntf--h1 {
+  color: var(--clr-primary-200);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-ex);
+}
+
+.header__ntf--num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 1.5625rem;
+  margin: auto;
+  border-radius: 6px;
+  font-size: var(--fs-200);
+  background-color: var(--clr-primary-200);
+  font-weight: var(--fw-m);
+  color: var(--clr-neutral-100);
+}
+
+.header__markall {
+  cursor: pointer;
+  color: var(--clr-neutral-500);
+  font-size: var(--fs-200);
+}
+
+.header__markall:hover {
+  color: var(--clr-primary-200);
+}
+
+.ntf-content {
+  padding: 1rem 0 1rem 1.125rem;
+  border-radius: 8px;
+  display: flex;
+  gap: 1.125rem;
+  margin-bottom: 0.625rem;
+}
+
+@media only screen and (max-width: 514px) {
+  .ntf-content {
+    gap: 0.75rem;
+    padding: 0.875rem 0 0.875rem 0.875rem;
+  }
+}
+
+.ntf-content__avatar {
+  width: 2.8125rem;
+  height: 2.8125rem;
+}
+
+@media only screen and (max-width: 514px) {
+  .ntf-content__avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+.ntf-content__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ntf-content__list--p {
+  font-size: var(--fs-200);
+  font-weight: var(--fw-m);
+  color: var(--clr-neutral-500);
+  padding-right: 1rem;
+}
+
+.ntf-content__list--name {
+  font-size: var(--fs-200);
+  font-weight: var(--fw-ex);
+  color: var(--clr-neutral-700);
+  cursor: pointer;
+}
+
+.ntf-content__list--name:hover {
+  color: var(--clr-primary-200);
+}
+
+.ntf-content__list--link {
+  font-size: var(--fs-200);
+  font-weight: var(--fw-ex);
+  color: var(--clr-neutral-500);
+  cursor: pointer;
+}
+
+.ntf-content__list--link:hover {
+  color: var(--clr-primary-200);
+}
+
+.ntf-content__list--img {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+}
+
+.ntf-content__history {
+  font-size: var(--fs-200);
+  font-weight: var(--fw-m);
+  color: var(--clr-neutral-500);
+}
+
+.ntf-content__pm {
+  background-color: var(--clr-neutral-300);
+  font-size: var(--fs-200);
+  color: var(--clr-neutral-500);
+  padding: 1rem 2rem 1.25rem;
+  border-radius: 5px;
+  margin-top: 0.8125rem;
+}
+
+.ntf-content__picture {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.ntf-content__picture--img {
+  max-width: 2.8125rem;
+  max-height: 2.8125rem;
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./css/main.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap"
+    rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/b01b141dfc.js" crossorigin="anonymous"></script>
+
+  <title>Frontend Mentor | Notifications page</title>
+
+
+</head>
+
+<body>
+
+  <main>
+    <div class="container">
+      <!-- HEADER -->
+
+      <div class="header">
+        <div class="header__ntf">
+          <h1 class="header__ntf--h1">
+            Notifications
+          </h1>
+          <span id="notification-number" class="header__ntf--num">3</span>
+        </div>
+        <p id="markall-asread" class="header__markall">
+          Mark all as read
+        </p>
+      </div>
+      <!-- BODY -->
+
+      <div class="ntf-list">
+        <div class="ntf-container">
+          <!-- BG NOTIFY -->
+          <!-- MARK WEBBER -->
+          <div id="content-notify" class="ntf-content unread">
+            <img class="ntf-content__avatar" src="./assets/images/avatar-mark-webber.webp" alt="mark webber img">
+            <div class="ntf-content__list">
+              <p class="ntf-content__list--p"><span class="ntf-content__list--name">Mark Webber</span>&nbsp;
+                reacted to your recent post&nbsp;
+                <span class="ntf-content__list--link">My first tournament today!&nbsp;</span>
+                <!-- ICON NOTIFY -->
+                <span class="icon-notify"></span>
+              </p>
+              <p class="ntf-content__history">
+                1m ago
+              </p>
+            </div>
+          </div>
+          <!-- ANGELA GRAY -->
+          <div class="ntf-content unread">
+            <img class="ntf-content__avatar" src="./assets/images/avatar-angela-gray.webp" alt="Angela Gray img">
+            <div class="ntf-content__list">
+              <p class="ntf-content__list--p"><span class="ntf-content__list--name">Angela Gray</span>&nbsp;
+                followed you&nbsp;
+
+                <!-- ICON NOTIFY -->
+                <span class="icon-notify"></span>
+              </p>
+              <p class="ntf-content__history">
+                5m ago
+              </p>
+            </div>
+          </div>
+          <!-- JACOB THOMPSON -->
+          <div class="ntf-content unread">
+            <img class="ntf-content__avatar" src="./assets/images/avatar-jacob-thompson.webp" alt="Jacob Thompson img">
+            <div class="ntf-content__list">
+              <p class="ntf-content__list--p"><span class="ntf-content__list--name">Jacob Thompson</span>&nbsp;has
+                joined your group&nbsp;
+                <span class="ntf-content__list--link">Chess Club&nbsp;</span>
+
+                <span class="icon-notify"></span>
+              </p>
+              <p class="ntf-content__history">
+                1 day ago
+              </p>
+
+            </div>
+          </div>
+          <!-- Rizhy Hasanuddin -->
+          <div class="ntf-content ">
+            <img class="ntf-content__avatar" src="./assets/images/avatar-rizky-hasanuddin.webp"
+              alt="Rizhy Hasanuddin img">
+            <div class="ntf-content__list">
+              <p class="ntf-content__list--p"><span class="ntf-content__list--name">Rizhy Hasanuddin</span>&nbsp;
+                sent you a <span class="pm"> private message</span>
+              </p>
+              <p class="ntf-content__history">
+                5 days ago
+              </p>
+              <p class="ntf-content__pm">
+                Hello, thanks for setting up the Chess Club. I've been a member for a
+                few weeks now and I'm already having lots of fun and improving my
+                game.
+              </p>
+
+            </div>
+          </div>
+          <!-- Kimberly Smith -->
+          <div class="ntf-content">
+            <img class="ntf-content__avatar" src="./assets/images/avatar-kimberly-smith.webp" alt="Kimberly Smith img">
+            <div class="ntf-content__list">
+              <p class="ntf-content__list--p"><span class="ntf-content__list--name">Kimberly Smith</span>&nbsp;
+                commented on your picture
+
+              </p>
+              <p class="ntf-content__history">
+                1m ago
+              </p>
+            </div>
+            <div class="ntf-content__picture">
+              <img class="ntf-content__picture--img" src="./assets/images/image-chess.webp" alt="">
+            </div>
+          </div>
+          <!-- Nathan Peterson -->
+          <div class="ntf-content">
+            <img class="ntf-content__avatar" src="./assets/images/avatar-nathan-peterson.webp"
+              alt="Nathan Peterson img">
+            <div class="ntf-content__list">
+              <p class="ntf-content__list--p"><span class="ntf-content__list--name">Nathan Peterson</span>&nbsp;
+                reacted to your recent post&nbsp;
+                <span class="ntf-content__list--link">5 end-game strategies to increase your win rate</span>
+
+              </p>
+              <p class="ntf-content__history">
+                1m ago
+              </p>
+            </div>
+          </div>
+          <!-- Anna Kim -->
+          <div class="ntf-content">
+            <img class="ntf-content__avatar" src="./assets/images/avatar-anna-kim.webp" alt="Ànna Kim img">
+            <div class="ntf-content__list">
+              <p class="ntf-content__list--p"><span class="ntf-content__list--name">Anna Kim</span>&nbsp;
+                left the group&nbsp;
+                <span class="ntf-content__list--link">Chess Club</span>
+
+              </p>
+              <p class="ntf-content__history">
+                1m ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
