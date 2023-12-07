@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./css/main.css">
+
+  <title>Frontend Mentor | Interactive card details form</title>
+
+
+
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <!-- CARDS -->
+      <div class="left-section">
+        <div class="card">
+          <!-- FRONT OF THE CARD -->
+          <div class="card__front">
+
+            <div class="card__front--details">
+              <img class="card__front--logo" src="./images/card-logo.svg" alt="card logo">
+
+
+              <div class="card__front--info" id="oInfo">
+                <p class="card__front--number" id="oNumber">
+                  0000 0000 0000 0000
+                </p>
+                <div class="card__front--bottom">
+                  <p class="card__front--name" id="oName">
+                    Jane Appleseed
+                  </p>
+                  <p class="card__front--expiry"> <span id="oMonth">00</span>/<span id="oYear">00</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- BACK OF THE CARD -->
+          <div class="card__back">
+            <p class="card__back--cvc" id="oCvc">
+              000
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="right-section">
+        <!-- FORM -->
+        <form class="form">
+          <div class="form__wrapper">
+
+            <!-- Cardholder Name -->
+            <div class="form__item form__item card-name">
+              <label class="form__item--label" for="name">Cardholder Name</label>
+              <input class="form__item--input" type="text" name="name" id="iName" minlength="18" autocomplete="cc-name"
+                placeholder="e.g. Jane Appleseed">
+              <p class="invalid invalid__1" id="errorCardName">Wrong format, letters only</p>
+            </div>
+            <!-- Card Number -->
+
+            <div class="form__item form__item card-number">
+              <label class="form__item--label" for="number">Card Number</label>
+              <input class="form__item--input" type="text" name="number" id="iNumber" minlength="19" maxlength="19"
+                autocomplete="cc-number" placeholder="e.g. 0000 0000 0000 0000">
+              <p class="invalid invalid__2" id="errorCardNumber">Wrong format, numbers only</p>
+            </div>
+
+            <div class="form__row">
+              <div class="form__item card-expiry">
+                <label class="form__item--label" for="date"> Exp. Date (MM/YY)</label>
+                <div class="form__row--date">
+                  <div class="form__row--box">
+                    <input class="form__item--input" type="text" name="date_month" id="iMonth" maxlength="2"
+                      autocomplete="cc-exp-month" placeholder="MM" required>
+                    <p class="invalid invalid__3" id="errorMonth">Can’t be blank</p>
+                  </div>
+
+                  <div class="form__row--box">
+                    <input class="form__item--input" type="text" name="date_year" id="iYear" maxlength="2"
+                      autocomplete="cc-exp-year" placeholder="YY" required>
+                    <p class="invalid invalid__4" id="errorYear">Can’t be blank</p>
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="form__item card-cvc">
+                <label class="form__item--label" for="cvc">CVC</label>
+                <input class="form__item--input" type="text" name="cvc" id="iCvc" minlength="3" maxlength="3"
+                  autocomplete="cc-csc" placeholder="e.g. 123">
+
+                <p class="invalid invalid__5" id="errorCvc">Can’t be blank</p>
+
+              </div>
+
+
+            </div>
+
+
+
+            <button class="btn" id="confirm" type="submit">Confirm</button>
+
+          </div>
+        </form>
+
+
+        <!-- MODAL -->
+        <div class="modal hidden">
+
+          <img class="modal__img" src="./images/icon-complete.svg" alt="complete">
+
+          <h1 class=" modal__h1">
+            THANK YOU!
+          </h1>
+          <p class=" modal__p">
+            We’ve added your card details
+          </p>
+          <button class="close-modal btn" id="continue">Continue</button>
+        </div>
+        <div class="overlay hidden"></div>
+
+        </form>
+
+      </div>
+
+  </main>
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

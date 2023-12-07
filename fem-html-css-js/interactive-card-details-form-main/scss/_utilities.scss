@@ -1,0 +1,82 @@
+.left-section {
+
+}
+
+.right-section {
+   position: relative;
+}
+
+.card-name {
+   width: 100%;
+}
+
+.card-number {
+   width: 100%;
+}
+
+.card-expiry {}
+
+.card-cvc {}
+
+.invalid {
+   font-weight: 500;
+   font-size: 0.75rem;
+   color: var(--clr-input-error);
+
+   // &__1 {
+   //    opacity: 0;
+   // }
+
+   // &__2 {
+   //    opacity: 0;
+   // }
+
+   // &__3 {
+   //    opacity: 0;
+   // }
+
+   // &__4 {
+   //    opacity: 0;
+   // }
+}
+
+
+
+.btn {
+
+   font-weight: 500;
+   font-size: 1.125rem;
+
+   width: 100%;
+   color: hsl(0deg, 0%, 100%);
+   background-color: hsl(278deg, 68%, 11%);
+   border: none;
+   outline: none;
+   border-radius: 0.5rem;
+
+   padding: 1rem;
+
+}
+
+
+.invalid__1 {
+   display: none;
+}
+
+
+.invalid__2 {
+   display: none;
+}
+
+.invalid__3 {
+   display: none;
+}
+
+.invalid__4 {
+   display: none;
+}
+
+.invalid__5 {
+   display: none;
+}
+
