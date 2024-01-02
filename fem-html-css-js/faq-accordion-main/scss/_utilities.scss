@@ -1,0 +1,53 @@
+@font-face {
+   font-family: "Work Sans";
+   src: url(../assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+.heading__1 {
+   font-size: 3.25rem;
+   font-style: normal;
+   font-weight: var(--fw-bold);
+   letter-spacing: 0.1625rem;
+   color: var(--clr-neutral-400);
+
+   @include respond(phone) {
+      font-size: 1.875rem;
+      letter-spacing: 0.09375rem;
+   }
+}
+
+.heading__2 {
+   font-family: Work Sans;
+   font-size: 1.125rem;
+   font-style: normal;
+   font-weight: var(--fw-sbold);
+   line-height: normal;
+   color: var(--clr-neutral-400);
+
+   &:hover {
+      cursor: pointer;
+      color: var(--clr-primary);
+   }
+
+   @include respond(tablet) {
+      padding-right: 1rem;
+   }
+
+   @include respond(phone) {
+      font-size: 1rem;
+   }
+}
+
+.paragraph__1 {
+   font-size: 0.9375rem;
+   font-style: normal;
+   font-weight: var(--fw-reg);
+   letter-spacing: 0.03138rem;
+   color: var(--clr-neutral-300);
+
+   @include respond(phone) {
+      font-size: 0.875rem;
+   }
+}
+
+
