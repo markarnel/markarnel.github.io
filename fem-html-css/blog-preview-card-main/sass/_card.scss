@@ -1,0 +1,80 @@
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   @include respond(phone) {
+      padding: 24px;
+   }
+}
+
+.card {
+   border: 1px solid var(--clr-black);
+   background-color: var(--clr-white);
+   padding: 23px;
+   border-radius: 19px;
+   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 1);
+   transition: all .5s;
+
+   &:hover {
+      box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+   }
+
+}
+
+.header {
+
+   &__img {
+      border-radius: 10px;
+      margin-bottom: 23px;
+      width: 100%;
+   }
+}
+
+.main {
+
+   margin-bottom: 26px;
+
+   &__btn {
+      font-size: 14px;
+      font-weight: var(--fw-ebold);
+      color: var(--clr-black);
+      padding: 7px 12px 6px 12px;
+      background-color: var(--clr-primary);
+      border: none;
+      border-radius: 4px;
+      margin-bottom: 14px;
+      cursor: pointer;
+      transition: all .25s ease-in;
+
+      &:hover {
+         background-color: var(--clr-black);
+         color: var(--clr-primary);
+      }
+
+
+      @include respond(phone) {
+         font-size: 12px;
+         padding: 6px 12px;
+      }
+
+
+   }
+
+   @include respond(phone) {
+      margin-bottom: 20px;
+   }
+}
+
+.footer {
+   display: flex;
+   align-items: center;
+
+   &__img {
+
+      width: 2rem;
+      height: 2rem;
+      border-radius: 100%;
+
+   }
+}

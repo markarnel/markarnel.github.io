@@ -1,0 +1,49 @@
+.primary-heading {
+   font-size: 24px;
+   font-weight: var(--fw-ebold);
+   margin-bottom: 20px;   
+   cursor: pointer;
+   
+   &:hover {
+      color: var(--clr-primary);
+   }
+
+
+   @include respond(phone) {
+      font-size: 20px;
+      margin-bottom: 17px;
+   }
+}
+
+.secondary-heading {
+   font-size: 14px;
+   font-weight: var(--fw-sbold);
+   margin-bottom: 16px;
+
+   @include respond(phone) {
+      font-size: 12px;
+   }
+}
+
+.main-heading {
+   font-size: 16px;
+   font-weight: var(--fw-sbold);
+   color: var(--clr-grey);
+   line-height: 1.4;
+   width: 316px;
+
+   @include respond(phone) {
+      font-size: 14px;
+      width: 100%;
+   }
+}
+
+.footer-heading {
+   padding-left: 12px;
+   font-size: 14px;
+   font-weight: var(--fw-ebold);
+
+   @include respond(phone) {
+      
+   }
+}
