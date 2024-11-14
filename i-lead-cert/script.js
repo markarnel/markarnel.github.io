@@ -531,9 +531,9 @@ const generateMultiplePDFs = async (tableData) => {
 
         // Trigger the download of the PDF
         // Use a unique name for each PDF, e.g., based on the participant's name or row number
-        const rowFileName = `Certificate_${rowData[0] || 'Row'}_${rowIndex}.pdf`;
+        const rowFileName = `Certificate_${rowData[0] || 'Row'}.pdf`;
         var file = new File([pdfBytes], rowFileName, {
-            type: "application/pdf;charset=utf-8",
+            type: "application/pdf;charset=utf-8"
         });
         saveAs(file); // Prompt the user to download the generated PDF
     }
