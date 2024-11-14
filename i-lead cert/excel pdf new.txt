@@ -1,0 +1,125 @@
+const fileInput = document.getElementById("fileInput");
+const { PDFDocument, rgb } = PDFLib;
+
+// Event listener for Excel file upload
+fileInput.addEventListener('change', function (event) {
+   const file = event.target.files[0];
+
+   if (file) {
+      const reader = new FileReader();
+
+      reader.onload = function (e) {
+         const data = new Uint8Array(e.target.result);
+         const workbook = XLSX.read(data, { type: 'array' });
+
+         // Get the first sheet name and contents
+         const sheetName = workbook.SheetNames[0];
+         const worksheet = workbook.Sheets[sheetName];
+
+         // Convert sheet to JSON
+         const json = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+         displayTable(json);
+         generateMultiplePDFs(json); // Generate multiple PDFs
+      };
+
+      reader.readAsArrayBuffer(file);
+   }
+});
+
+// Function to display the Excel data in a table (for visual confirmation)
+function displayTable(data) {
+   const tableContainer = document.getElementById('table-container');
+   tableContainer.innerHTML = ''; // Clear previous tables
+
+   const table = document.createElement('table');
+   data.forEach((rowData) => {
+      const row = document.createElement('tr');
+      rowData.forEach((cellData) => {
+         const cell = document.createElement('td');
+         cell.textContent = cellData || ''; // Handle empty cells
+         row.appendChild(cell);
+      });
+      table.appendChild(row);
+   });
+
+   tableContainer.appendChild(table);
+}
+
+// Function to generate PDFs for each row in the Excel file
+const generateMultiplePDFs = async (tableData) => {
+   const existingPdfBytes = await fetch("./ileadcert.pdf").then((res) =>
+      res.arrayBuffer()
+   );
+
+   const fontRegular = await fetch("./calibri-regular.ttf").then((res) =>
+      res.arrayBuffer()
+   );
+
+   const primaryColor = rgb(0.04, 0.12, 0.38);
+
+   // Customize settings for different columns
+   const columnStyles = [
+      { fontSize: 16, color: rgb(0.8, 0.1, 0.1) }, // Column 1 (e.g., Name)
+      { fontSize: 14, color: rgb(0.2, 0.5, 0.8) }, // Column 2 (e.g., ID)
+      { fontSize: 12, color: primaryColor }, // Column 3
+      { fontSize: 12, color: primaryColor }, // Column 4 (customize more as needed)
+      // Add more customizations for other columns here
+   ];
+
+   for (let rowIndex = 1; rowIndex < tableData.length; rowIndex++) {
+      const rowData = tableData[rowIndex]; // Data for the current row
+
+      // Skip empty rows (if all cells are empty)
+      if (rowData.every(cell => !cell || cell === '')) {
+         continue; // Skip this row if all cells are empty
+      }
+
+      // Create a new PDF for each non-empty row
+      const pdfDoc = await PDFDocument.load(existingPdfBytes);
+      pdfDoc.registerFontkit(fontkit);
+
+      const CalibriRegular = await pdfDoc.embedFont(fontRegular);
+
+      const pages = pdfDoc.getPages();
+      const firstPage = pages[0];
+      const { width, height } = firstPage.getSize();
+      let startY = height - 150; // Starting Y position for each row
+
+      // Loop through each column in the current row and customize text styles
+      rowData.forEach((cellData, cellIndex) => {
+         const text = cellData || ''; // Handle empty cells
+
+         // Get column style, or fallback to default if no customization provided
+         const columnStyle = columnStyles[cellIndex] || {
+            fontSize: 12,
+            color: primaryColor,
+         };
+
+         // Calculate the text width to center it horizontally
+         const textWidth = CalibriRegular.widthOfTextAtSize(text.toString(), columnStyle.fontSize);
+         const x = (width - textWidth) / 2; // Centered horizontally
+
+         // Calculate Y position for the column
+         const y = startY - cellIndex * 50; // Adjust the Y for each column
+
+         // Draw the actual data from the current row (without printing the column name)
+         firstPage.drawText(text.toString(), {
+            x: x,
+            y: y, // Centered Y position for the row data
+            size: columnStyle.fontSize,
+            font: CalibriRegular,
+            color: columnStyle.color,
+         });
+      });
+
+      const pdfBytes = await pdfDoc.save();
+
+      // Use a unique name for each row's PDF, e.g., using the first column (name or ID)
+      const rowFileName = `Certificate_${rowData[0] || 'Row'}_${rowIndex}.pdf`;
+      var file = new File([pdfBytes], rowFileName, {
+         type: "application/pdf;charset=utf-8",
+      });
+      saveAs(file);
+   }
+   console.log("All PDFs created successfully.");
+};

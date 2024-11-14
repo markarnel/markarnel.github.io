@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Get Your Certificate for PadhegaIndia</title>
+   <link rel="stylesheet" href="style.css">
+   <!-- Include SheetJS Library -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+   <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+   <script src="./FileSaver.js"></script>
+   <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+</head>
+
+<body>
+   <header>
+      <h4>Upload Excel File to Generate Certificate</h4>
+   </header>
+   <main>
+      <!-- File Input for Excel -->
+      <input type="file" id="fileInput" accept=".xlsx, .xls">
+      <br><br>
+
+      <!-- Display Table Data -->
+      <div id="table-container"></div>
+   </main>
+
+   <script src="./script.js"></script>
+</body>
+
+</html>
