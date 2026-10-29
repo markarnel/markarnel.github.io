@@ -1,0 +1,14 @@
+LEAD52 landing page
+===================
+
+1. Extract the zip first.
+   Right-click Lead52-Landing.zip > Extract All. Opening files from inside the
+   zip only copies that one file, so the design (styles, scripts, images) is missing.
+
+2. To just look at the page:
+   Double-click  public\index.html
+
+3. To run the full site (sign-up form, offline app, video streaming):
+   Double-click  Start LEAD52.cmd
+   (needs Node.js 20 or newer: https://nodejs.org)
+   It opens http://localhost:4173 in your browser. Close the black window to stop it.

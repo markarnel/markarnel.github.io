@@ -1,0 +1,12 @@
+{
+  "name": "lead52-landing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LEAD52 mobile-first landing page (iPhone, Android, desktop) with a zero-dependency Node server and sign-up API.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node server.mjs",
+    "hero": "cd ../my-video && npx remotion render Lead52-Hero ../landing/public/assets/hero.mp4 --codec=h264 --crf=24 --muted"
+  }
+}

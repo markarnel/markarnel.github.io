@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>LEAD52 — 52 weeks of leadership. 5 minutes a week. Free.</title>
+  <meta name="description" content="52 weeks of practical leadership lessons, less than five minutes a week, completely free.">
+  <meta name="theme-color" content="#04212A">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <meta property="og:title" content="LEAD52 — Lead better. Five minutes at a time.">
+  <meta property="og:description" content="52 weeks · less than 5 minutes a week · free.">
+  <meta property="og:image" content="assets/tour-poster.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Entrance animations hide content until app.js reveals it; if the script
+       never runs (blocked, offline, opened from a zip), show everything. -->
+  <script>
+    document.documentElement.classList.add("js");
+    setTimeout(function () { if (!window.L52_READY) document.documentElement.classList.remove("js"); }, 2500);
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <canvas id="field" aria-hidden="true"></canvas>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#top" aria-label="LEAD52 home">
+      <img class="brand-logo" src="assets/logo-white.png" alt="LEAD52" width="733" height="131">
+    </a>
+    <nav class="nav-links" id="nav-links" aria-label="Main">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#year">Your year</a>
+      <a href="#watch">Watch</a>
+    </nav>
+    <a class="btn btn-sm magnetic" href="#join">Join free</a>
+    <button class="menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="pill reveal"><span class="dot"></span> Free · Weekly · In your inbox</p>
+        <h1 class="kinetic" aria-label="Lead better. Five minutes at a time.">
+          <span class="line"><span class="w">Lead</span> <span class="w">better.</span></span>
+          <span class="line"><span class="w hl">Five</span> <span class="w hl">minutes</span></span>
+          <span class="line"><span class="w">at</span> <span class="w">a</span> <span class="w ul">time.</span></span>
+        </h1>
+        <p class="lede reveal">One sharp, practical leadership lesson every week, made for the phone in your hand. Less than five minutes to read. Fifty-two weeks. Completely free.</p>
+
+        <form class="signup reveal" data-source="hero" novalidate>
+          <label class="sr" for="hero-name">First name</label>
+          <input id="hero-name" name="name" autocomplete="given-name" placeholder="First name" required>
+          <label class="sr" for="hero-email">Email</label>
+          <input id="hero-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@company.com" required>
+          <input class="hp" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn magnetic" type="submit"><span>Get the lessons</span> <i aria-hidden="true">→</i></button>
+          <p class="form-msg" role="status" aria-live="polite"></p>
+        </form>
+
+        <dl class="stats reveal">
+          <div><dt>Weeks</dt><dd><b data-count="52">0</b></dd></div>
+          <div><dt>Minutes / week</dt><dd>&lt;<b data-count="5">0</b></dd></div>
+          <div><dt>Cost</dt><dd>$<b data-count="0">0</b></dd></div>
+        </dl>
+      </div>
+
+      <div class="hero-media reveal" data-tilt>
+        <!-- Same globe as the promo video (my-video/src/Promo/scenes/Join.tsx); app.js animates it. -->
+        <div class="globe" role="img" aria-label="A glowing globe turning slowly, with the LEAD52 logo at its center and 52 leaders orbiting around it">
+          <svg class="globe-svg" viewBox="-400 -400 800 800" aria-hidden="true">
+            <defs>
+              <radialGradient id="globe-fill" cx="38%" cy="32%" r="75%">
+                <stop offset="0%" stop-color="#00babc" stop-opacity="0.32"/>
+                <stop offset="55%" stop-color="#00babc" stop-opacity="0.08"/>
+                <stop offset="100%" stop-color="#083643" stop-opacity="0.2"/>
+              </radialGradient>
+            </defs>
+            <circle id="g-ring1" r="263.2" fill="none" stroke="#00babc" stroke-opacity=".45" stroke-width="2" stroke-dasharray="2 14"/>
+            <circle id="g-ring2" r="282" fill="none" stroke="#00babc" stroke-opacity=".3" stroke-width="3" stroke-dasharray="120 360 40 220" stroke-linecap="round"/>
+            <g transform="rotate(-16)">
+              <path d="M-310.2 0A310.2 84.6 0 0 1 310.2 0" fill="none" stroke="#00babc" stroke-opacity=".18" stroke-width="1.5"/>
+              <g id="g-back"></g>
+            </g>
+            <circle r="235" fill="url(#globe-fill)" stroke="#00babc" stroke-opacity=".6" stroke-width="2"/>
+            <g fill="none" stroke="#00babc" stroke-width="1.5">
+              <ellipse class="g-mer" ry="235" rx="235" stroke-opacity=".38"/>
+              <ellipse class="g-mer" ry="235" rx="117" stroke-opacity=".38"/>
+              <ellipse class="g-mer" ry="235" rx="117" stroke-opacity=".38"/>
+              <ellipse cy="-129.3" rx="196.2" ry="25.5" stroke-opacity=".3"/>
+              <ellipse rx="235" ry="30.6" stroke-opacity=".3"/>
+              <ellipse cy="129.3" rx="196.2" ry="25.5" stroke-opacity=".3"/>
+            </g>
+            <circle r="231" fill="none" stroke="#fff" stroke-opacity=".25" stroke-width="3" stroke-dasharray="211.5 1645" transform="rotate(200)"/>
+            <g transform="rotate(-16)">
+              <path d="M310.2 0A310.2 84.6 0 0 1 -310.2 0" fill="none" stroke="#00babc" stroke-opacity=".45" stroke-width="2"/>
+              <g id="g-front"></g>
+              <g id="g-pings" fill="none" stroke="#00babc" stroke-width="2"></g>
+            </g>
+          </svg>
+          <img class="globe-logo" src="assets/logo-white.png" alt="" width="733" height="131">
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="track">
+        <span>52 weeks</span><i>✦</i><span>Less than 5 minutes</span><i>✦</i><span>100% free</span><i>✦</i>
+        <span>52 weeks</span><i>✦</i><span>Less than 5 minutes</span><i>✦</i><span>100% free</span><i>✦</i>
+        <span>52 weeks</span><i>✦</i><span>Less than 5 minutes</span><i>✦</i><span>100% free</span><i>✦</i>
+        <span>52 weeks</span><i>✦</i><span>Less than 5 minutes</span><i>✦</i><span>100% free</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="section" id="features" aria-labelledby="features-h">
+      <p class="eyebrow reveal">Everything you get</p>
+      <h2 id="features-h" class="reveal">Built for leaders <span class="hl">on the move.</span></h2>
+      <p class="sub reveal">Every feature is about one thing: getting a little better at leading, every week, without adding to your load.</p>
+
+      <div class="features">
+        <article class="feature reveal" data-tilt>
+          <div class="ficon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><rect x="6" y="11" width="36" height="26" rx="5"/><path class="draw" d="M8 14l16 12 16-12"/></svg>
+          </div>
+          <h3>A lesson every Monday</h3>
+          <p>One lesson lands in your inbox each week. Open it from the notification on your phone, wherever you are.</p>
+        </article>
+        <article class="feature reveal" data-tilt>
+          <div class="ficon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><circle cx="24" cy="25" r="16"/><path class="hand" d="M24 25V15"/><path d="M20 5h8"/></svg>
+          </div>
+          <h3>Less than five minutes</h3>
+          <p>Short enough to read between meetings or in the coffee line. Every lesson respects your time.</p>
+        </article>
+        <article class="feature reveal" data-tilt>
+          <div class="ficon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><g class="grid-ico"><rect x="7" y="7" width="9" height="9" rx="2"/><rect x="19.5" y="7" width="9" height="9" rx="2"/><rect x="32" y="7" width="9" height="9" rx="2"/><rect x="7" y="19.5" width="9" height="9" rx="2"/><rect x="19.5" y="19.5" width="9" height="9" rx="2"/><rect x="32" y="19.5" width="9" height="9" rx="2"/><rect x="7" y="32" width="9" height="9" rx="2"/><rect x="19.5" y="32" width="9" height="9" rx="2"/><rect x="32" y="32" width="9" height="9" rx="2"/></g></svg>
+          </div>
+          <h3>A 52-week path</h3>
+          <p>A full year of leadership learning, one step at a time. Small weekly lessons add up to real change.</p>
+        </article>
+        <article class="feature reveal" data-tilt>
+          <div class="ficon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M8 14h32v8a4 4 0 0 0 0 8v8H8v-8a4 4 0 0 0 0-8z"/><path class="draw" d="M18 24l4 4 8-8"/></svg>
+          </div>
+          <h3>Free. Really.</h3>
+          <p>No card, no trial, no upsell. All 52 lessons cost nothing, now and later.</p>
+        </article>
+        <article class="feature reveal" data-tilt>
+          <div class="ficon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M14 30l-6 6M24 34v8M34 30l6 6"/><path class="draw" d="M24 6l4 8 9 1-6.5 6 1.5 9-8-4.3-8 4.3 1.5-9L11 15l9-1z"/></svg>
+          </div>
+          <h3>Use it the same day</h3>
+          <p>Practical, not theory. Each lesson gives you something to try in your very next meeting.</p>
+        </article>
+        <article class="feature reveal" data-tilt>
+          <div class="ficon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="17"/><ellipse class="spin" cx="24" cy="24" rx="7" ry="17"/><path d="M7 24h34"/></svg>
+          </div>
+          <h3>A global family</h3>
+          <p>Join a worldwide group of leaders committed to transforming how we lead and deliver.</p>
+        </article>
+        <article class="feature reveal" data-tilt>
+          <div class="ficon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><rect x="14" y="5" width="20" height="38" rx="5"/><path d="M21 37h6"/><path class="draw" d="M19 19l4 4 7-7"/></svg>
+          </div>
+          <h3>Made for your phone</h3>
+          <p>Reads beautifully on the phone in your pocket. No app to download, nothing to install.</p>
+        </article>
+        <article class="feature reveal" data-tilt>
+          <div class="ficon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M24 6l15 6v10c0 10-6.5 17-15 20C15.5 39 9 32 9 22V12z"/><path class="draw" d="M18 24l4 4 8-8"/></svg>
+          </div>
+          <h3>No spam, no login</h3>
+          <p>Just one email a week. No passwords to remember, and you can unsubscribe in one click.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="section how" id="how" aria-labelledby="how-h">
+      <p class="eyebrow reveal">How it works</p>
+      <h2 id="how-h" class="reveal">Three steps. <span class="hl">Zero effort.</span></h2>
+      <ol class="steps" style="--p:0">
+        <li class="step reveal">
+          <span class="num">01</span>
+          <h3>Join free</h3>
+          <p>Enter your first name and email. It takes ten seconds.</p>
+        </li>
+        <li class="step reveal">
+          <span class="num">02</span>
+          <h3>Get a lesson every week</h3>
+          <p>One short leadership lesson lands on your phone every Monday.</p>
+        </li>
+        <li class="step reveal">
+          <span class="num">03</span>
+          <h3>Read it in five minutes</h3>
+          <p>Use it in your very next meeting. Then do it again next week.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ YOUR YEAR ============ -->
+    <section class="section year" id="year" aria-labelledby="year-h">
+      <div class="year-copy">
+        <p class="eyebrow reveal">Your year, week by week</p>
+        <h2 id="year-h" class="reveal">Small weeks. <span class="hl">Big year.</span></h2>
+        <p class="sub reveal">Drag through the year to see how five minutes a week adds up.</p>
+        <label class="scrub reveal" for="week">
+          <span>Week <output id="week-out">12</output> of 52</span>
+          <input id="week" type="range" min="1" max="52" value="12">
+        </label>
+        <dl class="year-stats reveal">
+          <div><dt>Lessons read</dt><dd id="ys-lessons">12</dd></div>
+          <div><dt>Minutes invested</dt><dd id="ys-min">&lt;60</dd></div>
+          <div><dt>Of your year</dt><dd id="ys-pct">23%</dd></div>
+        </dl>
+      </div>
+      <div class="orbit reveal" aria-hidden="true">
+        <div class="orbit-glow"></div>
+        <div class="orbit-track"></div>
+        <div class="orbit-ring" id="orbit-ring"></div>
+        <img class="orbit-logo" src="assets/logo-white.png" alt="" width="733" height="131">
+        <p class="orbit-count"><b id="orbit-week">12</b><span>of 52 weeks</span></p>
+      </div>
+    </section>
+
+    <!-- ============ WATCH ============ -->
+    <section class="section watch" id="watch" aria-labelledby="watch-h">
+      <p class="eyebrow reveal">The 20-second tour</p>
+      <h2 id="watch-h" class="reveal">See what you <span class="hl">get.</span></h2>
+      <div class="player reveal" id="player">
+        <video id="tour" preload="metadata" playsinline poster="assets/tour-poster.jpg">
+          <source src="assets/tour.mp4" type="video/mp4">
+        </video>
+        <button class="play" id="play" aria-label="Play the tour with sound">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
+          <span class="ripple"></span>
+        </button>
+        <div class="progress" aria-hidden="true"><i id="tour-bar"></i></div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section cta" id="join" aria-labelledby="join-h">
+      <div class="cta-card reveal">
+        <div class="cta-rays" aria-hidden="true"></div>
+        <svg class="mark big" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="26"/><path d="M27 60L50 37L73 60"/><path d="M27 79L50 56L73 79" opacity=".55"/></svg>
+        <p class="eyebrow">Join the LEAD52 family</p>
+        <h2 id="join-h">Your first lesson is <span class="hl">one tap away.</span></h2>
+        <form class="signup" data-source="cta" novalidate>
+          <label class="sr" for="cta-name">First name</label>
+          <input id="cta-name" name="name" autocomplete="given-name" placeholder="First name" required>
+          <label class="sr" for="cta-email">Email</label>
+          <input id="cta-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@company.com" required>
+          <input class="hp" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn magnetic" type="submit"><span>Join free</span> <i aria-hidden="true">→</i></button>
+          <p class="form-msg" role="status" aria-live="polite"></p>
+        </form>
+        <p class="fine">GetLEAD52.com · 52 weeks · Less than five minutes a week · Free</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© LEAD52 · Lead and deliver.</span>
+    <span>Built with motion, not stock.</span>
+  </footer>
+
+  <!-- Classic script (not type="module") so it also runs when index.html is opened as a local file. -->
+  <script src="app.js" defer></script>
+</body>
+</html>
